@@ -1,0 +1,38 @@
+These representative photographs are from Wikimedia Commons. They are not photos of Gupt Vrindavan Dham. Each image was converted to WebP; source dimensions are retained.
+The WebP versions are shared under the same Creative Commons license listed for each source photograph.
+
+temple-gate.webp
+  "Main gate of ISKCON, Mayapur 07102013.jpg" by Joydeep
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:Main_gate_of_ISKCON,_Mayapur_07102013.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/3.0/
+
+prabhupada-samadhi.webp
+  "Samadhi Mandir of Srila Prabhupada, Mayapur 07102013 04.jpg" by Joydeep
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:Samadhi_Mandir_of_Srila_Prabhupada,_Mayapur_07102013_04.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/3.0/
+
+vechur-cow.webp
+  "Vechur Cow.jpg" by Mullookkaaran
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:Vechur_Cow.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/3.0/
+
+garden.webp
+  "Garden at ISKCON, Mayapur 07102013.jpg" by Joydeep
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:Garden_at_ISKCON,_Mayapur_07102013.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/3.0/
+
+kirtan.webp
+  "Kirtan hare Krishna.jpg" by Litan Paul
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Kirtan_hare_Krishna.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/4.0/
+
+fruit-offering.webp
+  "Fruit offering.jpg" by Yuv103m
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Fruit_offering.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/4.0/
