@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="mt-16 bg-maroon pb-20 text-cream md:pb-0">
       <div className="container-page grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h2 className="text-lg font-semibold text-gold">Gupt Vrindavan Dham</h2>
+          <h2 className="text-lg font-semibold text-gold">{siteConfig.brandName}</h2>
           <p className="mt-2 text-sm">{contact.address}</p>
           <p className="mt-2 text-sm"><a href={`tel:${contact.phoneHref}`}>{contact.phone}</a></p>
           <a className="mt-2 inline-block text-sm underline" href={contact.mapLink} target="_blank" rel="noopener noreferrer">View on map</a>
@@ -29,7 +29,7 @@ export default function Footer() {
         <div>
           <h2 className="text-lg font-semibold text-gold">More links</h2>
           <ul className="mt-2 space-y-1 text-sm">
-            <li><Link to="/donate">Donate</Link></li><li><Link to="/terms">Terms</Link></li><li><Link to="/privacy">Privacy</Link></li>
+            <li><Link to="/donate">Donate</Link></li><li><Link to="/terms">Terms</Link></li><li><Link to="/privacy">Privacy</Link></li><li><Link to="/refund">Refund policy</Link></li>
           </ul>
           <div className="mt-4 flex gap-2">
             {Object.entries(social).filter(([, u]) => u).map(([k, u]) => {
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="border-t border-gold/30 py-4 text-center text-sm">©2026 Gupt Vrindavan Dham</p>
+      <p className="border-t border-gold/30 py-4 text-center text-sm">©2026 {siteConfig.brandName}</p>
     </footer>
   );
 }

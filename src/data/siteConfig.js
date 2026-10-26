@@ -5,6 +5,7 @@ export const isFilled = (v) => Boolean(v) && !String(v).startsWith('TO BE FILLED
 
 const siteConfig = {
   name: 'Gupt Vrindavan Dham',
+  brandName: 'Hare Krishna',
   tagline: "Rajasthan's Biggest Krishna Temple",
   contact: {
     phone: '+91-97999 99881',

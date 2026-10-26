@@ -21,7 +21,7 @@ const places = [
 const activities = [
   { title: 'Harinama Kirtan', text: 'Join devotees in the congregational chanting of the holy names.', icon: Music2, to: '/activities/kirtan' },
   { title: 'Gita & Bhagavatam', text: 'Explore timeless spiritual teachings through classes and discussion.', icon: BookOpen, to: '/activities/education' },
-  { title: 'Food distribution', text: 'Support prasadam and food-service initiatives for the community.', icon: Utensils, to: '/activities/food-distribution' },
+  { title: 'Annadhan', text: 'Learn how food seva and prasadam support visitors and the community.', icon: Utensils, to: '/annadhan' },
   { title: 'Cow protection', text: 'Help sustain compassionate care for cows through dedicated seva.', icon: HandHeart, to: '/activities/cow-protection' },
 ];
 
@@ -48,7 +48,7 @@ function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to 
       </div>
       <h3 className="text-lg font-semibold">{to ? <Link to={to} className="hover:text-saffron-dark">{title}</Link> : title}</h3>
       <p className="mt-2 text-sm leading-6 text-maroon/75">{text}</p>
-      {to ? <Link to={to} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Discover <ArrowRight size={15} aria-hidden="true" /></Link> : <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Discover <ArrowRight size={15} aria-hidden="true" /></span>}
+      {to && <Link to={to} className="btn-outline mt-5 min-h-10 px-4 text-xs">Discover <ArrowRight size={15} aria-hidden="true" /></Link>}
     </article>
   );
 }
@@ -68,9 +68,9 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Gupt Vrindavan Dham – Krishna Temple in Jaipur</title>
+        <title>{siteConfig.brandName} – Krishna Temple in Jaipur</title>
         <meta name="description" content="Plan a visit to Gupt Vrindavan Dham in Jagatpura, Jaipur. Explore temple spaces, daily worship, spiritual programmes and ways to serve." />
-        <meta property="og:title" content="Gupt Vrindavan Dham, Jaipur" />
+        <meta property="og:title" content={`${siteConfig.brandName}, Jaipur`} />
         <meta property="og:type" content="website" />
       </Helmet>
 
@@ -93,7 +93,7 @@ export default function Home() {
 
       <section className="bg-white/60 py-16 sm:py-20">
         <div className="container-page">
-          <SectionHeading title="Explore the Dham" sub="Discover places and experiences that make a visit meaningful." />
+          <SectionHeading title="Discover the Dham" sub="Choose a place or experience to learn more and plan your visit." />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {places.map((place, index) => <IconCard key={place.title} {...place} index={index + 1} />)}
           </div>

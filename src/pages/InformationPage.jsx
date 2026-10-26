@@ -62,7 +62,7 @@ export default function InformationPage({ page }) {
   return (
     <>
       <Helmet>
-        <title>{page.title} – Gupt Vrindavan Dham</title>
+        <title>{page.title} – {siteConfig.brandName}</title>
         <meta name="description" content={page.description} />
       </Helmet>
 

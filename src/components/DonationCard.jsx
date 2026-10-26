@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ShieldCheck, ReceiptText, MessageCircle, ExternalLink, QrCode, Landmark, Globe } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
@@ -15,11 +15,17 @@ const METHODS = [
 export default function DonationCard() {
   const { donation, contact } = siteConfig;
   const [params] = useSearchParams();
-  const initial = donation.sevas.find((s) => s.id === params.get('seva'))?.id || 'general';
+  const requestedSeva = params.get('seva');
+  const initial = donation.sevas.find((s) => s.id === requestedSeva)?.id || 'general';
   const [seva, setSeva] = useState(initial);
   const [amount, setAmount] = useState(donation.amounts[1]);
   const [custom, setCustom] = useState('');
   const [method, setMethod] = useState('upi');
+
+  useEffect(() => {
+    const selectedSeva = donation.sevas.find((item) => item.id === requestedSeva);
+    setSeva(selectedSeva?.id || 'general');
+  }, [donation.sevas, requestedSeva]);
 
   const finalAmount = custom ? Number(custom) : amount;
   const sevaLabel = donation.sevas.find((s) => s.id === seva).label;

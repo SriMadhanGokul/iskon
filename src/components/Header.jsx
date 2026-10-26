@@ -28,9 +28,12 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-40 border-b border-gold/70 bg-cream/95 backdrop-blur">
         <div className="container-page flex min-h-[72px] items-center justify-between gap-4">
-          <Link to="/" className="min-w-0" aria-label="Gupt Vrindavan Dham home">
-            <span className="block truncate font-heading text-lg font-bold text-maroon sm:text-xl">Gupt Vrindavan Dham</span>
-            <span className="hidden text-xs text-maroon/70 sm:block">A spiritual home in Jaipur</span>
+          <Link to="/" className="flex min-w-0 items-center gap-2" aria-label="Hare Krishna home">
+            <img src="/hare-krishna-mark.svg" alt="" aria-hidden="true" className="h-10 w-10 shrink-0" />
+            <span className="min-w-0">
+              <span className="block truncate font-heading text-lg font-bold text-maroon sm:text-xl">Hare Krishna</span>
+              <span className="hidden text-xs text-maroon/70 sm:block">A spiritual home in Jaipur</span>
+            </span>
           </Link>
           <nav aria-label="Main navigation" className="hidden items-center gap-5 xl:flex">
             {primaryLinks.map((item) => <NavLink key={item.to} to={item.to} className={linkClass}>{item.label}</NavLink>)}
@@ -73,7 +76,7 @@ export default function Header() {
               )}
             </div>
           </nav>
-          <Link to="/donate" className="hidden rounded-full bg-saffron px-5 py-2.5 text-sm font-semibold text-maroon transition-colors hover:bg-gold sm:inline-flex">Donate</Link>
+          <Link to="/donate" className="inline-flex shrink-0 rounded-full bg-saffron px-3 py-2.5 text-xs font-semibold text-maroon transition-colors hover:bg-gold sm:px-5 sm:text-sm">Donate now</Link>
           <button
             type="button"
             onClick={() => setMoreOpen((open) => !open)}
@@ -90,7 +93,6 @@ export default function Header() {
             {SITE_NAV_LINKS.map((item) => (
               <NavLink key={item.to} to={item.to} className={({ isActive }) => `rounded-xl px-3 py-3 text-sm ${isActive ? 'bg-saffron/20 font-semibold text-saffron-dark' : 'bg-white text-maroon'}`}>{item.label}</NavLink>
             ))}
-            <Link to="/donate" className="rounded-xl bg-white px-3 py-3 text-sm text-maroon">Donate</Link>
           </nav>
         )}
       </header>

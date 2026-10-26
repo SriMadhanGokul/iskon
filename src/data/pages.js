@@ -102,7 +102,7 @@ export const SITE_PAGES = [
     intro: 'The temple’s public programme information describes activities for children, youth and families, alongside devotional practice and community service. Programme schedules can change; contact the temple to confirm upcoming sessions.',
     cards: [
       linkedCard('Spiritual education', 'Courses and seminars draw on the Bhagavad-gita and Srimad Bhagavatam for children, youth and families.', '/activities/education', prabhupadaPhoto),
-      linkedCard('Food distribution', 'Read about Nitya Annadana, Khichadi Vitran, Krishnamrita and school meal initiatives.', '/activities/food-distribution', prasadamPhoto),
+      linkedCard('Annadhan', 'Learn about food seva, prasadam and ways to support community food service.', '/annadhan', prasadamPhoto),
       linkedCard('Cow protection', 'Learn about the community’s support for care at the Hingonia cattle rehabilitation centre.', '/activities/cow-protection', cowPhoto),
       linkedCard('Kirtan and chanting', 'Explore congregational chanting and devotional music as part of spiritual life.', '/activities/kirtan', kirtanPhoto),
     ],
@@ -134,6 +134,30 @@ export const SITE_PAGES = [
       { title: 'School meals', text: 'The temple website describes a school meal initiative in collaboration with the Akshaya Patra Foundation. Visit the partner’s official website for programme and impact details.' },
     ],
     cta: { label: 'Contribute to Anna Daan', to: '/donate?seva=anna' },
+  },
+  {
+    path: '/annadhan',
+    title: 'Annadhan and prasadam seva',
+    eyebrow: 'Food as devotional service',
+    description: 'Learn about Annadhan, prasadam and ways to support food-service initiatives.',
+    image: prasadamPhoto,
+    intro: 'Annadhan is the offering and sharing of food in service to others. In the Hare Krishna tradition, food offered to Krishna is shared as prasadam. This page explains the purpose of food seva without assuming current serving times, meal counts or programme availability.',
+    sections: [
+      {
+        title: 'Why Annadhan matters',
+        text: 'Sharing nourishing vegetarian food is a practical expression of care and service. Prasadam also offers visitors and community members an opportunity to receive food prepared and offered with devotion.',
+        image: prasadamPhoto,
+      },
+      {
+        title: 'How contributions may help',
+        text: 'An offering for Anna Daan may support ingredients, preparation and distribution associated with food seva. The temple can confirm current programme needs and whether a contribution can be assigned to a particular activity.',
+      },
+      {
+        title: 'Participate or ask a question',
+        text: 'Please contact the temple to confirm current distribution schedules, volunteer opportunities, dietary information and visitor arrangements. No unverified dates, meal quantities or registration requirements are listed here.',
+      },
+    ],
+    cta: { label: 'Offer Anna Daan seva', to: '/donate?seva=anna' },
   },
   {
     path: '/activities/cow-protection',
@@ -386,6 +410,32 @@ export const SITE_PAGES = [
     ],
     cta: { label: 'Contact the temple', to: '/contact' },
   },
+  {
+    path: '/refund',
+    title: 'Refund policy',
+    eyebrow: 'Donation and service information',
+    description: 'General guidance on donation and service-related refunds, corrections and payment verification.',
+    intro: 'This refund policy sets out the general process for donation-related questions, payment corrections and service-related enquiries. Final decisions follow the temple’s official policy and the payment channel used at the time of payment.',
+    sections: [
+      {
+        title: 'General principle',
+        text: 'The temple seeks to process donations and seva payments with care and transparency. Because digital payment systems, bank transfers and third-party payment providers are involved, refunds and adjustments may require verification, delay and confirmation from the temple administration.',
+      },
+      {
+        title: 'When a refund may be considered',
+        text: 'A refund or correction may be considered when a payment is made in error, duplicated, or sent using an incorrect account or payment method. For donations, the temple may also require a valid proof of payment and the donor’s identity or transaction details before reviewing the request.',
+      },
+      {
+        title: 'How to request assistance',
+        text: 'Please contact the temple by phone or email with the payment reference, amount, date and purpose of the offering. Do not send OTPs, UPI PINs, bank credentials or sensitive personal details through this website. Use only the official contact details listed on the site or on the temple’s verified donation page.',
+      },
+      {
+        title: 'Important note',
+        text: 'This page is a general informational template and should be reviewed and confirmed by the temple before publication as an official legal document. Payment-related decisions are governed by the official temple policy and the terms of the payment provider used at the time of transaction.',
+      },
+    ],
+    cta: { label: 'Contact the temple', to: '/contact' },
+  },
 ];
 
 export const PAGE_BY_PATH = Object.fromEntries(SITE_PAGES.map((page) => [page.path, page]));
@@ -395,6 +445,7 @@ export const SITE_NAV_LINKS = [
   { label: 'Temple', to: '/mandir' },
   { label: 'Srila Prabhupada', to: '/prabhupada' },
   { label: 'Activities', to: '/activities' },
+  { label: 'Annadhan', to: '/annadhan' },
   { label: 'Festivals', to: '/festivals' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Visit', to: '/visit' },
