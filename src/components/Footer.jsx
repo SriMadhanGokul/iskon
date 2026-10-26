@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Youtube, Instagram, Facebook, Twitter } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
+import { SITE_NAV_LINKS } from '../data/pages.js';
 
 const ICONS = { youtube: Youtube, instagram: Instagram, facebook: Facebook, x: Twitter };
 
@@ -8,7 +9,7 @@ export default function Footer() {
   const { contact, social, timings } = siteConfig;
   return (
     <footer className="mt-16 bg-maroon pb-20 text-cream md:pb-0">
-      <div className="container-page grid gap-8 py-12 md:grid-cols-3">
+      <div className="container-page grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <h2 className="text-lg font-semibold text-gold">Gupt Vrindavan Dham</h2>
           <p className="mt-2 text-sm">{contact.address}</p>
@@ -20,7 +21,13 @@ export default function Footer() {
           <ul className="mt-2 space-y-1 text-sm">{timings.map(([n, t]) => <li key={n} className="flex justify-between gap-4"><span>{n}</span><span>{t}</span></li>)}</ul>
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-gold">Links</h2>
+          <h2 className="text-lg font-semibold text-gold">Explore</h2>
+          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
+            {SITE_NAV_LINKS.map(({ label, to }) => <li key={to}><Link to={to} className="hover:text-gold">{label}</Link></li>)}
+          </ul>
+        </div>
+        <div>
+          <h2 className="text-lg font-semibold text-gold">More links</h2>
           <ul className="mt-2 space-y-1 text-sm">
             <li><Link to="/donate">Donate</Link></li><li><Link to="/terms">Terms</Link></li><li><Link to="/privacy">Privacy</Link></li>
           </ul>

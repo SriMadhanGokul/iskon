@@ -12,17 +12,17 @@ import ProgressBar from '../components/ProgressBar.jsx';
 import AartiTimings from '../components/AartiTimings.jsx';
 
 const places = [
-  { title: 'Gau Seva', text: 'Learn about compassionate cow care and ways to support animal welfare through seva.', icon: HandHeart, image: siteConfig.images.gauSeva, imageAlt: 'Vechur cow photographed in India', credit: siteConfig.imageCredits.gauSeva },
-  { title: 'Bhoga & prasadam', text: 'A devotional fruit offering, one part of preparing prasadam for temple programmes and visitors.', icon: Utensils, image: siteConfig.images.prasadam, imageAlt: 'Fruit arranged as a devotional offering', credit: siteConfig.imageCredits.prasadam },
-  { title: 'Harinama Kirtan', text: 'A glimpse of Hare Krishna devotees gathered in devotional music and chanting.', icon: Music2, image: siteConfig.images.kirtan, imageAlt: 'Hare Krishna devotees taking part in kirtan', credit: siteConfig.imageCredits.kirtan },
-  { title: 'Temple Gardens', text: 'A representative garden photo from ISKCON Mayapur; visit information for Gupt Vrindavan Dham is available below.', icon: Flower2, image: siteConfig.images.garden, imageAlt: 'Garden at ISKCON Mayapur', credit: siteConfig.imageCredits.garden },
+  { title: 'Gau Seva', text: 'Learn about compassionate cow care and ways to support animal welfare through seva.', icon: HandHeart, image: siteConfig.images.gauSeva, imageAlt: 'Vechur cow photographed in India', credit: siteConfig.imageCredits.gauSeva, to: '/mandir/gaushala' },
+  { title: 'Bhoga & prasadam', text: 'A devotional fruit offering, one part of preparing prasadam for temple programmes and visitors.', icon: Utensils, image: siteConfig.images.prasadam, imageAlt: 'Fruit arranged as a devotional offering', credit: siteConfig.imageCredits.prasadam, to: '/activities/food-distribution' },
+  { title: 'Harinama Kirtan', text: 'A glimpse of Hare Krishna devotees gathered in devotional music and chanting.', icon: Music2, image: siteConfig.images.kirtan, imageAlt: 'Hare Krishna devotees taking part in kirtan', credit: siteConfig.imageCredits.kirtan, to: '/activities/kirtan' },
+  { title: 'Temple Gardens', text: 'A representative garden photo from ISKCON Mayapur; visit information for Gupt Vrindavan Dham is available below.', icon: Flower2, image: siteConfig.images.garden, imageAlt: 'Garden at ISKCON Mayapur', credit: siteConfig.imageCredits.garden, to: '/mandir/garden' },
 ];
 
 const activities = [
-  { title: 'Harinama Kirtan', text: 'Join devotees in the congregational chanting of the holy names.', icon: Music2 },
-  { title: 'Gita & Bhagavatam', text: 'Explore timeless spiritual teachings through classes and discussion.', icon: BookOpen },
-  { title: 'Food distribution', text: 'Support prasadam and food-service initiatives for the community.', icon: Utensils },
-  { title: 'Cow protection', text: 'Help sustain compassionate care for cows through dedicated seva.', icon: HandHeart },
+  { title: 'Harinama Kirtan', text: 'Join devotees in the congregational chanting of the holy names.', icon: Music2, to: '/activities/kirtan' },
+  { title: 'Gita & Bhagavatam', text: 'Explore timeless spiritual teachings through classes and discussion.', icon: BookOpen, to: '/activities/education' },
+  { title: 'Food distribution', text: 'Support prasadam and food-service initiatives for the community.', icon: Utensils, to: '/activities/food-distribution' },
+  { title: 'Cow protection', text: 'Help sustain compassionate care for cows through dedicated seva.', icon: HandHeart, to: '/activities/cow-protection' },
 ];
 
 const faqs = [
@@ -31,7 +31,7 @@ const faqs = [
   { question: 'What can visitors do at the Dham?', answer: 'Visitors can attend darshan, join kirtan and spiritual programmes, learn about seva activities, and explore the temple grounds.' },
 ];
 
-function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit }) {
+function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to }) {
   return (
     <article className="group rounded-3xl border border-gold/80 bg-white p-5 shadow-soft transition-transform hover:-translate-y-1 sm:p-6">
       {image && (
@@ -46,9 +46,9 @@ function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit }) {
         <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron/20 text-saffron-dark"><Icon size={23} aria-hidden="true" /></span>
         <span className="font-heading text-sm text-maroon/45">{String(index).padStart(2, '0')}</span>
       </div>
-      <h3 className="text-lg font-semibold">{title}</h3>
+      <h3 className="text-lg font-semibold">{to ? <Link to={to} className="hover:text-saffron-dark">{title}</Link> : title}</h3>
       <p className="mt-2 text-sm leading-6 text-maroon/75">{text}</p>
-      <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Discover <ArrowRight size={15} aria-hidden="true" /></span>
+      {to ? <Link to={to} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Discover <ArrowRight size={15} aria-hidden="true" /></Link> : <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Discover <ArrowRight size={15} aria-hidden="true" /></span>}
     </article>
   );
 }
@@ -112,7 +112,7 @@ export default function Home() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-saffron-dark">The inspiration</p>
             <h2 className="font-heading text-3xl font-semibold">A vision rooted in Krishna consciousness</h2>
             <p className="mt-4 leading-7 text-maroon/80">The Dham follows the teachings and devotional mission of Srila Prabhupada. Through worship, study and practical service, it aims to make spiritual life accessible to people and families across Jaipur.</p>
-            <a href="#activities" className="btn-outline mt-6">Explore our programmes <ArrowRight size={16} aria-hidden="true" /></a>
+            <Link to="/prabhupada" className="btn-outline mt-6">Explore our programmes <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>
@@ -167,9 +167,9 @@ export default function Home() {
         <div className="container-page">
           <SectionHeading title="Life at the Dham" sub="Celebrate, learn and share devotional moments throughout the year." />
           <div className="grid gap-4 md:grid-cols-3">
-            <IconCard title="Festival gatherings" text="Join the community for devotional celebrations and special days in the Vaishnava calendar." icon={CalendarDays} index={1} />
-            <IconCard title="Music & kirtan" text="Experience the joy of devotional music and congregational chanting." icon={Music2} index={2} />
-            <IconCard title="Learning together" text="Take part in classes and conversations on the Bhagavad Gita and Srimad Bhagavatam." icon={BookOpen} index={3} />
+            <IconCard title="Festival gatherings" text="Join the community for devotional celebrations and special days in the Vaishnava calendar." icon={CalendarDays} index={1} to="/festivals" />
+            <IconCard title="Music & kirtan" text="Experience the joy of devotional music and congregational chanting." icon={Music2} index={2} to="/activities/kirtan" />
+            <IconCard title="Learning together" text="Take part in classes and conversations on the Bhagavad Gita and Srimad Bhagavatam." icon={BookOpen} index={3} to="/activities/education" />
           </div>
         </div>
       </section>
@@ -231,7 +231,7 @@ export default function Home() {
             <h2 className="font-heading text-3xl font-semibold text-white">Share your time in service</h2>
             <p className="mt-3 max-w-2xl leading-7 text-cream/80">Volunteers help welcome visitors and support educational, devotional and community-service programmes at the Dham.</p>
           </div>
-          <a href={`tel:${siteConfig.contact.phoneHref}`} className="btn-primary justify-self-start md:justify-self-end">Contact the temple <ArrowRight size={16} aria-hidden="true" /></a>
+          <Link to="/contact" className="btn-primary justify-self-start md:justify-self-end">Contact the temple <ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
       </section>
     </>

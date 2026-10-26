@@ -6,7 +6,7 @@
     npm run build    # production build in /dist
 
 ## Edit content
-All text, numbers, timings, UPI and bank values live in `src/data/siteConfig.js`.
+Site-wide contact details, timings, donation settings and image paths live in `src/data/siteConfig.js`. Standalone page copy and navigation cards live in `src/data/pages.js`; each entry is automatically registered as a route.
 Values starting with "TO BE FILLED" are placeholders; the donation card shows them clearly and disables Copy until they are filled.
 
 ## Images
@@ -21,4 +21,4 @@ Set `donation.upi.id` and the `donation.bank` fields. The QR code appears once t
 Netlify: build `npm run build`, publish `dist`, add redirect `/* /index.html 200`. Vercel: Vite preset, same output.
 
 ## Temple must confirm before launch
-UPI ID, bank details, 80G status, registration numbers, impact line per amount, email, social URLs, official photos.
+UPI ID, bank details, 80G status, registration numbers, impact line per amount, social URLs, official photos.

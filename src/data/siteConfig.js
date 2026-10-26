@@ -10,7 +10,7 @@ const siteConfig = {
     phone: '+91-97999 99881',
     phoneHref: '+919799999881',
     whatsapp: '919799999881', // digits only, country code first. Confirm with temple.
-    email: PLACEHOLDER,
+    email: 'info@guptvrindavandham.org',
     address: 'C6-C11, Mahal Scheme, Goner Road, Jagatpura, Jaipur-302017',
     mapLink: 'https://www.google.com/maps/search/?api=1&query=Gupt+Vrindavan+Dham+Jagatpura+Jaipur',
   },

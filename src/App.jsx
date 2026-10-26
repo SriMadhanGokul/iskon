@@ -2,10 +2,12 @@ import { Suspense, lazy, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import { PAGE_BY_PATH, SITE_PAGES } from './data/pages.js';
 
 const Home = lazy(() => import('./pages/Home.jsx'));
 const Donate = lazy(() => import('./pages/Donate.jsx'));
 const NotFound = lazy(() => import('./pages/NotFound.jsx'));
+const InformationPage = lazy(() => import('./pages/InformationPage.jsx'));
 
 function ScrollTop() {
   const { pathname, hash } = useLocation();
@@ -35,6 +37,13 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/donate" element={<Donate />} />
+            {SITE_PAGES.map((page) => (
+              <Route
+                key={page.path}
+                path={page.path}
+                element={<InformationPage page={PAGE_BY_PATH[page.path]} />}
+              />
+            ))}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
