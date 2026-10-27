@@ -4,12 +4,18 @@ import { Link } from 'react-router-dom';
 import AartiTimings from '../components/AartiTimings.jsx';
 import siteConfig from '../data/siteConfig.js';
 
-function Photo({ image, className = 'aspect-[16/10]' }) {
+function Photo({ image, className = 'aspect-[16/10]', linkTo }) {
   if (!image) return null;
   const { credit } = image;
   return (
     <figure className={`overflow-hidden rounded-3xl border border-gold/70 bg-cream ${className}`}>
-      <img src={image.src} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+      {linkTo ? (
+        <Link to={linkTo} aria-label={`Explore ${image.alt}`} className="block h-full">
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+        </Link>
+      ) : (
+        <img src={image.src} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+      )}
       {credit && (
         <figcaption className="bg-cream px-3 py-2 text-xs leading-5 text-maroon/75">
           Representative image · <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a>
@@ -22,11 +28,11 @@ function Photo({ image, className = 'aspect-[16/10]' }) {
 function PageCard({ card }) {
   return (
     <article className="group overflow-hidden rounded-3xl border border-gold/80 bg-white shadow-soft transition-transform hover:-translate-y-1">
-      <Photo image={card.image} className="aspect-[16/10] rounded-none border-0" />
+      <Photo image={card.image} linkTo={card.to} className="aspect-[16/10] rounded-none border-0" />
       <div className="p-5">
         <h3 className="font-heading text-xl font-semibold"><Link to={card.to} className="hover:text-saffron-dark">{card.title}</Link></h3>
         <p className="mt-2 text-sm leading-6 text-maroon/75">{card.text}</p>
-        <Link to={card.to} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Read more <ArrowRight size={16} aria-hidden="true" className="transition-transform group-hover:translate-x-1" /></Link>
+        <Link to={card.to} className="btn-outline mt-4 min-h-10 px-4 text-xs">Read more <ArrowRight size={16} aria-hidden="true" className="transition-transform group-hover:translate-x-1" /></Link>
       </div>
     </article>
   );

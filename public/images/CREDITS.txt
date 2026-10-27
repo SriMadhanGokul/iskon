@@ -25,6 +25,13 @@ garden.webp
   Source: https://commons.wikimedia.org/wiki/File:Garden_at_ISKCON,_Mayapur_07102013.jpg
   License terms: https://creativecommons.org/licenses/by-sa/3.0/
 
+guest-house-room.webp
+  "Hotel Central - Room (II).jpg" by Fred Cherrygarden
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Hotel_Central_-_Room_(II).jpg
+  License terms: https://creativecommons.org/licenses/by-sa/4.0/
+  Representative hotel room image; not a photo of Gupt Vrindavan Dham.
+
 kirtan.webp
   "Kirtan hare Krishna.jpg" by Litan Paul
   License: CC BY-SA 4.0

@@ -18,7 +18,6 @@ const siteConfig = {
   social: { youtube: '', instagram: '', facebook: '', x: '' }, // full URLs; empty ones are hidden
   openingDate: '2027-05-12T00:00:00+05:30',
   donation: {
-    onlinePortal: 'https://donation.guptvrindavandham.org',
     upi: { id: PLACEHOLDER, payeeName: 'Gupt Vrindavan Dham' },
     bank: { accountName: PLACEHOLDER, bankName: PLACEHOLDER, accountNumber: PLACEHOLDER, ifsc: PLACEHOLDER, branch: PLACEHOLDER },
     has80G: false, // set true ONLY after the temple confirms 80G status
@@ -44,6 +43,7 @@ const siteConfig = {
     about: '/images/prabhupada-samadhi.webp',
     gauSeva: '/images/vechur-cow.webp',
     garden: '/images/garden.webp',
+    guestHouse: '/images/guest-house-room.webp',
     kirtan: '/images/kirtan.webp',
     prasadam: '/images/fruit-offering.webp',
   },
@@ -75,6 +75,13 @@ const siteConfig = {
       license: 'CC BY-SA 3.0',
       licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
       url: 'https://commons.wikimedia.org/wiki/File:Garden_at_ISKCON,_Mayapur_07102013.jpg',
+    },
+    guestHouse: {
+      title: 'Hotel Central - Room (II)',
+      author: 'Fred Cherrygarden',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:Hotel_Central_-_Room_(II).jpg',
     },
     kirtan: {
       title: 'Kirtan hare Krishna',

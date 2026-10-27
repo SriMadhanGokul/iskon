@@ -15,6 +15,7 @@ const kirtanPhoto = image('kirtan', 'Devotees taking part in kirtan');
 const cowPhoto = image('gauSeva', 'Vechur cow photographed in India');
 const prasadamPhoto = image('prasadam', 'Fruit arranged as a devotional offering');
 const prabhupadaPhoto = image('about', 'Samadhi Mandir of Srila Prabhupada in Mayapur');
+const guestHousePhoto = image('guestHouse', 'Representative photo of a hotel guest room');
 
 export const SITE_PAGES = [
   {
@@ -60,7 +61,7 @@ export const SITE_PAGES = [
     cards: [
       linkedCard('Hingonia Gaushala', 'Learn about the community’s cow-care and protection work.', '/mandir/gaushala', cowPhoto),
       linkedCard('Rasikam', 'Find out about the sattvik vegetarian dining experience.', '/mandir/rasikam', prasadamPhoto),
-      linkedCard('Guest house', 'Read about accommodation listed for pilgrims and visitors.', '/mandir/guest-house', gardenPhoto),
+      linkedCard('Guest house', 'Explore accommodation information for pilgrims and visitors.', '/mandir/guest-house', guestHousePhoto),
       linkedCard('Harinama Mandap', 'Discover devotional music, congregational chanting and gatherings.', '/mandir/harinama-mandap', kirtanPhoto),
       linkedCard('Vrindavan Garden', 'View a representative garden image and learn about this campus space.', '/mandir/garden', gardenPhoto),
       linkedCard('Cultural centre', 'Explore the wider vision for learning and community events.', '/mandir/cultural-centre', templePhoto),
@@ -216,10 +217,10 @@ export const SITE_PAGES = [
     title: 'Guest house',
     eyebrow: 'Temple and community spaces',
     description: 'Information for pilgrims and visitors interested in accommodation near the temple.',
-    image: gardenPhoto,
-    intro: 'The temple website describes guest-house accommodation within the wider cultural complex for pilgrims, families and visitors. Room availability, facilities and booking policies may change; contact the temple directly before making travel arrangements.',
+    image: guestHousePhoto,
+    intro: 'The temple website describes guest-house accommodation within the wider cultural complex for pilgrims, families and visitors. The room photograph is representative and is not a photo of the temple guest house. Room availability, facilities and booking policies may change; contact the temple directly before making travel arrangements.',
     sections: [
-      { title: 'Plan ahead', text: 'The published description mentions room types for individuals, families and groups, with guest facilities on campus. Confirm rates, availability, accessibility, check-in arrangements and current policies with the guest-house team.', image: gardenPhoto },
+      { title: 'Plan ahead', text: 'The published description mentions room types for individuals, families and groups, with guest facilities on campus. Confirm rates, availability, accessibility, check-in arrangements and current policies with the guest-house team.', image: guestHousePhoto },
       { title: 'During your stay', text: 'Visitors may ask the team about daily worship, prasadam arrangements and guided campus visits. Follow the temple’s current visitor guidance while on the premises.' },
     ],
     cta: { label: 'Contact the temple', to: '/contact' },

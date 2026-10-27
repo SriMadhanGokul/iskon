@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ShieldCheck, ReceiptText, MessageCircle, ExternalLink, QrCode, Landmark, Globe } from 'lucide-react';
+import { ShieldCheck, ReceiptText, MessageCircle, QrCode, Landmark, Globe } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
 import UpiQr from './UpiQr.jsx';
 import CopyField from './CopyField.jsx';
@@ -80,8 +80,7 @@ export default function DonationCard() {
           )}
           {method === 'online' && (
             <div>
-              <p className="mb-3">Pay by card, net banking or UPI on the temple’s existing donation portal.</p>
-              <a className="btn-primary" href={donation.onlinePortal} target="_blank" rel="noopener noreferrer">Go to online payment <ExternalLink size={16} aria-hidden="true" /></a>
+              <p className="mb-3">Card and net-banking payments need the temple’s payment-gateway integration before they can be accepted.</p>
             </div>
           )}
         </div>

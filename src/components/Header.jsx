@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { CalendarDays, Home as HomeIcon, MapPin, Menu, X } from 'lucide-react';
+import { CalendarDays, Heart, Home as HomeIcon, MapPin, Menu, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { SITE_NAV_LINKS, SITE_PAGES } from '../data/pages.js';
+import siteConfig from '../data/siteConfig.js';
 
 const primaryLinks = SITE_NAV_LINKS.filter(({ to }) =>
   ['/about', '/mandir', '/activities', '/festivals', '/visit'].includes(to),
@@ -76,7 +77,7 @@ export default function Header() {
               )}
             </div>
           </nav>
-          <Link to="/donate" className="inline-flex shrink-0 rounded-full bg-saffron px-3 py-2.5 text-xs font-semibold text-maroon transition-colors hover:bg-gold sm:px-5 sm:text-sm">Donate now</Link>
+          <Link to="/donate" className="inline-flex shrink-0 items-center gap-2 rounded-full bg-saffron-dark px-3 py-2.5 text-xs font-bold text-white shadow-soft ring-2 ring-saffron/30 transition-colors hover:bg-maroon sm:px-5 sm:text-sm"><Heart size={16} aria-hidden="true" />Donate now</Link>
           <button
             type="button"
             onClick={() => setMoreOpen((open) => !open)}
@@ -97,12 +98,13 @@ export default function Header() {
         )}
       </header>
 
-      <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-gold bg-cream/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] backdrop-blur sm:hidden">
+      <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-6 border-t border-gold bg-cream/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] backdrop-blur sm:hidden">
         <Link to="/" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><HomeIcon size={18} aria-hidden="true" />Home</Link>
         <Link to="/mandir" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><span aria-hidden="true">ॐ</span>Temple</Link>
         <Link to="/activities" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><CalendarDays size={18} aria-hidden="true" />Activities</Link>
         <Link to="/visit" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><MapPin size={18} aria-hidden="true" />Visit</Link>
         <button type="button" onClick={() => setMoreOpen((open) => !open)} aria-expanded={moreOpen} className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><Menu size={18} aria-hidden="true" />More</button>
+        <Link to="/donate" className="flex min-h-16 flex-col items-center justify-center gap-1 bg-saffron-dark text-xs font-semibold text-white"><Heart size={18} aria-hidden="true" />Donate</Link>
       </nav>
     </>
   );

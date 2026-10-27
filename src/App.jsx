@@ -6,6 +6,7 @@ import { PAGE_BY_PATH, SITE_PAGES } from './data/pages.js';
 
 const Home = lazy(() => import('./pages/Home.jsx'));
 const Donate = lazy(() => import('./pages/Donate.jsx'));
+const DonationCheckout = lazy(() => import('./pages/DonationCheckout.jsx'));
 const NotFound = lazy(() => import('./pages/NotFound.jsx'));
 const InformationPage = lazy(() => import('./pages/InformationPage.jsx'));
 
@@ -37,6 +38,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/donate" element={<Donate />} />
+            <Route path="/donate/checkout" element={<DonationCheckout />} />
             {SITE_PAGES.map((page) => (
               <Route
                 key={page.path}

@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
-  ArrowRight, BookOpen, Building2, CalendarDays, Flower2, HandHeart,
-  Heart, MapPin, Music2, Utensils,
+  ArrowRight, BookOpen, Building2, ChevronLeft, ChevronRight,
+  Flower2, HandHeart, Heart, MapPin, Music2, Utensils,
 } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
+import { SITE_PAGES } from '../data/pages.js';
 import Hero from '../components/Hero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
@@ -31,12 +32,20 @@ const faqs = [
   { question: 'What can visitors do at the Dham?', answer: 'Visitors can attend darshan, join kirtan and spiritual programmes, learn about seva activities, and explore the temple grounds.' },
 ];
 
+const festivalCards = SITE_PAGES.find(({ path }) => path === '/festivals')?.cards ?? [];
+
 function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to }) {
   return (
     <article className="group rounded-3xl border border-gold/80 bg-white p-5 shadow-soft transition-transform hover:-translate-y-1 sm:p-6">
       {image && (
         <figure className="-mx-5 -mt-5 mb-5 overflow-hidden rounded-t-3xl sm:-mx-6 sm:-mt-6">
-          <img src={image} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="aspect-[16/10] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
+          {to ? (
+            <Link to={to} aria-label={`Learn more about ${title}`} className="block">
+              <img src={image} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="aspect-[16/10] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
+            </Link>
+          ) : (
+            <img src={image} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="aspect-[16/10] w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
+          )}
           <figcaption className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
             Photo: <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a>
           </figcaption>
@@ -50,6 +59,53 @@ function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to 
       <p className="mt-2 text-sm leading-6 text-maroon/75">{text}</p>
       {to && <Link to={to} className="btn-outline mt-5 min-h-10 px-4 text-xs">Discover <ArrowRight size={15} aria-hidden="true" /></Link>}
     </article>
+  );
+}
+
+function FestivalSlider() {
+  const sliderRef = useRef(null);
+  const move = (direction) => {
+    sliderRef.current?.scrollBy({ left: direction * 360, behavior: 'smooth' });
+  };
+
+  return (
+    <section className="bg-white/60 py-16 sm:py-20" aria-labelledby="festival-slider-heading">
+      <div className="container-page">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-saffron-dark">Life at the Dham</p>
+            <h2 id="festival-slider-heading" className="font-heading text-3xl font-semibold sm:text-4xl">Festival celebrations</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-maroon/75">Explore devotional celebrations throughout the Vaishnava calendar.</p>
+          </div>
+          <div className="flex shrink-0 gap-2">
+            <button type="button" onClick={() => move(-1)} aria-label="Previous festivals" className="flex h-11 w-11 items-center justify-center rounded-full border border-gold bg-white text-maroon hover:bg-cream"><ChevronLeft size={20} aria-hidden="true" /></button>
+            <button type="button" onClick={() => move(1)} aria-label="Next festivals" className="flex h-11 w-11 items-center justify-center rounded-full border border-gold bg-white text-maroon hover:bg-cream"><ChevronRight size={20} aria-hidden="true" /></button>
+          </div>
+        </div>
+        <div ref={sliderRef} className="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4" aria-label="Festival guides">
+          {festivalCards.map((festival) => (
+            <article key={festival.to} className="w-[min(82vw,22rem)] shrink-0 snap-start overflow-hidden rounded-3xl border border-gold/80 bg-white shadow-soft">
+              <Link to={festival.to} aria-label={`Explore ${festival.title}`} className="block">
+                <img src={festival.image.src} alt={festival.image.alt} width="1200" height="800" loading="lazy" decoding="async" className="aspect-[16/10] w-full object-cover" />
+              </Link>
+              {festival.image.credit && (
+                <p className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
+                  Photo: <a href={festival.image.credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{festival.image.credit.title}</a> by {festival.image.credit.author} · <a href={festival.image.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{festival.image.credit.license}</a>
+                </p>
+              )}
+              <div className="p-5">
+                <h3 className="font-heading text-lg font-semibold">{festival.title}</h3>
+                <p className="mt-2 min-h-12 text-sm leading-6 text-maroon/75">{festival.text}</p>
+                <Link to={festival.to} className="btn-outline mt-4 min-h-10 px-4 text-xs">Explore festival <ArrowRight size={15} aria-hidden="true" /></Link>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div className="mt-2 flex justify-center sm:hidden">
+          <button type="button" onClick={() => move(1)} className="btn-outline min-h-10 px-4 text-xs">More festivals <ChevronRight size={15} aria-hidden="true" /></button>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -132,12 +188,12 @@ export default function Home() {
               { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, seva: 'sqft' },
               { title: 'Anna Daan', text: 'Support prasadam and food-service efforts for visitors and the wider community.', icon: Utensils, seva: 'anna' },
               { title: 'Gau Seva', text: 'Help provide care and support for the temple’s cow-protection work.', icon: HandHeart, seva: 'gau' },
-            ].map(({ title, text, icon: Icon, seva }, index) => (
-              <Link key={title} to={`/donate?seva=${seva}`} className="flex min-h-52 flex-col rounded-3xl border border-gold bg-white p-6 shadow-soft transition-transform hover:-translate-y-1">
+            ].map(({ title, text, icon: Icon, seva }) => (
+              <Link key={title} to={`/donate?seva=${seva}`} className="flex min-h-52 flex-col rounded-3xl border border-gold bg-white p-6 shadow-soft transition-transform hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-krishna">
                 <Icon size={26} className="mb-5 text-saffron-dark" aria-hidden="true" />
                 <h3 className="text-lg font-semibold">{title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-6 text-maroon/75">{text}</p>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-saffron-dark">Offer this seva <ArrowRight size={15} aria-hidden="true" /></span>
+                <span className="btn-primary mt-5 min-h-10 self-start px-4 text-xs">Donate now <ArrowRight size={15} aria-hidden="true" /></span>
               </Link>
             ))}
           </div>
@@ -163,16 +219,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white/60 py-16 sm:py-20">
-        <div className="container-page">
-          <SectionHeading title="Life at the Dham" sub="Celebrate, learn and share devotional moments throughout the year." />
-          <div className="grid gap-4 md:grid-cols-3">
-            <IconCard title="Festival gatherings" text="Join the community for devotional celebrations and special days in the Vaishnava calendar." icon={CalendarDays} index={1} to="/festivals" />
-            <IconCard title="Music & kirtan" text="Experience the joy of devotional music and congregational chanting." icon={Music2} index={2} to="/activities/kirtan" />
-            <IconCard title="Learning together" text="Take part in classes and conversations on the Bhagavad Gita and Srimad Bhagavatam." icon={BookOpen} index={3} to="/activities/education" />
-          </div>
-        </div>
-      </section>
+      <FestivalSlider />
 
       <section id="activities" className="scroll-mt-24 bg-white/60 py-16 sm:py-20">
         <div className="container-page">
