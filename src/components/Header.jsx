@@ -15,7 +15,6 @@ const moreLinks = [
 const MORE_ITEMS = [
   { label: 'About us', to: '/about', icon: Info },
   { label: 'Plan your visit', to: '/visit', icon: MapPin },
-  { label: 'Festivals', to: '/festivals', icon: CalendarDays },
   { label: 'Contact the temple', to: '/contact', icon: Phone },
 ];
 
@@ -128,6 +127,7 @@ export default function Header() {
                 <li key={to}>
                   <NavLink
                     to={to}
+                    onClick={() => setMoreOpen(false)}
                     className={({ isActive }) => `flex min-h-14 items-center gap-4 px-1 py-2 transition-colors active:bg-gold/60 ${isActive ? 'text-saffron-dark' : 'text-maroon'}`}
                   >
                     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cream text-maroon"><Icon size={18} aria-hidden="true" /></span>
@@ -144,12 +144,11 @@ export default function Header() {
       {moreOpen && (
         <button type="button" aria-label="Close menu" onClick={() => setMoreOpen(false)} className="fixed inset-0 z-30 cursor-default bg-maroon/25 xl:hidden" />
       )}
-      <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-primary-dark/25 bg-primary pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] sm:hidden">
-        <Link to="/" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><HomeIcon size={18} aria-hidden="true" />Home</Link>
-        <Link to="/about" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><Info size={18} aria-hidden="true" />About us</Link>
-        <Link to="/festivals" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><CalendarDays size={18} aria-hidden="true" />Festivals</Link>
+      <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-primary-dark/25 bg-primary pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] sm:hidden">
+        <Link to="/" onClick={() => setMoreOpen(false)} className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><HomeIcon size={18} aria-hidden="true" />Home</Link>
+        <Link to="/festivals" onClick={() => setMoreOpen(false)} className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><CalendarDays size={18} aria-hidden="true" />Festivals</Link>
         <button type="button" onClick={() => setMoreOpen((open) => !open)} aria-expanded={moreOpen} className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><Menu size={18} aria-hidden="true" />More</button>
-        <Link to="/donate" className="flex min-h-16 flex-col items-center justify-center gap-1 bg-primary text-xs font-semibold text-maroon"><Heart size={18} aria-hidden="true" />Donate</Link>
+        <Link to="/donate" onClick={() => setMoreOpen(false)} className="flex min-h-16 flex-col items-center justify-center gap-1 bg-primary text-xs font-semibold text-maroon"><Heart size={18} aria-hidden="true" />Donate</Link>
       </nav>
     </>
   );
