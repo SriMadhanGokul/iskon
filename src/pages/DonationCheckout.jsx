@@ -36,37 +36,37 @@ export default function DonationCheckout() {
         <title>Payment options – {siteConfig.brandName}</title>
         <meta name="description" content="Review your offering and available payment options." />
       </Helmet>
-      <section className="min-h-[calc(100vh-7rem)] bg-[#f0eff3] px-3 py-8 sm:px-6 sm:py-12">
+      <section className="min-h-[calc(100vh-7rem)] bg-cream px-3 py-8 sm:px-6 sm:py-12">
         <div className="mx-auto grid max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl md:grid-cols-[0.92fr_1.08fr]">
-          <aside className="flex flex-col bg-[#6d55bd] p-5 text-white sm:p-7">
-            <div className="flex items-center justify-between border-b border-white/20 pb-4 text-xs font-medium">
+          <aside className="flex flex-col bg-primary p-5 text-maroon sm:p-7">
+            <div className="flex items-center justify-between border-b border-maroon/20 pb-4 text-xs font-medium">
               <span className="inline-flex items-center gap-2"><Check size={16} aria-hidden="true" /> Your details are ready</span>
               <span>INR</span>
             </div>
-            <Link to={`/donate?seva=${encodeURIComponent(seva.id)}`} className="mt-5 inline-flex w-fit items-center gap-2 text-sm text-white/90 hover:text-white">
+            <Link to={`/donate?seva=${encodeURIComponent(seva.id)}`} className="mt-5 inline-flex w-fit items-center gap-2 text-sm text-maroon/90 hover:text-maroon">
               <ArrowLeft size={17} aria-hidden="true" /> Change details
             </Link>
             <div className="flex flex-1 flex-col items-center justify-center py-8 text-center">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 text-2xl font-bold">G</div>
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/45 text-2xl font-bold">G</div>
               <h1 className="mt-3 font-heading text-2xl font-semibold">Gupt Vrindavan Dham</h1>
-              <p className="mt-1 text-sm text-white/75">{seva.label}</p>
-              <div className="mt-6 flex w-full max-w-xs items-center justify-between rounded-2xl bg-white/15 px-5 py-4">
-                <span className="text-sm text-white/85">Donation amount</span>
+              <p className="mt-1 text-sm text-maroon/80">{seva.label}</p>
+              <div className="mt-6 flex w-full max-w-xs items-center justify-between rounded-2xl bg-white/40 px-5 py-4">
+                <span className="text-sm text-maroon/85">Donation amount</span>
                 <span className="text-xl font-semibold">{inr(amount)}</span>
               </div>
-              <div className="mt-5 w-full max-w-xs text-left text-sm text-white/85">
+              <div className="mt-5 w-full max-w-xs text-left text-sm text-maroon/85">
                 <p className="truncate">Donor: {donor.name}</p>
                 <p className="mt-1">+91 {donor.phone}</p>
                 {donor.pincode && <p className="mt-1">Pincode: {donor.pincode}</p>}
               </div>
             </div>
-            <p className="text-center text-xs text-white/70">Review your details before choosing a payment method.</p>
+            <p className="text-center text-xs text-maroon/75">Review your details before choosing a payment method.</p>
           </aside>
 
           <div className="bg-[#fafafa] p-5 sm:p-8">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <h2 className="font-medium">Payment options for +91 {donor.phone}</h2>
-              <Link to={`/donate?seva=${encodeURIComponent(seva.id)}`} className="text-sm font-semibold text-[#6d55bd] hover:underline">Change</Link>
+              <Link to={`/donate?seva=${encodeURIComponent(seva.id)}`} className="text-sm font-semibold text-primary-dark hover:underline">Change</Link>
             </div>
 
             <section aria-label="Selected payment method" className="mt-5 rounded-2xl border border-slate-200 bg-white p-4 sm:p-5">
@@ -77,7 +77,7 @@ export default function DonationCheckout() {
                       <p className="font-semibold">Scan and pay with UPI</p>
                       <p className="mt-1 text-xs text-slate-500">Use any UPI app to make your offering</p>
                     </div>
-                    <span className="rounded-full bg-[#6d55bd]/10 px-3 py-1 text-xs font-semibold text-[#6d55bd]">UPI / QR</span>
+                    <span className="rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold text-primary-dark">UPI / QR</span>
                   </div>
                   {upiReady ? (
                     <div className="grid items-center gap-4 sm:grid-cols-[180px_1fr]">
@@ -106,7 +106,7 @@ export default function DonationCheckout() {
               <h3 className="mb-3 text-sm font-medium text-slate-600">Other payment options</h3>
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
                 {paymentMethods.map(({ id, label, icon: Icon }) => (
-                  <button key={id} type="button" aria-pressed={method === id} onClick={() => setMethod(id)} className={`flex min-h-12 w-full items-center gap-3 border-b border-slate-100 px-4 text-left last:border-b-0 ${method === id ? 'bg-[#6d55bd]/5 text-[#6d55bd]' : 'text-slate-800 hover:bg-slate-50'}`}>
+                  <button key={id} type="button" aria-pressed={method === id} onClick={() => setMethod(id)} className={`flex min-h-12 w-full items-center gap-3 border-b border-slate-100 px-4 text-left last:border-b-0 ${method === id ? 'bg-primary/15 text-primary-dark' : 'text-slate-800 hover:bg-slate-50'}`}>
                     <Icon size={19} aria-hidden="true" />
                     <span className="flex-1 text-sm font-medium">{label}</span>
                     {method === id && <span className="text-xs font-medium">Selected</span>}

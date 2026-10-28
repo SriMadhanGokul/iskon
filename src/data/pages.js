@@ -27,11 +27,18 @@ export const SITE_PAGES = [
     intro: 'Gupt Vrindavan Dham is a spiritual and cultural centre in Jagatpura, Jaipur. Its public mission is to share Krishna consciousness through worship, spiritual learning, devotional culture and service.',
     sections: [
       {
-        title: 'A spiritual home for Jaipur',
-        text: 'The temple’s vision is inspired by the teachings of the Bhagavad-gita and Srimad Bhagavatam and the devotional mission of His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada. The developing campus is planned across approximately 3.5 lakh square feet as a temple and cultural centre.',
+        id: 'mission',
+        title: 'Our mission',
+        text: 'Gupt Vrindavan Dham brings devotional worship, spiritual learning and community service together in Jaipur. Its work is inspired by the teachings of the Bhagavad-gita and Srimad Bhagavatam.',
         image: prabhupadaPhoto,
       },
       {
+        id: 'history',
+        title: 'A spiritual home for Jaipur',
+        text: 'The temple’s vision is inspired by the teachings of the Bhagavad-gita and Srimad Bhagavatam and the devotional mission of His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada. The developing campus is planned across approximately 3.5 lakh square feet as a temple and cultural centre.',
+      },
+      {
+        id: 'timeline',
         title: 'The project timeline',
         text: 'The following milestones are described in the temple’s public account of its history.',
         timeline: [
@@ -41,6 +48,22 @@ export const SITE_PAGES = [
           ['2012', 'Sri Sri Krishna Balaram were installed.'],
           ['2027', 'The current public website lists the grand opening for 12 May 2027.'],
         ],
+      },
+      {
+        id: 'objectives',
+        title: 'Our objectives',
+        text: 'The project aims to make devotional practice, scripture-based learning, cultural activities and practical service accessible to visitors, families and the wider Jaipur community.',
+      },
+      {
+        id: 'centres',
+        title: 'Centres and community',
+        text: 'The Dham connects worship spaces with programmes and service initiatives. Contact the temple for current information about its centres, outreach activities and ways to participate.',
+      },
+      {
+        id: 'architecture',
+        title: 'A campus shaped for worship and culture',
+        text: 'The planned campus combines a temple environment with spaces for learning, cultural gatherings and community activities. Facilities and access arrangements may change during development.',
+        image: templePhoto,
       },
     ],
     cards: [
@@ -82,6 +105,7 @@ export const SITE_PAGES = [
         image: kirtanPhoto,
       },
       {
+        id: 'history',
         title: 'The Jaipur vision',
         text: 'The temple describes its project as a place where worship, spiritual education, cultural life and service come together. Its public timeline records the foundation in 2009 and the installation of Sri Sri Krishna Balaram in 2012.',
         timeline: [
@@ -90,6 +114,36 @@ export const SITE_PAGES = [
           ['2012', 'Sri Sri Krishna Balaram are installed.'],
           ['Today', 'Devotees and visitors gather for worship, learning and seva.'],
         ],
+      },
+      {
+        id: 'biography',
+        title: 'His life and service',
+        text: 'A.C. Bhaktivedanta Swami Srila Prabhupada founded ISKCON and travelled internationally to share Krishna-bhakti, translate Vaishnava texts and establish communities of devotional practice.',
+      },
+      {
+        id: 'qualities',
+        title: 'Teachings and example',
+        text: 'His example is remembered through dedication to spiritual teaching, disciplined practice, compassion and the sharing of devotional wisdom across cultures.',
+      },
+      {
+        id: 'facts',
+        title: 'A life of devotional service',
+        text: 'Srila Prabhupada is remembered as a teacher, author and spiritual leader whose work established an international community focused on Krishna-bhakti.',
+      },
+      {
+        id: 'books',
+        title: 'Books and spiritual tradition',
+        text: 'His translations and commentaries introduced many readers to texts such as the Bhagavad-gita and Srimad Bhagavatam. These works remain central to study in the Hare Krishna tradition.',
+      },
+      {
+        id: 'sampradaya',
+        title: 'A living Vaishnava lineage',
+        text: 'ISKCON is part of the Gaudiya Vaishnava tradition, which teaches devotion to Krishna and emphasizes congregational chanting, scripture study and service.',
+      },
+      {
+        id: 'guru',
+        title: 'The role of the spiritual teacher',
+        text: 'In the Vaishnava tradition, a spiritual teacher guides students in understanding scripture and applying devotional practice in daily life.',
       },
     ],
     cta: { label: 'Explore spiritual programmes', to: '/activities' },
@@ -106,8 +160,37 @@ export const SITE_PAGES = [
       linkedCard('Annadhan', 'Learn about food seva, prasadam and ways to support community food service.', '/annadhan', prasadamPhoto),
       linkedCard('Cow protection', 'Learn about the community’s support for care at the Hingonia cattle rehabilitation centre.', '/activities/cow-protection', cowPhoto),
       linkedCard('Kirtan and chanting', 'Explore congregational chanting and devotional music as part of spiritual life.', '/activities/kirtan', kirtanPhoto),
+      linkedCard('Yuga Dharma', 'Explore the tradition of sharing Krishna’s names and devotional teachings in the present age.', '/activities#yuga-dharma', kirtanPhoto),
+      linkedCard('Community projects', 'Learn about temple development and community initiatives.', '/activities#projects', templePhoto),
+      linkedCard('Events', 'Find information about devotional gatherings, classes and cultural programmes.', '/activities#events', gardenPhoto),
+      linkedCard('Temple services', 'Ask about services and programme arrangements offered by the temple.', '/activities#services', prasadamPhoto),
+    ],
+    sections: [
+      { id: 'yuga-dharma', title: 'Yuga Dharma', text: 'Congregational chanting of Krishna’s names is a central devotional practice in the Gaudiya Vaishnava tradition. Ask the temple about current Hari Naam and kirtan gatherings.', image: kirtanPhoto },
+      { id: 'projects', title: 'Community projects', text: 'Temple development and service initiatives bring together worship, education, cultural life and practical community support. Contact the organizers for current project information.' },
+      { id: 'events', title: 'Events and gatherings', text: 'The programme may include classes, festivals, cultural events and devotional gatherings. Dates and participation arrangements can change, so confirm details before attending.' },
+      { id: 'services', title: 'Temple services', text: 'Services may include kirtan instrument learning, prasadam arrangements, devotional programme bookings and puja sponsorship for special occasions. Contact the temple to confirm current availability, booking steps and any requirements.' },
     ],
     cta: { label: 'Support a seva', to: '/donate' },
+  },
+  {
+    path: '/get-involved',
+    title: 'Get involved',
+    eyebrow: 'Serve and participate',
+    description: 'Find ways to volunteer, take part in programmes and stay connected with the devotional calendar.',
+    image: kirtanPhoto,
+    intro: 'People can support Gupt Vrindavan Dham by contributing their time, skills and care to devotional programmes and community service. Contact the temple to discuss current opportunities and eligibility.',
+    cards: [
+      linkedCard('Volunteer', 'Offer your time and skills to support temple activities and community outreach.', '/get-involved#volunteer', kirtanPhoto),
+      linkedCard('Careers and service roles', 'Ask about current employment and service opportunities at the Dham.', '/get-involved#careers', templePhoto),
+      linkedCard('Vaishnava calendar', 'Check the devotional calendar and confirm local observances with the temple.', '/get-involved#calendar', prasadamPhoto),
+    ],
+    sections: [
+      { id: 'volunteer', title: 'Volunteer to serve', text: 'Volunteers may be able to assist with events, visitor support, devotional programmes or community initiatives. Contact the temple to learn about current needs, orientation and schedules.' },
+      { id: 'careers', title: 'Careers and service roles', text: 'Roles and vacancies depend on the temple’s current requirements. Ask the administration directly for verified openings, responsibilities and application details.' },
+      { id: 'calendar', title: 'Vaishnava calendar', text: 'Festival and observance dates follow the Vaishnava calendar and can vary by year and location. Confirm upcoming dates and programme details with the temple.' },
+    ],
+    cta: { label: 'Contact the temple', to: '/contact' },
   },
   {
     path: '/activities/education',
@@ -442,13 +525,86 @@ export const SITE_PAGES = [
 export const PAGE_BY_PATH = Object.fromEntries(SITE_PAGES.map((page) => [page.path, page]));
 
 export const SITE_NAV_LINKS = [
-  { label: 'About', to: '/about' },
-  { label: 'Temple', to: '/mandir' },
-  { label: 'Srila Prabhupada', to: '/prabhupada' },
+  { label: 'About Us', to: '/about' },
+  { label: 'Mandir', to: '/mandir' },
+  { label: 'Prabhupada', to: '/prabhupada' },
   { label: 'Activities', to: '/activities' },
-  { label: 'Annadhan', to: '/annadhan' },
+  { label: 'Get Involved', to: '/get-involved' },
   { label: 'Festivals', to: '/festivals' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Visit', to: '/visit' },
   { label: 'Contact', to: '/contact' },
+];
+
+export const SITE_NAV_GROUPS = [
+  {
+    label: 'About Us',
+    to: '/about',
+    links: [
+      { label: 'Our story', to: '/about' },
+      { label: 'Spiritual roots', to: '/prabhupada' },
+      { label: 'Mission and vision', to: '/about#mission' },
+      { label: 'Community programmes', to: '/activities' },
+    ],
+  },
+  {
+    label: 'Mandir',
+    to: '/mandir',
+    links: [
+      { label: 'About the temple', to: '/mandir' },
+      { label: 'Our mission', to: '/about#mission' },
+      { label: 'Our history', to: '/about#history' },
+      { label: 'Our objectives', to: '/about#objectives' },
+      { label: 'Our centres', to: '/about#centres' },
+      { label: 'Our schedule', to: '/visit' },
+      { label: 'Our architecture', to: '/about#architecture' },
+      { label: 'Explore the campus', to: '/mandir' },
+      { label: 'Hingonia Gaushala', to: '/mandir/gaushala' },
+      { label: 'Rasikam restaurant', to: '/mandir/rasikam' },
+      { label: 'Guest house', to: '/mandir/guest-house' },
+      { label: 'Harinama Mandap', to: '/mandir/harinama-mandap' },
+      { label: 'Vrindavan Garden', to: '/mandir/garden' },
+      { label: 'Gallery', to: '/gallery' },
+      { label: 'Darshan information', to: '/visit' },
+    ],
+  },
+  {
+    label: 'Prabhupada',
+    to: '/prabhupada',
+    links: [
+      { label: 'About and biography', to: '/prabhupada#biography' },
+      { label: 'Qualities and teachings', to: '/prabhupada#qualities' },
+      { label: 'Key facts', to: '/prabhupada#facts' },
+      { label: 'Milestone timeline', to: '/prabhupada#history' },
+      { label: 'Books', to: '/prabhupada#books' },
+      { label: 'Vaishnava tradition', to: '/prabhupada#sampradaya' },
+      { label: 'The spiritual teacher', to: '/prabhupada#guru' },
+    ],
+  },
+  {
+    label: 'Activities',
+    to: '/activities',
+    links: [
+      { label: 'Education', to: '/activities/education' },
+      { label: 'Food distribution', to: '/activities/food-distribution' },
+      { label: 'Yuga Dharma', to: '/activities#yuga-dharma' },
+      { label: 'Cow protection', to: '/activities/cow-protection' },
+      { label: 'Projects', to: '/activities#projects' },
+      { label: 'Events', to: '/activities#events' },
+      { label: 'Services', to: '/activities#services' },
+      { label: 'Kirtan and chanting', to: '/activities/kirtan' },
+    ],
+  },
+  {
+    label: 'Get Involved',
+    to: '/get-involved',
+    links: [
+      { label: 'Volunteer', to: '/get-involved#volunteer' },
+      { label: 'Careers and service roles', to: '/get-involved#careers' },
+      { label: 'Vaishnava calendar', to: '/get-involved#calendar' },
+      { label: 'Plan your visit', to: '/visit' },
+      { label: 'Contact the temple', to: '/contact' },
+    ],
+  },
+  { label: 'Festivals', to: '/festivals', links: [] },
 ];

@@ -7,6 +7,36 @@ temple-gate.webp
   Source: https://commons.wikimedia.org/wiki/File:Main_gate_of_ISKCON,_Mayapur_07102013.jpg
   License terms: https://creativecommons.org/licenses/by-sa/3.0/
 
+bhagavad-gita-book.webp
+  "Bhagavad Gita - The Song of God.jpg" artwork by Anna Monday
+  License: Public domain
+  Source: https://commons.wikimedia.org/wiki/File:Bhagavad_Gita_-_The_Song_of_God.jpg
+  License terms: https://creativecommons.org/publicdomain/mark/1.0/
+
+prasadam-distribution.webp
+  "Daily Free Prasadam Distribution at ISKCON Juhu.jpg" by Rrbdgm
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Daily_Free_Prasadam_Distribution_at_ISKCON_Juhu.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/4.0/
+
+mayapur-radha-krishna.webp
+  "New Mayapur Radha Krishna deities 05.jpg" by Ilya Mauter
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:New_Mayapur_Radha_Krishna_deities_05.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/3.0/
+
+vrindavan-radha-krishna.webp
+  "Radha Krishna Vrindavan.jpg" by Odisha1
+  License: CC BY-SA 3.0
+  Source: https://commons.wikimedia.org/wiki/File:Radha_Krishna_Vrindavan.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/3.0/
+
+lalji-temple-radha-krishna.webp
+  "Radha Krishna Idol, Lalji Temple, Kalna.jpg" by Rangan Datta Wiki
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Radha_Krishna_Idol,_Lalji_Temple,_Kalna.jpg
+  License terms: https://creativecommons.org/licenses/by-sa/4.0/
+
 prabhupada-samadhi.webp
   "Samadhi Mandir of Srila Prabhupada, Mayapur 07102013 04.jpg" by Joydeep
   License: CC BY-SA 3.0

@@ -24,19 +24,12 @@ const siteConfig = {
     amounts: [501, 1100, 2100, 5100, 11000],
     // Impact lines per amount. Leave '' until the temple confirms real figures.
     impact: { 501: '', 1100: '', 2100: '', 5100: '', 11000: '' },
-    sevas: [
-      { id: 'sqft', label: 'Square Feet Seva' },
-      { id: 'anna', label: 'Anna Daan (food distribution)' },
-      { id: 'gau', label: 'Gau Seva' },
-      { id: 'construction', label: 'Temple Construction' },
-      { id: 'festival', label: 'Festival Seva' },
-      { id: 'general', label: 'General Donation' },
-    ],
+    // Seva pages, amounts and wording live in data/sevas.js.
   },
   stats: { sqftRaised: 82880, sqftTotal: 350000, lastUpdated: PLACEHOLDER },
   // Home-page notice board. Kartik dates follow the temple website's 2026 banner; confirm each year.
   announcements: [
-    { tag: 'Kartik month', date: '26 Oct – 24 Nov', text: 'Offer a diya each day of this holy month through Deep Daan.', to: '/donate?seva=festival' },
+    { tag: 'Kartik month', date: '26 Oct – 24 Nov', text: 'Offer a diya each day of this holy month through Deep Daan.', to: '/donate/festival' },
     { tag: 'Grand opening', date: '12 May 2027', text: 'The Dham is taking shape. Follow the countdown and plan your first visit.', to: '/visit' },
     { tag: 'Festival days', date: 'Ongoing', text: 'Darshan timings can change on festival days. Please call before you travel.', to: '/contact' },
   ],
@@ -46,6 +39,11 @@ const siteConfig = {
   ],
   images: {
     hero: '/images/temple-gate.webp',
+    gitaBook: '/images/bhagavad-gita-book.webp',
+    prasadamDistribution: '/images/prasadam-distribution.webp',
+    mayapurRadhaKrishna: '/images/mayapur-radha-krishna.webp',
+    vrindavanRadhaKrishna: '/images/vrindavan-radha-krishna.webp',
+    laljiTempleRadhaKrishna: '/images/lalji-temple-radha-krishna.webp',
     about: '/images/prabhupada-samadhi.webp',
     gauSeva: '/images/vechur-cow.webp',
     garden: '/images/garden.webp',
@@ -54,12 +52,47 @@ const siteConfig = {
     prasadam: '/images/fruit-offering.webp',
   },
   imageCredits: {
+    gitaBook: {
+      title: 'Bhagavad Gita - The Song of God',
+      author: 'Anna Monday',
+      license: 'Public domain',
+      licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:Bhagavad_Gita_-_The_Song_of_God.jpg',
+    },
+    prasadamDistribution: {
+      title: 'Daily Free Prasadam Distribution at ISKCON Juhu',
+      author: 'Rrbdgm',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:Daily_Free_Prasadam_Distribution_at_ISKCON_Juhu.jpg',
+    },
     hero: {
       title: 'Main gate of ISKCON, Mayapur 07102013',
       author: 'Joydeep',
       license: 'CC BY-SA 3.0',
       licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
       url: 'https://commons.wikimedia.org/wiki/File:Main_gate_of_ISKCON,_Mayapur_07102013.jpg',
+    },
+    mayapurRadhaKrishna: {
+      title: 'New Mayapur Radha Krishna deities 05',
+      author: 'Ilya Mauter',
+      license: 'CC BY-SA 3.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:New_Mayapur_Radha_Krishna_deities_05.jpg',
+    },
+    vrindavanRadhaKrishna: {
+      title: 'Radha Krishna Vrindavan',
+      author: 'Odisha1',
+      license: 'CC BY-SA 3.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:Radha_Krishna_Vrindavan.jpg',
+    },
+    laljiTempleRadhaKrishna: {
+      title: 'Radha Krishna Idol, Lalji Temple, Kalna',
+      author: 'Rangan Datta Wiki',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:Radha_Krishna_Idol,_Lalji_Temple,_Kalna.jpg',
     },
     about: {
       title: 'Samadhi Mandir of Srila Prabhupada, Mayapur',

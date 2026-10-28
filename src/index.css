@@ -6,19 +6,19 @@
   html { scroll-behavior: smooth; }
   body { @apply bg-cream font-body text-base text-maroon antialiased; }
   h1, h2, h3, h4 { @apply font-heading; }
-  :focus-visible { @apply outline-none ring-2 ring-krishna ring-offset-2 ring-offset-cream; }
+  :focus-visible { outline: 2px solid #b83c00; outline-offset: 2px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
 }
 @layer components {
   .btn { @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 py-2.5 font-medium transition-colors; }
-  .btn-primary { @apply btn bg-saffron-dark text-white hover:bg-maroon; }
+  .btn-primary { @apply btn bg-primary text-maroon hover:bg-primary-dark hover:text-white; }
   .btn-secondary { @apply btn border border-gold bg-white/10 text-white backdrop-blur hover:bg-white/20; }
-  .btn-outline { @apply btn border border-maroon/30 text-maroon hover:bg-gold/30; }
+  .btn-outline { @apply btn border border-primary-dark/40 text-maroon hover:bg-primary/15; }
   .container-page { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
   .prose-line { @apply max-w-[68ch]; }
   /* Lift + warm border glow on hover; pair with a child image using .card-zoom. */
   .card-lift {
-    @apply transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1.5 hover:border-saffron/70 hover:shadow-[0_22px_45px_-18px_rgba(74,26,8,0.35),0_0_0_1px_rgba(255,155,51,0.25),0_0_28px_-6px_rgba(255,155,51,0.45)];
+    @apply transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/70 hover:shadow-[0_22px_45px_-18px_rgba(74,26,8,0.25),0_0_0_1px_rgba(255,153,51,0.25),0_0_28px_-6px_rgba(255,153,51,0.45)];
   }
   .card-zoom { @apply transition-transform duration-700 ease-out group-hover:scale-105; }
   .shine-animation::after {

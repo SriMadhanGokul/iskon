@@ -135,10 +135,10 @@ export default function Home() {
           </div>
           <p className="max-w-xl leading-7 text-maroon/80">Gupt Vrindavan Dham is a growing spiritual and cultural centre in Jaipur. Its programmes bring devotional practice, community service and the teachings of Krishna together.</p>
         </Reveal>
-        <Stagger className="mt-8 grid gap-4 rounded-3xl bg-maroon p-6 text-cream shadow-[0_30px_60px_-30px_rgba(74,26,8,0.6)] sm:grid-cols-3 sm:p-8">
-          <StaggerItem><p className="font-heading text-3xl font-semibold text-gold">3.5 lakh</p><p className="mt-1 text-sm text-cream/80">square feet planned for the temple and cultural centre</p></StaggerItem>
-          <StaggerItem className="border-gold/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-gold">Jagatpura</p><p className="mt-1 text-sm text-cream/80">a spiritual destination in Jaipur, Rajasthan</p></StaggerItem>
-          <StaggerItem className="border-gold/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-gold">Daily seva</p><p className="mt-1 text-sm text-cream/80">worship, learning and service for the community</p></StaggerItem>
+        <Stagger className="mt-8 grid gap-4 rounded-3xl bg-primary p-6 text-maroon shadow-[0_30px_60px_-30px_rgba(184,60,0,0.4)] sm:grid-cols-3 sm:p-8">
+          <StaggerItem><p className="font-heading text-3xl font-semibold text-maroon">3.5 lakh</p><p className="mt-1 text-sm text-maroon/80">square feet planned for the temple and cultural centre</p></StaggerItem>
+          <StaggerItem className="border-maroon/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-maroon">Jagatpura</p><p className="mt-1 text-sm text-maroon/80">a spiritual destination in Jaipur, Rajasthan</p></StaggerItem>
+          <StaggerItem className="border-maroon/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-maroon">Daily seva</p><p className="mt-1 text-sm text-maroon/80">worship, learning and service for the community</p></StaggerItem>
         </Stagger>
       </section>
 
@@ -155,7 +155,7 @@ export default function Home() {
         <Reveal className="card-lift group grid overflow-hidden rounded-[2rem] border border-gold bg-cream md:grid-cols-[0.8fr_1.2fr]">
         <figure className="relative min-h-64 overflow-hidden bg-gold/30">
           <img {...photo(siteConfig.images.about, '(min-width: 768px) 460px, 100vw')} alt="Samadhi Mandir of Srila Prabhupada in Mayapur" width="1200" height="800" loading="lazy" decoding="async" className="card-zoom absolute inset-0 h-full w-full object-cover" />
-          <figcaption className="absolute inset-x-3 bottom-3 rounded-xl bg-maroon/85 px-3 py-2 text-xs text-cream backdrop-blur-sm">
+          <figcaption className="absolute inset-x-3 bottom-3 rounded-xl bg-primary/95 px-3 py-2 text-xs text-maroon backdrop-blur-sm">
             Photo: <a href={siteConfig.imageCredits.about.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.about.title}</a> by {siteConfig.imageCredits.about.author} · <a href={siteConfig.imageCredits.about.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.about.license}</a>
           </figcaption>
         </figure>
@@ -185,7 +185,7 @@ export default function Home() {
               { title: 'Gau Seva', text: 'Help provide care and support for the temple’s cow-protection work.', icon: HandHeart, seva: 'gau' },
             ].map(({ title, text, icon: Icon, seva }) => (
               <StaggerItem key={title} className="flex">
-                <Link to={`/donate?seva=${seva}`} className="card-lift group flex min-h-52 w-full flex-col rounded-3xl border border-gold bg-white p-6 shadow-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-krishna">
+                <Link to={`/donate?seva=${seva}`} className="card-lift group flex min-h-52 w-full flex-col rounded-3xl border border-gold bg-white p-6 shadow-soft">
                 <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron/15 text-saffron-dark transition-colors duration-300 group-hover:bg-saffron-dark group-hover:text-white"><Icon size={24} aria-hidden="true" /></span>
                 <h3 className="text-lg font-semibold">{title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-6 text-maroon/75">{text}</p>
@@ -254,14 +254,14 @@ export default function Home() {
       </section>
 
       <section className="container-page py-16 sm:py-20">
-        <Reveal className="relative grid items-center gap-6 overflow-hidden rounded-[2rem] bg-maroon px-6 py-10 text-cream sm:px-10 md:grid-cols-[1fr_auto]">
-          <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(255,155,51,0.35),transparent_65%)]" aria-hidden="true" />
+        <Reveal className="relative grid items-center gap-6 overflow-hidden rounded-[2rem] bg-primary px-6 py-10 text-maroon sm:px-10 md:grid-cols-[1fr_auto]">
+          <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.45),transparent_65%)]" aria-hidden="true" />
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-gold">Get involved</p>
-            <h2 className="font-heading text-3xl font-semibold text-white">Share your time in service</h2>
-            <p className="mt-3 max-w-2xl leading-7 text-cream/80">Volunteers help welcome visitors and support educational, devotional and community-service programmes at the Dham.</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-maroon/80">Get involved</p>
+            <h2 className="font-heading text-3xl font-semibold text-maroon">Share your time in service</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-maroon/85">Volunteers help welcome visitors and support educational, devotional and community-service programmes at the Dham.</p>
           </div>
-          <Link to="/contact" className="btn-primary justify-self-start md:justify-self-end">Contact the temple <ArrowRight size={16} aria-hidden="true" /></Link>
+          <Link to="/contact" className="btn-outline justify-self-start md:justify-self-end">Contact the temple <ArrowRight size={16} aria-hidden="true" /></Link>
         </Reveal>
       </section>
     </>

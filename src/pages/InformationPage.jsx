@@ -73,12 +73,12 @@ export default function InformationPage({ page }) {
         <meta name="description" content={page.description} />
       </Helmet>
 
-      <header className="bg-maroon text-cream">
+      <header className="bg-primary text-maroon">
         <div className="container-page grid items-center gap-8 py-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-16">
           <div>
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-gold">{page.eyebrow}</p>
-            <h1 className="font-heading text-3xl font-bold leading-tight text-white sm:text-5xl">{page.title}</h1>
-            <p className="mt-5 max-w-2xl leading-7 text-cream/90">{page.description}</p>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-maroon/80">{page.eyebrow}</p>
+            <h1 className="font-heading text-3xl font-bold leading-tight text-maroon sm:text-5xl">{page.title}</h1>
+            <p className="mt-5 max-w-2xl leading-7 text-maroon/85">{page.description}</p>
           </div>
           <Photo image={page.image} className="aspect-[16/10] border-gold/50" />
         </div>
@@ -117,7 +117,7 @@ export default function InformationPage({ page }) {
         )}
 
         {page.sections?.map((section) => (
-          <section key={section.title} className="mt-12 border-t border-gold/70 pt-10">
+          <section key={section.title} id={section.id} className="mt-12 scroll-mt-24 border-t border-gold/70 pt-10">
             <div className={section.image ? 'grid items-start gap-7 lg:grid-cols-2' : 'max-w-4xl'}>
               <div>
                 <h2 className="font-heading text-2xl font-semibold sm:text-3xl">{section.title}</h2>
@@ -155,12 +155,12 @@ export default function InformationPage({ page }) {
         )}
 
         {page.cta && (
-          <div className="mt-12 flex flex-wrap items-center gap-4 rounded-3xl bg-maroon p-6 text-cream sm:p-8">
+          <div className="mt-12 flex flex-wrap items-center gap-4 rounded-3xl bg-primary p-6 text-maroon sm:p-8">
             <div className="flex-1">
-              <h2 className="font-heading text-2xl font-semibold text-white">Learn more or get in touch</h2>
-              <p className="mt-2 text-sm text-cream/80">Contact the temple to confirm current details and arrangements.</p>
+              <h2 className="font-heading text-2xl font-semibold text-maroon">Learn more or get in touch</h2>
+              <p className="mt-2 text-sm text-maroon/80">Contact the temple to confirm current details and arrangements.</p>
             </div>
-            <Link to={page.cta.to} className="btn-primary">{page.cta.label} <ArrowRight size={16} aria-hidden="true" /></Link>
+            <Link to={page.cta.to} className="btn-outline">{page.cta.label} <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
         )}
       </div>
@@ -171,13 +171,13 @@ export default function InformationPage({ page }) {
 function Directions() {
   const { contact } = siteConfig;
   return (
-    <aside className="rounded-3xl bg-maroon p-6 text-cream sm:p-8">
-      <MapPin size={26} className="mb-4 text-gold" aria-hidden="true" />
-      <h2 className="font-heading text-2xl font-semibold text-white">Gupt Vrindavan Dham</h2>
-      <p className="mt-3 leading-7 text-cream/85">{contact.address}</p>
+    <aside className="rounded-3xl bg-primary p-6 text-maroon sm:p-8">
+      <MapPin size={26} className="mb-4 text-maroon" aria-hidden="true" />
+      <h2 className="font-heading text-2xl font-semibold text-maroon">Gupt Vrindavan Dham</h2>
+      <p className="mt-3 leading-7 text-maroon/85">{contact.address}</p>
       <div className="mt-5 flex flex-wrap gap-3">
-        <a href={contact.mapLink} target="_blank" rel="noopener noreferrer" className="btn-primary">Get directions <ExternalLink size={16} aria-hidden="true" /></a>
-        <a href={`tel:${contact.phoneHref}`} className="btn-secondary">Call {contact.phone}</a>
+        <a href={contact.mapLink} target="_blank" rel="noopener noreferrer" className="btn-outline">Get directions <ExternalLink size={16} aria-hidden="true" /></a>
+        <a href={`tel:${contact.phoneHref}`} className="btn-outline">Call {contact.phone}</a>
       </div>
     </aside>
   );

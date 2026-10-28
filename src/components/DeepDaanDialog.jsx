@@ -243,7 +243,7 @@ export default function DeepDaanDialog({ open, onClose, originRef }) {
             />
           );
         })}
-        <div ref={counterRef} aria-label={`${offered} diya${offered > 1 ? 's' : ''} offered`} className="absolute flex items-center justify-center font-bold leading-none text-[#5f2fd6]" style={{ ...box(COUNTER.x, COUNTER.y, COUNTER.w, COUNTER.h), fontSize: u(offered > 99 ? 14 : 18) }}>
+        <div ref={counterRef} aria-label={`${offered} diya${offered > 1 ? 's' : ''} offered`} className="absolute flex items-center justify-center font-bold leading-none text-[#b83c00]" style={{ ...box(COUNTER.x, COUNTER.y, COUNTER.w, COUNTER.h), fontSize: u(offered > 99 ? 14 : 18) }}>
           <img src="/pop_ups/icons/plus-small.svg" alt="" style={{ width: u(10), height: u(10), marginRight: u(-2), marginTop: u(3) }} />
           {offered}
         </div>
@@ -264,10 +264,10 @@ export default function DeepDaanDialog({ open, onClose, originRef }) {
         <button type="button" onClick={remove} disabled={count <= 1} aria-label="Remove a diya" className="absolute flex items-center justify-center rounded-full bg-white transition active:scale-90 disabled:opacity-50" style={box(231.68, 373, 40, 40)}>
           <img src="/pop_ups/icons/minus.svg" alt="" style={{ width: u(25), height: u(25) }} />
         </button>
-        <span aria-live="polite" className="absolute flex items-center justify-center whitespace-nowrap font-bold leading-[1.2] text-[#5f2fd6]" style={{ ...box(271.68, 383.5, 63, 19), fontSize: u(count > 99 ? 11 : count > 9 ? 13 : count > 1 ? 14.5 : 16) }}>
+        <span aria-live="polite" className="absolute flex items-center justify-center whitespace-nowrap font-bold leading-[1.2] text-[#b83c00]" style={{ ...box(271.68, 383.5, 63, 19), fontSize: u(count > 99 ? 11 : count > 9 ? 13 : count > 1 ? 14.5 : 16) }}>
           {count} {count > 1 ? 'Diyas' : 'Diya'}
         </span>
-        <button type="button" onClick={add} disabled={count >= MAX_DIYAS} aria-label="Add a diya" className="absolute flex items-center justify-center rounded-full bg-[#5f2fd6] transition hover:brightness-110 active:scale-90 disabled:opacity-50" style={box(334.68, 373, 40, 40)}>
+        <button type="button" onClick={add} disabled={count >= MAX_DIYAS} aria-label="Add a diya" className="absolute flex items-center justify-center rounded-full bg-[#b83c00] transition hover:brightness-110 active:scale-90 disabled:opacity-50" style={box(334.68, 373, 40, 40)}>
           <img src="/pop_ups/icons/plus.svg" alt="" style={{ width: u(25), height: u(25) }} />
         </button>
 
@@ -281,7 +281,7 @@ export default function DeepDaanDialog({ open, onClose, originRef }) {
                 onClick={() => choosePreset(n)}
                 aria-pressed={selected}
                 aria-label={`Offer ${n} diyas`}
-                className={`flex flex-1 items-center justify-center rounded-full font-semibold leading-none tabular-nums transition active:scale-95 ${selected ? 'bg-gradient-to-r from-[#2f3fb5] to-[#7a2fcf] text-white shadow-[0_2px_6px_rgba(95,47,214,0.35)]' : 'bg-white text-[#5f2fd6] ring-1 ring-inset ring-[#5f2fd6]/20 hover:bg-[#f4f0ff] hover:ring-[#5f2fd6]/45'}`}
+                className={`flex flex-1 items-center justify-center rounded-full font-semibold leading-none tabular-nums transition active:scale-95 ${selected ? 'bg-[#f93] text-[#4A1A08] shadow-[0_2px_6px_rgba(184,60,0,0.35)]' : 'bg-white text-[#b83c00] ring-1 ring-inset ring-[#b83c00]/20 hover:bg-[#fff2e5] hover:ring-[#b83c00]/45'}`}
                 style={{ fontSize: u(12.5) }}
               >
                 {n}
@@ -306,7 +306,7 @@ export default function DeepDaanDialog({ open, onClose, originRef }) {
           <p role="alert" className="absolute text-center font-medium text-[#c62828]" style={{ left: u(35), top: u(697), width: u(385.34), fontSize: u(12) }}>{error}</p>
         )}
 
-        <button type="button" onClick={onClose} aria-label="Close" className="absolute z-20 flex items-center justify-center rounded-full bg-white text-[#5f2fd6] shadow-[0_2px_10px_rgba(0,0,0,0.3)] ring-2 ring-[#f5b301] transition hover:scale-105 active:scale-95" style={{ right: u(-10), top: u(-10), width: `max(32px, ${u(36)})`, height: `max(32px, ${u(36)})` }}>
+        <button type="button" onClick={onClose} aria-label="Close" className="absolute z-20 flex items-center justify-center rounded-full bg-white text-[#b83c00] shadow-[0_2px_10px_rgba(0,0,0,0.3)] ring-2 ring-[#f93] transition hover:scale-105 active:scale-95" style={{ right: u(-10), top: u(-10), width: `max(32px, ${u(36)})`, height: `max(32px, ${u(36)})` }}>
           <X className="size-[55%]" strokeWidth={2.75} />
         </button>
 

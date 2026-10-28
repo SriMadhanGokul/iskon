@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        saffron: { DEFAULT: '#FF9B33', dark: '#E0620A' },
+        primary: { DEFAULT: '#f93', dark: '#b83c00' },
+        saffron: { DEFAULT: '#f93', dark: '#b83c00' },
         maroon: '#4A1A08',
-        cream: '#FFF5E6',
-        gold: '#FFD27A',
+        cream: '#FFF8F1',
+        gold: '#FFD1A3',
         teal: '#0E7C7B',
-        krishna: '#1F5FA8',
       },
       fontFamily: {
         heading: ['Lora', 'Georgia', 'serif'],

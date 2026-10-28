@@ -62,7 +62,7 @@ export default function DonationCard() {
       <div className="mt-8 rounded-2xl bg-cream p-4 sm:p-5">
         <div role="tablist" aria-label="Payment method" className="mb-4 grid grid-cols-3 gap-2">
           {METHODS.map(({ id, label, icon: Icon }) => (
-            <button key={id} role="tab" aria-selected={method === id} onClick={() => setMethod(id)} className={`flex min-h-[44px] items-center justify-center gap-2 rounded-xl border px-2 text-sm font-medium ${method === id ? 'border-maroon bg-maroon text-white' : 'border-gold bg-white'}`}>
+            <button key={id} role="tab" aria-selected={method === id} onClick={() => setMethod(id)} className={`flex min-h-[44px] items-center justify-center gap-2 rounded-xl border px-2 text-sm font-medium ${method === id ? 'border-primary bg-primary text-maroon' : 'border-gold bg-white'}`}>
               <Icon size={16} aria-hidden="true" /> {label}
             </button>
           ))}
