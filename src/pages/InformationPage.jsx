@@ -28,7 +28,7 @@ function Photo({ image, className = 'aspect-[16/10]', linkTo }) {
 
 function PageCard({ card }) {
   return (
-    <article className="group overflow-hidden rounded-3xl border border-gold/80 bg-white shadow-soft transition-transform hover:-translate-y-1">
+    <article className="group overflow-hidden rounded-3xl border border-primary/35 bg-primary/10 shadow-soft transition-transform hover:-translate-y-1">
       <Photo image={card.image} linkTo={card.to} className="aspect-[16/10] rounded-none border-0" />
       <div className="p-5">
         <h3 className="font-heading text-xl font-semibold"><Link to={card.to} className="hover:text-saffron-dark">{card.title}</Link></h3>
@@ -43,19 +43,19 @@ function ContactDetails() {
   const { contact } = siteConfig;
   return (
     <div className="grid gap-4 sm:grid-cols-2">
-      <a href={`tel:${contact.phoneHref}`} className="flex items-start gap-4 rounded-2xl border border-gold bg-white p-5 shadow-soft">
+      <a href={`tel:${contact.phoneHref}`} className="flex items-start gap-4 rounded-2xl border border-primary/35 bg-primary/10 p-5 shadow-soft">
         <Phone className="mt-1 shrink-0 text-saffron-dark" aria-hidden="true" />
         <span><span className="block font-semibold">Call the temple</span><span className="mt-1 block text-sm text-maroon/75">{contact.phone}</span></span>
       </a>
-      <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 rounded-2xl border border-gold bg-white p-5 shadow-soft">
+      <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 rounded-2xl border border-primary/35 bg-primary/10 p-5 shadow-soft">
         <Phone className="mt-1 shrink-0 text-saffron-dark" aria-hidden="true" />
         <span><span className="block font-semibold">WhatsApp</span><span className="mt-1 block text-sm text-maroon/75">Message the temple team</span></span>
       </a>
-      <a href={`mailto:${contact.email}`} className="flex items-start gap-4 rounded-2xl border border-gold bg-white p-5 shadow-soft">
+      <a href={`mailto:${contact.email}`} className="flex items-start gap-4 rounded-2xl border border-primary/35 bg-primary/10 p-5 shadow-soft">
         <Mail className="mt-1 shrink-0 text-saffron-dark" aria-hidden="true" />
         <span><span className="block font-semibold">Email</span><span className="mt-1 block break-all text-sm text-maroon/75">{contact.email}</span></span>
       </a>
-      <a href={contact.mapLink} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 rounded-2xl border border-gold bg-white p-5 shadow-soft">
+      <a href={contact.mapLink} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 rounded-2xl border border-primary/35 bg-primary/10 p-5 shadow-soft">
         <MapPin className="mt-1 shrink-0 text-saffron-dark" aria-hidden="true" />
         <span><span className="block font-semibold">Temple address</span><span className="mt-1 block text-sm leading-6 text-maroon/75">{contact.address}</span></span>
       </a>
@@ -90,7 +90,7 @@ export default function InformationPage({ page }) {
         {page.highlights && (
           <ul className="mt-8 grid gap-3 sm:grid-cols-3">
             {page.highlights.map((highlight) => (
-              <li key={highlight} className="rounded-2xl border border-gold bg-white p-4 text-center font-medium shadow-soft">{highlight}</li>
+              <li key={highlight} className="rounded-2xl border border-primary/35 bg-primary/10 p-4 text-center font-medium shadow-soft">{highlight}</li>
             ))}
           </ul>
         )}
@@ -117,7 +117,7 @@ export default function InformationPage({ page }) {
         )}
 
         {page.sections?.map((section) => (
-          <section key={section.title} id={section.id} className="mt-12 scroll-mt-24 border-t border-gold/70 pt-10">
+          <section key={section.title} id={section.id} className="mt-12 scroll-mt-24 border-t border-primary/40 pt-10">
             <div className={section.image ? 'grid items-start gap-7 lg:grid-cols-2' : 'max-w-4xl'}>
               <div>
                 <h2 className="font-heading text-2xl font-semibold sm:text-3xl">{section.title}</h2>

@@ -64,7 +64,7 @@ function FestivalSlider() {
   };
 
   return (
-    <section className="bg-white/60 py-16 sm:py-20" aria-labelledby="festival-slider-heading">
+    <section className="bg-primary/10 py-16 sm:py-20" aria-labelledby="festival-slider-heading">
       <div className="container-page">
         <Reveal className="mb-6 flex items-end justify-between gap-4">
           <div>
@@ -180,19 +180,30 @@ export default function Home() {
           </Reveal>
           <Stagger className="mt-8 grid gap-4 md:grid-cols-3">
             {[
-              { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, seva: 'sqft' },
-              { title: 'Anna Daan', text: 'Support prasadam and food-service efforts for visitors and the wider community.', icon: Utensils, seva: 'anna' },
-              { title: 'Gau Seva', text: 'Help provide care and support for the temple’s cow-protection work.', icon: HandHeart, seva: 'gau' },
-            ].map(({ title, text, icon: Icon, seva }) => (
+              { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, seva: 'sqft', photoKey: 'hero', alt: 'Main gate of an ISKCON temple in Mayapur, shown as representative temple architecture' },
+              { title: 'Anna Daan', text: 'Support prasadam and food-service efforts for visitors and the wider community.', icon: Utensils, seva: 'anna', photoKey: 'prasadam', alt: 'Fruit arranged as a devotional offering' },
+              { title: 'Gau Seva', text: 'Help provide care and support for the temple’s cow-protection work.', icon: HandHeart, seva: 'gau', photoKey: 'gauSeva', alt: 'Vechur cow photographed in India' },
+            ].map(({ title, text, icon: Icon, seva, photoKey, alt }) => {
+              const credit = siteConfig.imageCredits[photoKey];
+              return (
               <StaggerItem key={title} className="flex">
-                <Link to={`/donate?seva=${seva}`} className="card-lift group flex min-h-52 w-full flex-col rounded-3xl border border-gold bg-white p-6 shadow-soft">
-                <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron/15 text-saffron-dark transition-colors duration-300 group-hover:bg-saffron-dark group-hover:text-white"><Icon size={24} aria-hidden="true" /></span>
-                <h3 className="text-lg font-semibold">{title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-6 text-maroon/75">{text}</p>
-                <span className="btn-primary mt-5 min-h-10 self-start px-4 text-xs">Donate now <ArrowRight size={15} aria-hidden="true" className="transition-transform group-hover:translate-x-0.5" /></span>
+                <Link to={`/donate?seva=${seva}`} className="card-lift group flex w-full flex-col overflow-hidden rounded-3xl border border-gold bg-white shadow-soft">
+                  <figure className="overflow-hidden">
+                    <img {...photo(siteConfig.images[photoKey], '(min-width: 768px) 33vw, 100vw')} alt={alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
+                    <figcaption className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
+                      Photo: <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a>
+                    </figcaption>
+                  </figure>
+                  <div className="flex flex-1 flex-col p-6">
+                    <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron/15 text-saffron-dark transition-colors duration-300 group-hover:bg-saffron-dark group-hover:text-white"><Icon size={24} aria-hidden="true" /></span>
+                    <h3 className="text-lg font-semibold">{title}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-6 text-maroon/75">{text}</p>
+                    <span className="btn-primary mt-5 min-h-10 self-start px-4 text-xs">Donate now <ArrowRight size={15} aria-hidden="true" className="transition-transform group-hover:translate-x-0.5" /></span>
+                  </div>
                 </Link>
               </StaggerItem>
-            ))}
+              );
+            })}
           </Stagger>
         </div>
       </section>

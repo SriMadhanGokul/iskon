@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { CalendarDays, ChevronDown, Heart, Home as HomeIcon, MapPin, Menu, X } from 'lucide-react';
+import { CalendarDays, ChevronDown, ChevronRight, Heart, Home as HomeIcon, Info, MapPin, Menu, Phone, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { SITE_NAV_GROUPS, SITE_PAGES } from '../data/pages.js';
 import useScrollHeader from '../hooks/useScrollHeader.js';
@@ -9,6 +9,14 @@ const moreLinks = [
   { label: 'Home', to: '/' },
   ...SITE_PAGES.map(({ title, path }) => ({ label: title, to: path })),
   { label: 'Donate', to: '/donate' },
+];
+
+// Mobile "More" menu: these four only. Visit lives here, Activities is removed from mobile.
+const MORE_ITEMS = [
+  { label: 'About us', to: '/about', icon: Info },
+  { label: 'Plan your visit', to: '/visit', icon: MapPin },
+  { label: 'Festivals', to: '/festivals', icon: CalendarDays },
+  { label: 'Contact the temple', to: '/contact', icon: Phone },
 ];
 
 const getDropdownLinks = (group) => {
@@ -55,7 +63,7 @@ export default function Header() {
       <motion.header
         animate={{ y: hidden && !moreOpen ? '-100%' : '0%' }}
         transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-        className="sticky top-0 z-40 border-b border-primary/40 bg-cream shadow-[0_8px_30px_rgba(74,26,8,0.08)]"
+        className="sticky top-0 z-40 border-b border-primary-dark/25 bg-primary shadow-[0_8px_30px_rgba(74,26,8,0.08)]"
       >
         <div className={`container-page flex items-center justify-between gap-4 transition-[min-height] duration-500 ${scrolled ? 'min-h-[56px]' : 'min-h-[60px]'}`}>
           <Link to="/" className="flex min-w-0 items-center gap-2" aria-label="Hare Krishna home">
@@ -65,7 +73,7 @@ export default function Header() {
               <span className="hidden text-xs text-maroon/75 sm:block">A spiritual home in Jaipur</span>
             </span>
           </Link>
-          <nav aria-label="Main navigation" className="hidden items-center gap-5 xl:flex">
+          <nav aria-label="Main navigation" className="hidden flex-1 items-center justify-center gap-14 px-10 xl:flex">
             <NavLink to="/" end className={linkClass}>Home</NavLink>
             {SITE_NAV_GROUPS.map((group) => {
               const links = getDropdownLinks(group);
@@ -88,9 +96,9 @@ export default function Header() {
                   </NavLink>
                   {links.length > 0 && activeGroup === group.label && (
                     <div className="absolute left-0 top-full z-50 w-64 pt-3">
-                      <div className="max-h-[75vh] overflow-y-auto rounded-2xl border border-gold bg-white p-2 shadow-soft">
+                      <div className="max-h-[75vh] overflow-y-auto rounded-2xl border border-primary/50 bg-cream p-2 shadow-soft">
                         {links.map((item) => (
-                          <NavLink key={item.label} to={item.to} className={({ isActive }) => `block rounded-xl px-3 py-2 text-sm hover:bg-cream ${isActive ? 'font-semibold text-saffron-dark' : 'text-maroon'}`}>
+                          <NavLink key={item.label} to={item.to} className={({ isActive }) => `block rounded-xl px-3 py-2 text-sm hover:bg-primary/20 ${isActive ? 'bg-primary/20 font-semibold text-saffron-dark' : 'text-maroon'}`}>
                             {item.label}
                           </NavLink>
                         ))}
@@ -101,7 +109,7 @@ export default function Header() {
               );
             })}
           </nav>
-          <Link to="/donate" className="shine-animation relative inline-flex h-10 shrink-0 items-center overflow-hidden rounded-full bg-primary px-4 text-xs font-bold text-maroon shadow-soft ring-2 ring-primary/40 transition-transform duration-500 hover:scale-[1.08] hover:bg-primary-dark hover:text-white sm:text-sm"><img src="/gifs/heart.gif" alt="" aria-hidden="true" width="150" height="150" className="-ml-5 -mr-2 h-14 w-14" />Donate now</Link>
+          <Link to="/donate" className="shine-animation relative inline-flex h-10 shrink-0 items-center overflow-hidden rounded-full bg-primary-dark px-4 text-xs font-bold text-white shadow-soft ring-2 ring-white/60 transition-transform duration-500 hover:scale-[1.08] hover:bg-maroon sm:text-sm"><img src="/gifs/heart.gif" alt="" aria-hidden="true" width="150" height="150" className="-ml-5 -mr-2 h-14 w-14" />Donate now</Link>
           <button
             type="button"
             onClick={() => setMoreOpen((open) => !open)}
@@ -114,36 +122,32 @@ export default function Header() {
         </div>
 
         {moreOpen && (
-          <nav aria-label="More navigation" className="container-page grid max-h-[65vh] grid-cols-1 gap-3 overflow-y-auto border-t border-gold/70 py-4 sm:grid-cols-2 sm:gap-4 xl:hidden">
-            {SITE_NAV_GROUPS.map((group) => {
-              const links = getDropdownLinks(group);
-              return (
-                <div key={group.to} className="rounded-2xl bg-white p-3">
-                  <NavLink to={group.to} className={({ isActive }) => `block rounded-xl px-2 py-2 font-semibold ${isActive ? 'text-saffron-dark' : 'text-maroon'}`}>{group.label}</NavLink>
-                  {links.length > 0 && (
-                    <ul className="space-y-1">
-                      {links.map((item) => (
-                        <li key={item.label}>
-                          <NavLink to={item.to} className={({ isActive }) => `block rounded-lg px-2 py-2 text-sm ${isActive ? 'bg-saffron/20 font-semibold text-saffron-dark' : 'text-maroon/80'}`}>{item.label}</NavLink>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              );
-            })}
-            {moreLinks.filter(({ to }) => ['/terms', '/privacy', '/refund'].includes(to)).map((item) => (
-              <NavLink key={item.to} to={item.to} className={({ isActive }) => `rounded-xl bg-white px-3 py-3 text-sm ${isActive ? 'font-semibold text-saffron-dark' : 'text-maroon'}`}>{item.label}</NavLink>
-            ))}
+          <nav aria-label="More navigation" className="container-page border-t border-primary-dark/25 bg-primary py-2 xl:hidden">
+            <ul className="divide-y divide-primary-dark/20">
+              {MORE_ITEMS.map(({ label, to, icon: Icon }) => (
+                <li key={to}>
+                  <NavLink
+                    to={to}
+                    className={({ isActive }) => `flex min-h-14 items-center gap-4 px-1 py-2 transition-colors active:bg-gold/60 ${isActive ? 'text-saffron-dark' : 'text-maroon'}`}
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cream text-maroon"><Icon size={18} aria-hidden="true" /></span>
+                    <span className="flex-1 text-[15px] font-semibold">{label}</span>
+                    <ChevronRight size={18} className="text-maroon/60" aria-hidden="true" />
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
           </nav>
         )}
       </motion.header>
 
-      <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-6 border-t border-gold bg-cream/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] backdrop-blur sm:hidden">
+      {moreOpen && (
+        <button type="button" aria-label="Close menu" onClick={() => setMoreOpen(false)} className="fixed inset-0 z-30 cursor-default bg-maroon/25 xl:hidden" />
+      )}
+      <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-5 border-t border-primary-dark/25 bg-primary pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] sm:hidden">
         <Link to="/" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><HomeIcon size={18} aria-hidden="true" />Home</Link>
-        <Link to="/mandir" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><span aria-hidden="true">ॐ</span>Temple</Link>
-        <Link to="/activities" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><CalendarDays size={18} aria-hidden="true" />Activities</Link>
-        <Link to="/visit" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><MapPin size={18} aria-hidden="true" />Visit</Link>
+        <Link to="/about" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><Info size={18} aria-hidden="true" />About us</Link>
+        <Link to="/festivals" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><CalendarDays size={18} aria-hidden="true" />Festivals</Link>
         <button type="button" onClick={() => setMoreOpen((open) => !open)} aria-expanded={moreOpen} className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><Menu size={18} aria-hidden="true" />More</button>
         <Link to="/donate" className="flex min-h-16 flex-col items-center justify-center gap-1 bg-primary text-xs font-semibold text-maroon"><Heart size={18} aria-hidden="true" />Donate</Link>
       </nav>
