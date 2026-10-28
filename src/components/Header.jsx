@@ -83,7 +83,7 @@ export default function Header() {
             onClick={() => setMoreOpen((open) => !open)}
             aria-label={moreOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={moreOpen}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gold text-maroon xl:hidden"
+            className="hidden h-11 w-11 items-center justify-center rounded-full border border-gold text-maroon sm:inline-flex xl:hidden"
           >
             {moreOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
           </button>
