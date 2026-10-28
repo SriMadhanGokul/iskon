@@ -54,7 +54,7 @@ export default function Header() {
       >
         <div className={`container-page flex items-center justify-between gap-4 transition-[min-height] duration-500 ${scrolled ? 'min-h-[60px]' : 'min-h-[72px]'}`}>
           <Link to="/" className="flex min-w-0 items-center gap-2" aria-label="Hare Krishna home">
-            <img src="/govardhan-dham-logo.jpg" alt="" aria-hidden="true" className={`shrink-0 rounded-lg object-cover transition-all duration-500 ${scrolled ? 'h-10 w-10' : 'h-12 w-12'}`} />
+            <img src="/govardhan-dham-logo-96.webp" alt="" aria-hidden="true" width="96" height="96" className={`shrink-0 rounded-lg object-cover transition-all duration-500 ${scrolled ? 'h-10 w-10' : 'h-12 w-12'}`} />
             <span className="min-w-0">
               <span className={`block truncate font-heading text-lg font-bold transition-colors sm:text-xl ${overHero ? 'text-white' : 'text-maroon'}`}>Hare Krishna</span>
               <span className={`hidden text-xs transition-colors sm:block ${overHero ? 'text-cream/75' : 'text-maroon/70'}`}>A spiritual home in Jaipur</span>

@@ -6,10 +6,10 @@ import Header from './components/Header.jsx';
 import FestivalGifs from './components/FestivalGifs.jsx';
 import Footer from './components/Footer.jsx';
 import OfferDiya from './components/OfferDiya.jsx';
-import Preloader from './components/Preloader.jsx';
 import { PAGE_BY_PATH, SITE_PAGES } from './data/pages.js';
+// The landing page ships in the main bundle so the hero paints without waiting on another chunk.
+import Home from './pages/Home.jsx';
 
-const Home = lazy(() => import('./pages/Home.jsx'));
 const Donate = lazy(() => import('./pages/Donate.jsx'));
 const DonationCheckout = lazy(() => import('./pages/DonationCheckout.jsx'));
 const NotFound = lazy(() => import('./pages/NotFound.jsx'));
@@ -41,27 +41,25 @@ export default function App() {
       <ScrollTop />
       <OfferDiya />
       <FestivalGifs />
-      <Preloader>
-        <Header />
-        <main id="main">
-          <Suspense fallback={<div className="container-page py-24 text-center">Loading…</div>}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/donate" element={<Donate />} />
-              <Route path="/donate/checkout" element={<DonationCheckout />} />
-              {SITE_PAGES.map((page) => (
-                <Route
-                  key={page.path}
-                  path={page.path}
-                  element={<InformationPage page={PAGE_BY_PATH[page.path]} />}
-                />
-              ))}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-        </main>
-        <Footer />
-      </Preloader>
+      <Header />
+      <main id="main">
+        <Suspense fallback={<div className="container-page py-24 text-center">Loading…</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/donate/checkout" element={<DonationCheckout />} />
+            {SITE_PAGES.map((page) => (
+              <Route
+                key={page.path}
+                path={page.path}
+                element={<InformationPage page={PAGE_BY_PATH[page.path]} />}
+              />
+            ))}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
     </MotionConfig>
   );
 }

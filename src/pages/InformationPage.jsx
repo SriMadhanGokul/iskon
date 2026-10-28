@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import AartiTimings from '../components/AartiTimings.jsx';
 import siteConfig from '../data/siteConfig.js';
+import { photo } from '../lib/photo.js';
 
 function Photo({ image, className = 'aspect-[16/10]', linkTo }) {
   if (!image) return null;
@@ -11,10 +12,10 @@ function Photo({ image, className = 'aspect-[16/10]', linkTo }) {
     <figure className={`overflow-hidden rounded-3xl border border-gold/70 bg-cream ${className}`}>
       {linkTo ? (
         <Link to={linkTo} aria-label={`Explore ${image.alt}`} className="block h-full">
-          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+          <img {...photo(image.src, '(min-width: 1024px) 50vw, 100vw')} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
         </Link>
       ) : (
-        <img src={image.src} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+        <img {...photo(image.src, '(min-width: 1024px) 50vw, 100vw')} alt={image.alt} loading="lazy" decoding="async" className="h-full w-full object-cover" />
       )}
       {credit && (
         <figcaption className="bg-cream px-3 py-2 text-xs leading-5 text-maroon/75">

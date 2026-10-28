@@ -21,6 +21,7 @@ export default function OfferDiya() {
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+    if (navigator.connection?.saveData) return undefined;
     return playDiyaSparkles(canvasRef.current, diyaRef.current, flameRef.current);
   }, []);
 
@@ -43,7 +44,7 @@ export default function OfferDiya() {
       >
         <div className="relative origin-[100%_70%] motion-safe:animate-diya-aarti">
           <span className="absolute inset-0 bg-[radial-gradient(circle_38cqw_at_39.5%_54%,rgba(255,110,0,0.85)_0%,rgba(215,70,0,0.6)_25%,rgba(150,40,0,0.3)_55%,rgba(120,30,0,0)_100%)] motion-safe:animate-diya-glow" />
-          <img src="/gifs/offerdiya-loop.gif" alt="" draggable="false" className="relative block h-auto w-full" />
+          <img src="/gifs/offerdiya-loop.webp" alt="" width="440" height="445" draggable="false" fetchpriority="low" decoding="async" className="relative block h-auto w-full" />
           <span ref={flameRef} className="absolute left-[39.5%] top-[54%] size-0" />
           {embers.map(({ size, dx, delay, duration }) => (
             <span

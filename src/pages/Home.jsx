@@ -6,6 +6,7 @@ import {
   Flower2, HandHeart, Heart, Music2, Utensils,
 } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
+import { photo } from '../lib/photo.js';
 import { SITE_PAGES } from '../data/pages.js';
 import Hero from '../components/Hero.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
@@ -35,10 +36,10 @@ function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to 
         <figure className="-mx-5 -mt-5 mb-5 overflow-hidden rounded-t-3xl sm:-mx-6 sm:-mt-6">
           {to ? (
             <Link to={to} aria-label={`Learn more about ${title}`} className="block">
-              <img src={image} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
+              <img {...photo(image, '(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw')} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
             </Link>
           ) : (
-            <img src={image} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
+            <img {...photo(image, '(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw')} alt={imageAlt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
           )}
           <figcaption className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
             Photo: <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a>
@@ -80,7 +81,7 @@ function FestivalSlider() {
           {festivalCards.map((festival) => (
             <article key={festival.to} className="card-lift group w-[min(82vw,22rem)] shrink-0 snap-start overflow-hidden rounded-3xl border border-gold/80 bg-white shadow-soft">
               <Link to={festival.to} aria-label={`Explore ${festival.title}`} className="block overflow-hidden">
-                <img src={festival.image.src} alt={festival.image.alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
+                <img {...photo(festival.image.src, '(min-width: 640px) 352px, 82vw')} alt={festival.image.alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
               </Link>
               {festival.image.credit && (
                 <p className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
@@ -153,7 +154,7 @@ export default function Home() {
       <section id="prabhupada" className="container-page scroll-mt-24 py-16 sm:py-20">
         <Reveal className="card-lift group grid overflow-hidden rounded-[2rem] border border-gold bg-cream md:grid-cols-[0.8fr_1.2fr]">
         <figure className="relative min-h-64 overflow-hidden bg-gold/30">
-          <img src={siteConfig.images.about} alt="Samadhi Mandir of Srila Prabhupada in Mayapur" width="1200" height="800" loading="lazy" decoding="async" className="card-zoom absolute inset-0 h-full w-full object-cover" />
+          <img {...photo(siteConfig.images.about, '(min-width: 768px) 460px, 100vw')} alt="Samadhi Mandir of Srila Prabhupada in Mayapur" width="1200" height="800" loading="lazy" decoding="async" className="card-zoom absolute inset-0 h-full w-full object-cover" />
           <figcaption className="absolute inset-x-3 bottom-3 rounded-xl bg-maroon/85 px-3 py-2 text-xs text-cream backdrop-blur-sm">
             Photo: <a href={siteConfig.imageCredits.about.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.about.title}</a> by {siteConfig.imageCredits.about.author} · <a href={siteConfig.imageCredits.about.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.about.license}</a>
           </figcaption>

@@ -12,6 +12,10 @@ const END = SWEEP_START + SPAWN_SPREAD + 7.464114832535885 + 1.2;
 const TILT = (-12 * Math.PI) / 180;
 const SLIDE_DELAY_MS = 600;
 
+// Phones and low-core devices draw half the sparks with shorter trails and smaller sprites.
+const isLightDevice = () =>
+  window.innerWidth < 768 || (navigator.hardwareConcurrency || 8) <= 4 || Boolean(navigator.connection?.saveData);
+
 const clamp01 = (x) => Math.min(1, Math.max(0, x));
 const progress = (from, to, x) => clamp01((x - from) / (to - from));
 const bezier = (a, b, c, t) => (1 - t) * (1 - t) * a + 2 * (1 - t) * t * b + t * t * c;
@@ -65,11 +69,16 @@ export function playDiyaSparkles(canvas, diyaEl, flameEl) {
   let sparks = [];
   let dust = [];
   let frame = 0;
+  let wait = 0;
   let visible = false;
+  const light = isLightDevice();
+  const amount = light ? 0.5 : 1;
+  const trailLength = light ? 2 : 3;
+  const spriteSize = light ? 32 : 64;
 
-  const gold = glowSprite([[0, 'rgba(255,248,215,1)'], [0.2, 'rgba(255,213,74,0.95)'], [0.5, 'rgba(255,170,0,0.35)'], [1, 'rgba(255,150,0,0)']]);
-  const ember = glowSprite([[0, 'rgba(255,226,140,1)'], [0.22, 'rgba(240,160,0,0.95)'], [0.5, 'rgba(210,110,0,0.35)'], [1, 'rgba(200,90,0,0)']]);
-  const star = starSprite();
+  const gold = glowSprite([[0, 'rgba(255,248,215,1)'], [0.2, 'rgba(255,213,74,0.95)'], [0.5, 'rgba(255,170,0,0.35)'], [1, 'rgba(255,150,0,0)']], spriteSize);
+  const ember = glowSprite([[0, 'rgba(255,226,140,1)'], [0.22, 'rgba(240,160,0,0.95)'], [0.5, 'rgba(210,110,0,0.35)'], [1, 'rgba(200,90,0,0)']], spriteSize);
+  const star = starSprite(spriteSize);
 
   const resize = () => {
     viewHeight = window.innerHeight;
@@ -82,7 +91,7 @@ export function playDiyaSparkles(canvas, diyaEl, flameEl) {
     canvas.style.height = `${canvasHeight}px`;
     const density = clamp01((width * viewHeight) / 2073600);
     const rand = seededRandom(108);
-    sparks = Array.from({ length: Math.round(280 + 470 * density) }, () => ({
+    sparks = Array.from({ length: Math.round((280 + 470 * density) * amount) }, () => ({
       start: SWEEP_START + SPAWN_SPREAD * rand(),
       speed: 0.95 + 0.1 * rand(),
       jx: (rand() - 0.5) * 0.06,
@@ -94,7 +103,7 @@ export function playDiyaSparkles(canvas, diyaEl, flameEl) {
       twSpeed: 4 + 9 * rand(),
       twPhase: rand() * Math.PI * 2,
     }));
-    dust = Array.from({ length: Math.round(90 + 170 * density) }, () => ({
+    dust = Array.from({ length: Math.round((90 + 170 * density) * amount) }, () => ({
       x: rand(),
       y: rand(),
       size: 0.6 + 1.6 * rand(),
@@ -117,7 +126,12 @@ export function playDiyaSparkles(canvas, diyaEl, flameEl) {
       cancelAnimationFrame(frame);
       return;
     }
-    if (time < SWEEP_START) return;
+    if (time < SWEEP_START) {
+      // Nothing to draw yet: sleep until just before the sweep instead of spinning every frame.
+      cancelAnimationFrame(frame);
+      wait = setTimeout(() => { frame = requestAnimationFrame(draw); }, Math.max(0, (SWEEP_START - time) * 1000 - 50));
+      return;
+    }
     if (!visible) canvas.style.display = '';
     visible = true;
     ctx.clearRect(0, 0, width, canvasHeight);
@@ -182,7 +196,7 @@ export function playDiyaSparkles(canvas, diyaEl, flameEl) {
     for (const spark of sparks) {
       const twinkle = 0.6 + 0.4 * Math.sin(time * spark.twSpeed + spark.twPhase);
       const sprite = spark.star ? star : spark.deep ? ember : gold;
-      for (let trail = 0; trail < 3; trail++) {
+      for (let trail = 0; trail < trailLength; trail++) {
         const pos = sparkAt(spark, time - 0.035 * trail);
         if (!pos) break;
         const [x, y, alpha, sizeScale] = pos;
@@ -209,6 +223,7 @@ export function playDiyaSparkles(canvas, diyaEl, flameEl) {
   frame = requestAnimationFrame(draw);
   return () => {
     cancelAnimationFrame(frame);
+    clearTimeout(wait);
     window.removeEventListener('resize', resize);
   };
 }

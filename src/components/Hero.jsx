@@ -2,22 +2,24 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowDown, Flower2, MapPin, Sparkles } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
+import { photo } from '../lib/photo.js';
 import Countdown from './Countdown.jsx';
 
 const EASE = [0.22, 1, 0.36, 1];
 const HEADLINE = 'Discover a sacred home in Jaipur';
 
+// Kept short so the hero is fully readable within ~0.7s (it is the page's LCP area).
 const sequence = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.14, delayChildren: 0.15 } },
+  show: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
 };
 const rise = {
-  hidden: { opacity: 0, y: 24, filter: 'blur(6px)' },
-  show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.8, ease: EASE } },
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } },
 };
 const words = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.07 } },
+  show: { transition: { staggerChildren: 0.05 } },
 };
 const word = {
   hidden: { opacity: 0, y: '0.6em' },
@@ -67,15 +69,16 @@ export default function Hero() {
           <motion.p variants={rise} className="mt-6 flex items-center gap-2 text-sm text-gold"><MapPin size={16} aria-hidden="true" /> Jagatpura, Jaipur, Rajasthan</motion.p>
         </motion.div>
 
+        {/* No opacity fade: the photo is the likely LCP element, so it must paint on the first frame. */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.94, y: 30 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.45, ease: EASE }}
+          initial={{ scale: 0.96, y: 16 }}
+          animate={{ scale: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="relative mx-auto w-full max-w-lg"
         >
           <div className="absolute -inset-3 rotate-3 rounded-[2rem] border border-gold/40" aria-hidden="true" />
           <figure className="group relative aspect-[4/3] w-full overflow-hidden rounded-[1.75rem] border border-gold/40 bg-gradient-to-br from-gold/70 via-cream to-saffron/40 shadow-2xl md:aspect-[5/4]">
-            <img src={siteConfig.images.hero} alt="Main gate of an ISKCON temple in Mayapur, shown as representative temple architecture" width="2743" height="2516" fetchpriority="high" decoding="async" className="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105" />
+            <img {...photo(siteConfig.images.hero, '(min-width: 768px) 512px, calc(100vw - 32px)')} alt="Main gate of an ISKCON temple in Mayapur, shown as representative temple architecture" width="2743" height="2516" fetchpriority="high" loading="eager" decoding="async" className="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-maroon/55 via-transparent to-maroon/20" aria-hidden="true" />
             <figcaption className="absolute left-3 right-3 top-3 rounded-xl bg-maroon/80 px-3 py-2 text-xs text-cream backdrop-blur-sm sm:left-4 sm:right-4 sm:top-4">
               Representative temple photo · Mayapur · <a href={siteConfig.imageCredits.hero.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.hero.title}</a> by {siteConfig.imageCredits.hero.author} · <a href={siteConfig.imageCredits.hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.hero.license}</a>

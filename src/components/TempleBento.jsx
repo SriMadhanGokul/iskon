@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, BookOpen, Clock3, HandHeart, MapPin, Megaphone, Music2, Phone, Utensils } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
+import { photo } from '../lib/photo.js';
 import { Stagger, StaggerItem } from './Reveal.jsx';
 
 const toMinutes = (time) => {
@@ -38,7 +39,7 @@ function Credit({ credit }) {
 function PhotoTile({ to, image, alt, credit, icon: Icon, title, text, className }) {
   return (
     <StaggerItem className={`card-lift group relative isolate flex min-h-[15rem] flex-col justify-end overflow-hidden rounded-[1.75rem] border border-gold/60 p-6 text-cream ${className}`}>
-      <img src={image} alt={alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom absolute inset-0 -z-10 h-full w-full object-cover" />
+      <img {...photo(image, '(min-width: 1024px) 560px, (min-width: 768px) 50vw, 100vw')} alt={alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom absolute inset-0 -z-10 h-full w-full object-cover" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-maroon via-maroon/60 to-maroon/5" aria-hidden="true" />
       <span className="mb-auto flex h-11 w-11 items-center justify-center rounded-2xl bg-white/15 text-gold backdrop-blur-md"><Icon size={21} aria-hidden="true" /></span>
       <h3 className="mt-10 font-heading text-2xl font-semibold text-white">
