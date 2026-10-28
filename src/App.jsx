@@ -1,5 +1,7 @@
 import { Suspense, lazy, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { MotionConfig } from 'framer-motion';
+import AmbientGlow from './components/AmbientGlow.jsx';
 import Header from './components/Header.jsx';
 import FestivalGifs from './components/FestivalGifs.jsx';
 import Footer from './components/Footer.jsx';
@@ -30,7 +32,9 @@ function ScrollTop() {
 
 export default function App() {
   return (
-    <>
+    // reducedMotion="user": Framer skips movement for visitors who ask for less motion.
+    <MotionConfig reducedMotion="user">
+      <AmbientGlow />
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-[60] focus:rounded focus:bg-white focus:px-4 focus:py-2">
         Skip to content
       </a>
@@ -58,6 +62,6 @@ export default function App() {
         </main>
         <Footer />
       </Preloader>
-    </>
+    </MotionConfig>
   );
 }

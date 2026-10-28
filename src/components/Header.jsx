@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import { CalendarDays, Heart, Home as HomeIcon, MapPin, Menu, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { SITE_NAV_LINKS, SITE_PAGES } from '../data/pages.js';
-import siteConfig from '../data/siteConfig.js';
+import useScrollHeader from '../hooks/useScrollHeader.js';
 
 const primaryLinks = SITE_NAV_LINKS.filter(({ to }) =>
   ['/about', '/mandir', '/activities', '/festivals', '/visit'].includes(to),
@@ -13,13 +14,27 @@ const moreLinks = [
   { label: 'Donate', to: '/donate' },
 ];
 
-function linkClass({ isActive }) {
-  return `whitespace-nowrap text-sm font-medium transition-colors hover:text-saffron-dark ${isActive ? 'text-saffron-dark' : 'text-maroon'}`;
+function ScrollProgress() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 140, damping: 30, restDelta: 0.001 });
+  return (
+    <motion.div
+      aria-hidden="true"
+      style={{ scaleX }}
+      className="fixed inset-x-0 top-0 z-50 h-[3px] origin-left bg-gradient-to-r from-saffron-dark via-saffron to-gold shadow-[0_0_10px_rgba(255,155,51,0.7)]"
+    />
+  );
 }
 
 export default function Header() {
   const [moreOpen, setMoreOpen] = useState(false);
   const { pathname } = useLocation();
+  const { scrolled, hidden } = useScrollHeader();
+  // Only the home page has a photo hero for the header to float over.
+  const overHero = pathname === '/' && !scrolled && !moreOpen;
+  const tone = overHero ? 'text-cream' : 'text-maroon';
+  const linkClass = ({ isActive }) =>
+    `whitespace-nowrap text-sm font-medium transition-colors hover:text-saffron ${isActive ? (overHero ? 'text-gold' : 'text-saffron-dark') : tone}`;
 
   useEffect(() => {
     setMoreOpen(false);
@@ -27,13 +42,22 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-gold/70 bg-cream/95 backdrop-blur">
-        <div className="container-page flex min-h-[72px] items-center justify-between gap-4">
+      <ScrollProgress />
+      <motion.header
+        animate={{ y: hidden && !moreOpen ? '-100%' : '0%' }}
+        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+        className={`sticky top-0 z-40 border-b transition-[background-color,border-color,box-shadow,backdrop-filter] duration-500 ${
+          overHero
+            ? 'border-transparent bg-transparent'
+            : 'border-gold/50 bg-cream/75 shadow-[0_8px_30px_rgba(74,26,8,0.08)] backdrop-blur-[12px] backdrop-saturate-150'
+        }`}
+      >
+        <div className={`container-page flex items-center justify-between gap-4 transition-[min-height] duration-500 ${scrolled ? 'min-h-[60px]' : 'min-h-[72px]'}`}>
           <Link to="/" className="flex min-w-0 items-center gap-2" aria-label="Hare Krishna home">
-            <img src="/govardhan-dham-logo.jpg" alt="" aria-hidden="true" className="h-12 w-12 shrink-0 rounded-lg object-cover" />
+            <img src="/govardhan-dham-logo.jpg" alt="" aria-hidden="true" className={`shrink-0 rounded-lg object-cover transition-all duration-500 ${scrolled ? 'h-10 w-10' : 'h-12 w-12'}`} />
             <span className="min-w-0">
-              <span className="block truncate font-heading text-lg font-bold text-maroon sm:text-xl">Hare Krishna</span>
-              <span className="hidden text-xs text-maroon/70 sm:block">A spiritual home in Jaipur</span>
+              <span className={`block truncate font-heading text-lg font-bold transition-colors sm:text-xl ${overHero ? 'text-white' : 'text-maroon'}`}>Hare Krishna</span>
+              <span className={`hidden text-xs transition-colors sm:block ${overHero ? 'text-cream/75' : 'text-maroon/70'}`}>A spiritual home in Jaipur</span>
             </span>
           </Link>
           <nav aria-label="Main navigation" className="hidden items-center gap-5 xl:flex">
@@ -55,7 +79,7 @@ export default function Header() {
                 aria-haspopup="true"
                 aria-expanded={moreOpen}
                 onClick={() => setMoreOpen((open) => !open)}
-                className={`whitespace-nowrap text-sm font-medium transition-colors hover:text-saffron-dark ${moreOpen ? 'text-saffron-dark' : 'text-maroon'}`}
+                className={`whitespace-nowrap text-sm font-medium transition-colors hover:text-saffron ${moreOpen ? 'text-saffron-dark' : tone}`}
               >
                 More <span aria-hidden="true">⌄</span>
               </button>
@@ -83,7 +107,7 @@ export default function Header() {
             onClick={() => setMoreOpen((open) => !open)}
             aria-label={moreOpen ? 'Close navigation menu' : 'Open navigation menu'}
             aria-expanded={moreOpen}
-            className="hidden h-11 w-11 items-center justify-center rounded-full border border-gold text-maroon sm:inline-flex xl:hidden"
+            className={`hidden h-11 w-11 items-center justify-center rounded-full border transition-colors sm:inline-flex xl:hidden ${overHero ? 'border-gold/60 text-cream' : 'border-gold text-maroon'}`}
           >
             {moreOpen ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
           </button>
@@ -96,7 +120,7 @@ export default function Header() {
             ))}
           </nav>
         )}
-      </header>
+      </motion.header>
 
       <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-6 border-t border-gold bg-cream/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] backdrop-blur sm:hidden">
         <Link to="/" className="flex min-h-16 flex-col items-center justify-center gap-1 text-xs text-maroon"><HomeIcon size={18} aria-hidden="true" />Home</Link>

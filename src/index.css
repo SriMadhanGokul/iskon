@@ -16,6 +16,11 @@
   .btn-outline { @apply btn border border-maroon/30 text-maroon hover:bg-gold/30; }
   .container-page { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
   .prose-line { @apply max-w-[68ch]; }
+  /* Lift + warm border glow on hover; pair with a child image using .card-zoom. */
+  .card-lift {
+    @apply transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1.5 hover:border-saffron/70 hover:shadow-[0_22px_45px_-18px_rgba(74,26,8,0.35),0_0_0_1px_rgba(255,155,51,0.25),0_0_28px_-6px_rgba(255,155,51,0.45)];
+  }
+  .card-zoom { @apply transition-transform duration-700 ease-out group-hover:scale-105; }
   .shine-animation::after {
     content: '';
     position: absolute;

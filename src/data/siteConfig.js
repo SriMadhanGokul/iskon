@@ -34,6 +34,12 @@ const siteConfig = {
     ],
   },
   stats: { sqftRaised: 82880, sqftTotal: 350000, lastUpdated: PLACEHOLDER },
+  // Home-page notice board. Kartik dates follow the temple website's 2026 banner; confirm each year.
+  announcements: [
+    { tag: 'Kartik month', date: '26 Oct – 24 Nov', text: 'Offer a diya each day of this holy month through Deep Daan.', to: '/donate?seva=festival' },
+    { tag: 'Grand opening', date: '12 May 2027', text: 'The Dham is taking shape. Follow the countdown and plan your first visit.', to: '/visit' },
+    { tag: 'Festival days', date: 'Ongoing', text: 'Darshan timings can change on festival days. Please call before you travel.', to: '/contact' },
+  ],
   timings: [
     ['Mangala Aarti', '04:30 AM'], ['Shringar Darshan', '07:30 AM'], ['Bhagavatam Class', '08:15 AM'],
     ['Rajbhog Aarti', '12:00 PM'], ['Dhoop Aarti', '04:30 PM'], ['Sandhya Aarti', '07:00 PM'], ['Shayan Aarti', '08:15 PM'],

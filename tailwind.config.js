@@ -35,6 +35,10 @@ export default {
           '45%': { opacity: '0.7' },
           '70%': { opacity: '0.95' },
         },
+        'mesh-drift': {
+          '0%': { transform: 'translate(0, 0) scale(1)' },
+          '100%': { transform: 'translate(6%, 8%) scale(1.12)' },
+        },
         'diya-ember': {
           '0%': { opacity: '0', transform: 'translate(-50%, 0) scale(1)' },
           '12%': { opacity: '1' },
@@ -47,6 +51,8 @@ export default {
         'diya-aarti': 'diya-aarti 6s ease-in-out infinite',
         'diya-glow': 'diya-glow 3.2s ease-in-out infinite',
         'diya-ember': 'diya-ember 2.8s ease-out infinite both',
+        'mesh-drift': 'mesh-drift 28s ease-in-out infinite alternate',
+        'mesh-drift-reverse': 'mesh-drift 34s ease-in-out infinite alternate-reverse',
       },
     },
   },
