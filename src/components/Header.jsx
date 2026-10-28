@@ -30,7 +30,7 @@ export default function Header() {
       <header className="sticky top-0 z-40 border-b border-gold/70 bg-cream/95 backdrop-blur">
         <div className="container-page flex min-h-[72px] items-center justify-between gap-4">
           <Link to="/" className="flex min-w-0 items-center gap-2" aria-label="Hare Krishna home">
-            <img src="/hare-krishna-mark.svg" alt="" aria-hidden="true" className="h-10 w-10 shrink-0" />
+            <img src="/govardhan-dham-logo.jpg" alt="" aria-hidden="true" className="h-12 w-12 shrink-0 rounded-lg object-cover" />
             <span className="min-w-0">
               <span className="block truncate font-heading text-lg font-bold text-maroon sm:text-xl">Hare Krishna</span>
               <span className="hidden text-xs text-maroon/70 sm:block">A spiritual home in Jaipur</span>
@@ -77,7 +77,7 @@ export default function Header() {
               )}
             </div>
           </nav>
-          <Link to="/donate" className="inline-flex shrink-0 items-center gap-2 rounded-full bg-saffron-dark px-3 py-2.5 text-xs font-bold text-white shadow-soft ring-2 ring-saffron/30 transition-colors hover:bg-maroon sm:px-5 sm:text-sm"><Heart size={16} aria-hidden="true" />Donate now</Link>
+          <Link to="/donate" className="shine-animation relative inline-flex h-10 shrink-0 items-center overflow-hidden rounded-full bg-saffron-dark px-4 text-xs font-bold text-white shadow-soft ring-2 ring-saffron/30 transition-transform duration-500 hover:scale-[1.08] hover:bg-maroon sm:text-sm"><img src="/gifs/heart.gif" alt="" aria-hidden="true" width="150" height="150" className="-ml-5 -mr-2 h-14 w-14" />Donate now</Link>
           <button
             type="button"
             onClick={() => setMoreOpen((open) => !open)}

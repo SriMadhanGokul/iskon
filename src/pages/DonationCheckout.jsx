@@ -57,7 +57,7 @@ export default function DonationCheckout() {
               <div className="mt-5 w-full max-w-xs text-left text-sm text-white/85">
                 <p className="truncate">Donor: {donor.name}</p>
                 <p className="mt-1">+91 {donor.phone}</p>
-                <p className="mt-1">Pincode: {donor.pincode}</p>
+                {donor.pincode && <p className="mt-1">Pincode: {donor.pincode}</p>}
               </div>
             </div>
             <p className="text-center text-xs text-white/70">Review your details before choosing a payment method.</p>

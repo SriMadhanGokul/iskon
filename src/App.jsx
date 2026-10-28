@@ -1,7 +1,10 @@
 import { Suspense, lazy, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header.jsx';
+import FestivalGifs from './components/FestivalGifs.jsx';
 import Footer from './components/Footer.jsx';
+import OfferDiya from './components/OfferDiya.jsx';
+import Preloader from './components/Preloader.jsx';
 import { PAGE_BY_PATH, SITE_PAGES } from './data/pages.js';
 
 const Home = lazy(() => import('./pages/Home.jsx'));
@@ -32,25 +35,29 @@ export default function App() {
         Skip to content
       </a>
       <ScrollTop />
-      <Header />
-      <main id="main">
-        <Suspense fallback={<div className="container-page py-24 text-center">Loading…</div>}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/donate/checkout" element={<DonationCheckout />} />
-            {SITE_PAGES.map((page) => (
-              <Route
-                key={page.path}
-                path={page.path}
-                element={<InformationPage page={PAGE_BY_PATH[page.path]} />}
-              />
-            ))}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </main>
-      <Footer />
+      <OfferDiya />
+      <FestivalGifs />
+      <Preloader>
+        <Header />
+        <main id="main">
+          <Suspense fallback={<div className="container-page py-24 text-center">Loading…</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/donate" element={<Donate />} />
+              <Route path="/donate/checkout" element={<DonationCheckout />} />
+              {SITE_PAGES.map((page) => (
+                <Route
+                  key={page.path}
+                  path={page.path}
+                  element={<InformationPage page={PAGE_BY_PATH[page.path]} />}
+                />
+              ))}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </main>
+        <Footer />
+      </Preloader>
     </>
   );
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, BookOpen, Heart, Landmark, Utensils, X } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import siteConfig from '../data/siteConfig.js';
 
 const sevaIcons = {
@@ -32,6 +32,13 @@ export default function Donate() {
   const [phone, setPhone] = useState('');
   const [pincode, setPincode] = useState('');
   const [amount, setAmount] = useState('1000');
+  const { key: locationKey } = useLocation();
+
+  // Every Donate link click is a new navigation (new key), even while already on this page,
+  // so the form reopens each time.
+  useEffect(() => {
+    setDialogOpen(true);
+  }, [locationKey]);
 
   useEffect(() => {
     if (!dialogOpen) return undefined;
