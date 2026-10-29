@@ -35,6 +35,17 @@ export default {
           '45%': { opacity: '0.7' },
           '70%': { opacity: '0.95' },
         },
+        // Double "lub-dub" pulse for the heart on the Donate button.
+        heartbeat: {
+          '0%, 45%, 100%': { transform: 'scale(1)' },
+          '12%': { transform: 'scale(1.3)' },
+          '24%': { transform: 'scale(1)' },
+          '34%': { transform: 'scale(1.2)' },
+        },
+        'photo-strip': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
         'mesh-drift': {
           '0%': { transform: 'translate(0, 0) scale(1)' },
           '100%': { transform: 'translate(6%, 8%) scale(1.12)' },
@@ -53,6 +64,8 @@ export default {
         'diya-ember': 'diya-ember 2.8s ease-out infinite both',
         'mesh-drift': 'mesh-drift 28s ease-in-out infinite alternate',
         'mesh-drift-reverse': 'mesh-drift 34s ease-in-out infinite alternate-reverse',
+        'photo-strip': 'photo-strip 45s linear infinite',
+        heartbeat: 'heartbeat 1.4s ease-in-out infinite',
       },
     },
   },

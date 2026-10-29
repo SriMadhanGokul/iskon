@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight, Building2, ChevronLeft, ChevronRight,
-  Flower2, HandHeart, Heart, Music2, Utensils,
+  Flower2, Gift, HandHeart, Heart, Hotel, Music2, MessageCircle, Utensils,
 } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
 import { photo } from '../lib/photo.js';
 import { SITE_PAGES } from '../data/pages.js';
-import Hero from '../components/Hero.jsx';
+import BannerSlider from '../components/BannerSlider.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import ProgressBar from '../components/ProgressBar.jsx';
 import TempleBento from '../components/TempleBento.jsx';
@@ -29,7 +29,7 @@ const faqs = [
 
 const festivalCards = SITE_PAGES.find(({ path }) => path === '/festivals')?.cards ?? [];
 
-function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to }) {
+function IconCard({ title, text, index, image, imageAlt, credit, to }) {
   return (
     <StaggerItem as="article" className="card-lift group rounded-3xl border border-gold/80 bg-white p-5 shadow-soft sm:p-6">
       {image && (
@@ -47,7 +47,6 @@ function IconCard({ title, text, icon: Icon, index, image, imageAlt, credit, to 
         </figure>
       )}
       <div className="mb-6 flex items-center justify-between">
-        <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-saffron/20 text-saffron-dark"><Icon size={23} aria-hidden="true" /></span>
         <span className="font-heading text-sm text-maroon/45">{String(index).padStart(2, '0')}</span>
       </div>
       <h3 className="text-lg font-semibold">{to ? <Link to={to} className="hover:text-saffron-dark">{title}</Link> : title}</h3>
@@ -125,7 +124,8 @@ export default function Home() {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <Hero />
+      <h1 className="sr-only">{siteConfig.name}, a Krishna temple in Jagatpura, Jaipur</h1>
+      <BannerSlider />
 
       <section id="mandir" className="container-page scroll-mt-24 py-16 sm:py-20">
         <Reveal className="grid items-end gap-6 md:grid-cols-[1.1fr_0.9fr]">
@@ -149,6 +149,69 @@ export default function Home() {
             {places.map((place, index) => <IconCard key={place.title} {...place} index={index + 1} />)}
           </Stagger>
         </div>
+      </section>
+
+      <section id="facilities" className="container-page scroll-mt-24 py-16 sm:py-20" aria-labelledby="facilities-heading">
+        <Reveal>
+          <SectionHeading title="Facilities at the Dham" sub="Spaces for guests, kirtan, prasadam and everyday devotional life." />
+        </Reveal>
+        <Stagger className="grid gap-4 md:grid-cols-3">
+          {[
+            { title: 'Guest House', icon: Hotel, image: 'guestHouse', alt: 'Guest house room' },
+            { title: 'Harinam Mandap', icon: Music2, image: 'kirtan', alt: 'Hare Krishna devotees taking part in kirtan' },
+            { title: 'Vrindavan Garden', icon: Flower2, image: 'garden', alt: 'Garden at ISKCON Mayapur' },
+          ].map(({ title, icon: Icon, image, alt }) => {
+            const credit = siteConfig.imageCredits[image];
+            return (
+              <StaggerItem key={title} className="card-lift group overflow-hidden rounded-3xl border border-gold/80 bg-white shadow-soft">
+                <figure className="overflow-hidden">
+                  <img {...photo(siteConfig.images[image], '(min-width: 768px) 33vw, 100vw')} alt={alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
+                  <figcaption className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
+                    Photo: <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a>
+                  </figcaption>
+                </figure>
+                <div className="flex items-center gap-3 p-5">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-saffron/15 text-saffron-dark"><Icon size={20} aria-hidden="true" /></span>
+                  <h3 className="font-semibold">{title}</h3>
+                </div>
+              </StaggerItem>
+            );
+          })}
+        </Stagger>
+        <Stagger className="mt-4 flex flex-wrap gap-3">
+          {[
+            { label: 'Banquet Halls', icon: Building2 },
+            { label: 'Rasikam (Pure Sattvic Restaurant)', icon: Utensils },
+            { label: 'Hare Krishna Gift Shop', icon: Gift },
+            { label: 'Hinganiya Gau Shala', icon: HandHeart },
+          ].map(({ label, icon: Icon }) => (
+            <StaggerItem key={label} className="inline-flex items-center gap-2 rounded-full border border-gold bg-white px-4 py-2 text-sm font-medium shadow-soft">
+              <Icon size={16} className="text-saffron-dark" aria-hidden="true" /> {label}
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </section>
+
+      <section id="programmes" className="container-page scroll-mt-24 pb-16 sm:pb-20" aria-labelledby="programmes-heading">
+        <Reveal className="flex flex-col gap-5 rounded-[2rem] bg-maroon p-6 text-cream sm:flex-row sm:items-center sm:justify-between sm:p-8">
+          <div>
+            <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-gold">Programmes</p>
+            <h2 id="programmes-heading" className="font-heading text-2xl font-semibold text-white sm:text-3xl">Festivals, bhajans and contests</h2>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {[
+                { label: 'Kartik Month', to: '/festivals' },
+                { label: 'Vaishnav Bhajan', to: '/activities/kirtan' },
+                { label: 'Gita Contest', to: '/contact' },
+                { label: 'Shubharambh 2025', to: '/contact' },
+              ].map(({ label, to }) => (
+                <Link key={label} to={to} className="rounded-full border border-gold/50 px-4 py-2 text-sm transition-colors hover:bg-white/10">{label}</Link>
+              ))}
+            </div>
+          </div>
+          <a href={`https://wa.me/${siteConfig.contact.whatsapp}`} target="_blank" rel="noopener noreferrer" className="btn-primary shrink-0 self-start sm:self-center">
+            <MessageCircle size={17} aria-hidden="true" /> Join our WhatsApp community
+          </a>
+        </Reveal>
       </section>
 
       <section id="prabhupada" className="container-page scroll-mt-24 py-16 sm:py-20">

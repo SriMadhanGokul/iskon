@@ -5,8 +5,10 @@ import AmbientGlow from './components/AmbientGlow.jsx';
 import Header from './components/Header.jsx';
 import FestivalGifs from './components/FestivalGifs.jsx';
 import Footer from './components/Footer.jsx';
+import PhotoStrip from './components/PhotoStrip.jsx';
 import OfferDiya from './components/OfferDiya.jsx';
 import { PAGE_BY_PATH, SITE_PAGES } from './data/pages.js';
+import { FESTIVAL_PAGE_BY_PATH } from './data/festivalPages.js';
 // The landing page ships in the main bundle so the hero paints without waiting on another chunk.
 import Home from './pages/Home.jsx';
 
@@ -15,6 +17,14 @@ const DonationSevaPage = lazy(() => import('./pages/Donate.jsx').then((module) =
 const DonationCheckout = lazy(() => import('./pages/DonationCheckout.jsx'));
 const NotFound = lazy(() => import('./pages/NotFound.jsx'));
 const InformationPage = lazy(() => import('./pages/InformationPage.jsx'));
+const Darshan = lazy(() => import('./pages/Darshan.jsx'));
+const Darshans = lazy(() => import('./pages/Darshans.jsx'));
+const Bhajans = lazy(() => import('./pages/Bhajans.jsx'));
+const BhajanCollection = lazy(() => import('./pages/BhajanCollection.jsx'));
+const BhajanSong = lazy(() => import('./pages/BhajanSong.jsx'));
+const Blogs = lazy(() => import('./pages/Blogs.jsx'));
+const BlogPost = lazy(() => import('./pages/BlogPost.jsx'));
+const FestivalPage = lazy(() => import('./pages/FestivalPage.jsx'));
 
 function ScrollTop() {
   const { pathname, hash } = useLocation();
@@ -48,19 +58,31 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/donate" element={<Donate />} />
+            <Route path="/darshan" element={<Darshan />} />
+            <Route path="/mandir/darshans" element={<Darshans />} />
+            <Route path="/bhajans" element={<Bhajans />} />
+            {['moods', 'categories', 'authors', 'festivals'].map((type) => (
+              <Route key={type} path={`/bhajans/${type}/:slug`} element={<BhajanCollection type={type} />} />
+            ))}
+            <Route path="/bhajans/:slug" element={<BhajanSong />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:slug" element={<BlogPost />} />
             <Route path="/donate/checkout" element={<DonationCheckout />} />
             <Route path="/donate/:sevaId" element={<DonationSevaPage />} />
             {SITE_PAGES.map((page) => (
               <Route
                 key={page.path}
                 path={page.path}
-                element={<InformationPage page={PAGE_BY_PATH[page.path]} />}
+                element={FESTIVAL_PAGE_BY_PATH[page.path]
+                  ? <FestivalPage page={FESTIVAL_PAGE_BY_PATH[page.path]} />
+                  : <InformationPage page={PAGE_BY_PATH[page.path]} />}
               />
             ))}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>
+      <PhotoStrip />
       <Footer />
     </MotionConfig>
   );

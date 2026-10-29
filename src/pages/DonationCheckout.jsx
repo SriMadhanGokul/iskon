@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, Navigate, useLocation } from 'react-router-dom';
 import UpiQr, { upiLink } from '../components/UpiQr.jsx';
 import siteConfig, { isFilled } from '../data/siteConfig.js';
+import { SEVA_BY_ID } from '../data/sevas.js';
 
 const paymentMethods = [
   { id: 'upi', label: 'UPI / QR', icon: QrCode },
@@ -21,14 +22,14 @@ export default function DonationCheckout() {
   const [method, setMethod] = useState('upi');
   const donor = state?.donor;
   const amount = Number(state?.amount);
-  const seva = siteConfig.donation.sevas.find(({ id }) => id === state?.sevaId);
+  const seva = SEVA_BY_ID[state?.sevaId];
 
   if (!donor || !Number.isSafeInteger(amount) || amount < 1 || !seva) {
     return <Navigate to="/donate" replace />;
   }
 
   const upiReady = isFilled(siteConfig.donation.upi.id);
-  const paymentLink = upiReady ? upiLink(amount, `${seva.label} donation`) : '';
+  const paymentLink = upiReady ? upiLink(amount, `${seva.title} donation`) : '';
 
   return (
     <>
@@ -49,7 +50,7 @@ export default function DonationCheckout() {
             <div className="flex flex-1 flex-col items-center justify-center py-8 text-center">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/45 text-2xl font-bold">G</div>
               <h1 className="mt-3 font-heading text-2xl font-semibold">Gupt Vrindavan Dham</h1>
-              <p className="mt-1 text-sm text-maroon/80">{seva.label}</p>
+              <p className="mt-1 text-sm text-maroon/80">{seva.title}</p>
               <div className="mt-6 flex w-full max-w-xs items-center justify-between rounded-2xl bg-white/40 px-5 py-4">
                 <span className="text-sm text-maroon/85">Donation amount</span>
                 <span className="text-xl font-semibold">{inr(amount)}</span>
@@ -81,7 +82,7 @@ export default function DonationCheckout() {
                   </div>
                   {upiReady ? (
                     <div className="grid items-center gap-4 sm:grid-cols-[180px_1fr]">
-                      <div className="rounded-xl border border-slate-100 p-2"><UpiQr amount={amount} note={`${seva.label} donation`} /></div>
+                      <div className="rounded-xl border border-slate-100 p-2"><UpiQr amount={amount} note={`${seva.title} donation`} /></div>
                       <div>
                         <p className="text-sm text-slate-600">Scan this QR with your UPI app and verify the payee and amount before confirming.</p>
                         <a href={paymentLink} className="btn-primary mt-4">Open UPI app</a>

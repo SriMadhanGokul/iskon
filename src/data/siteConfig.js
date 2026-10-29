@@ -33,6 +33,8 @@ const siteConfig = {
     { tag: 'Grand opening', date: '12 May 2027', text: 'The Dham is taking shape. Follow the countdown and plan your first visit.', to: '/visit' },
     { tag: 'Festival days', date: 'Ongoing', text: 'Darshan timings can change on festival days. Please call before you travel.', to: '/contact' },
   ],
+  // Darshan open windows (IST, 24h) for the "Darshan open / closed" badge in the top bar. Confirm with temple.
+  darshanHours: [['04:30', '13:00'], ['16:30', '20:30']],
   timings: [
     ['Mangala Aarti', '04:30 AM'], ['Shringar Darshan', '07:30 AM'], ['Bhagavatam Class', '08:15 AM'],
     ['Rajbhog Aarti', '12:00 PM'], ['Dhoop Aarti', '04:30 PM'], ['Sandhya Aarti', '07:00 PM'], ['Shayan Aarti', '08:15 PM'],

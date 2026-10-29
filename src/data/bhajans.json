@@ -1,0 +1,6482 @@
+{
+ "hero": {
+  "tabs": [
+   "All",
+   "Dependency",
+   "Prayer for Mercy",
+   "Shri Chaitanya Mahaprabhu",
+   "Stotram & Ashtakam",
+   "Pranam Mantras",
+   "Spiritual Master",
+   "Shri Nityananada Prabhu",
+   "Lord Shri Krishna ",
+   "Shrimati Radharani",
+   "Narasimha Prayers"
+  ]
+ },
+ "templeRhythm": {
+  "badge": "TEMPLE RHYTHM",
+  "title": "A Symphony of Devotion",
+  "description": "From morning to night, here are the daily temple aartis and Vaishnav mantras sung in all ISKCON Temples Worldwide.",
+  "songs": [
+   "bhaja-bhakata-vatsala",
+   "govindam-prayers",
+   "jaya-jaya-goracander-arotik",
+   "jaya-radha-madhava",
+   "maha-prasade-govinde",
+   "mangalacarana-full",
+   "namaste-narasimhaya",
+   "namo-namah-tulasi-krsna-preyasi",
+   "samsara-davanala-lidha-loka",
+   "sarira-avidya-jala",
+   "sri-guru-carana-padma"
+  ]
+ },
+ "featuredMonth": {
+  "title": "Sri Damodar Ashtakam",
+  "description": "In the auspicious month of Kartik, offer the sacred Damodar Ashtakam prayer daily & get the mercy of the Lord.",
+  "song": "namamisvaram-saccidananda-rupam"
+ },
+ "featuredSongs": [
+  "achyutam-kesavam",
+  "doyal-nitai-caitanya",
+  "hari-haraye-namah-krsna-yadavaya",
+  "jaya-radhe-jaya-krsna-jaya-vrndavana",
+  "gurudeva-krpa-bindu-diya",
+  "radha-krsna-prana-mora",
+  "adharam-madhuram",
+  "dhana-mor-nityananda",
+  "bhaja-hu-re-mana",
+  "boro-krpa-koile-krsna"
+ ],
+ "homeAuthors": [
+  "bhaktivinoda-thakura",
+  "narottama-dasa-thakura",
+  "ac-bhaktivedanta-swami",
+  "vrindavana-dasa-thakura",
+  "krsnadasa-kaviraja-goswami",
+  "locana-dasa-thakura",
+  "adi-sankaracarya",
+  "vasudeva-ghosha",
+  "vyasadeva",
+  "rupa-goswami"
+ ],
+ "moods": [
+  {
+   "slug": "deep-longing",
+   "name": "Deep Longing",
+   "description": "These songs express the heart’s deep desire to remember Krishna and remain connected with Him. They reflect the eagerness of a devotee who longs for the Lord’s presence, association and mercy, keeping Krishna as the center of the heart.",
+   "count": 26
+  },
+  {
+   "slug": "reverence",
+   "name": "Reverence",
+   "description": "These songs express deep respect and appreciation for the Lord’s greatness, qualities and divine nature. Through them, devotees remember Krishna with honor, gratitude and a heart filled with admiration for His unlimited beauty and mercy.",
+   "count": 95
+  },
+  {
+   "slug": "self-surrender",
+   "name": "Self Surrender",
+   "description": "These songs reflect the devotee’s complete dependence on Krishna and willingness to place everything in His care. They express faith, acceptance and the desire to dedicate one’s thoughts, actions and life in the service of the Lord.",
+   "count": 52
+  },
+  {
+   "slug": "teachings-and-guidance",
+   "name": "Teachings & Guidance",
+   "description": "These songs carry the teachings and realizations shared by great devotees and acharyas. They guide us in understanding the path of bhakti, the importance of devotion and the practices that help us move closer to Krishna.",
+   "count": 33
+  },
+  {
+   "slug": "humility",
+   "name": "Humility",
+   "description": "The heart of a humble devotee seeking Krishna’s mercy is beautifully reflected through these songs. They inspire simplicity, sincerity and a spirit of service while reminding devotees of their dependence on the Lord and the importance of approaching Him with devotion.",
+   "count": 58
+  },
+  {
+   "slug": "longing-aspiration",
+   "name": "Aspiration",
+   "description": "These songs express the devotee’s heartfelt desire to grow in devotion and deepen the relationship with Krishna. They reflect the wish to develop spiritual qualities, remain engaged in service and progress further on the path of bhakti.",
+   "count": 40
+  },
+  {
+   "slug": "separation",
+   "name": "Separation",
+   "description": "The heartfelt longing to be close to Krishna and experience His presence is beautifully expressed through these songs. They reflect the deep attachment of devotees who constantly remember the Lord and cherish the desire to remain connected with Him through love and devotion.",
+   "count": 11
+  },
+  {
+   "slug": "glorification-praise",
+   "name": "Glorification",
+   "description": "The names, qualities, forms and divine pastimes of the Lord are beautifully remembered through these songs. They help devotees appreciate Krishna’s unlimited beauty, mercy and spiritual activities with love and devotion, deepening their connection with the Supreme Lord.",
+   "count": 127
+  }
+ ],
+ "categories": [
+  {
+   "slug": "dependency",
+   "name": "Dependency",
+   "description": "These songs reveal the mood of a devotee who completely depends on Krishna’s mercy. They express surrender, faith and the desire to remain under the Lord’s shelter in every situation. Through these prayers, devotees learn to place their trust in Krishna and seek His guidance in life.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/rupa-sanatan-goswami.webp",
+   "count": 39,
+   "featured": true
+  },
+  {
+   "slug": "glories-of-holy-name",
+   "name": "Glories of the Holy Name",
+   "description": "The chanting of Krishna’s holy name is the essence of devotional practice. These songs glorify the sweetness, mercy and spiritual power of the holy name. They inspire devotees to chant with faith and remind us that the holy name is always a source of shelter and remembrance.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/hare-krishna-maha-mantra_izVxPpz.png",
+   "count": 32,
+   "featured": false
+  },
+  {
+   "slug": "kripa-prarthana",
+   "name": "Prayer for Mercy",
+   "description": "A devotee’s heart naturally turns towards the mercy of Krishna and His devotees. These songs express humility, dependence and a sincere prayer for grace. Through heartfelt words, devotees seek strength to continue on the path of bhakti and remain connected with the service of the Lord.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/02-devotional-painting.webp",
+   "count": 54,
+   "featured": true
+  },
+  {
+   "slug": "other",
+   "name": "Other",
+   "description": "From remembering the Lord’s pastimes to offering prayers on special occasions, these songs bring different expressions of devotion to the heart. They help us hear about Krishna, remember His devotees and stay connected with bhakti.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/Yashomati_nanadan.webp",
+   "count": 25,
+   "featured": false
+  },
+  {
+   "slug": "sri-chaitanya-mahaprabhu",
+   "name": "Shri Chaitanya Mahaprabhu",
+   "description": "These songs and prayers dedicated to Sri Chaitanya Mahaprabhu reflect His teachings, divine qualities and the path of devotion He shared with the world. Through these devotional expressions, devotees remember Mahaprabhu’s mercy, teachings and love for Krishna while connecting with the spirit of bhakti.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/0e341fb6-ed86-44f4-a915-5d1d819789d4.png",
+   "count": 43,
+   "featured": true
+  },
+  {
+   "slug": "stotram-ashtakam",
+   "name": "Stotram & Ashtakam",
+   "description": "These beautiful prayers glorify the names, qualities and forms of the Lord through carefully composed verses. Stotrams and ashtakams help devotees meditate with focus and devotion, offering praise and remembrance of Krishna, His expansions and great devotees in a traditional way.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/08-lotus-temple-scene.webp",
+   "count": 36,
+   "featured": true
+  },
+  {
+   "slug": "tulasi-songs",
+   "name": "Tulasi Songs",
+   "description": "Tulasi Devi is very dear to Krishna and is worshipped by devotees with love and respect. These songs offer prayers and glorification to Tulasi Devi, expressing gratitude and seeking her blessings to engage in the loving service of Sri Krishna with devotion and sincerity.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/tulsi-arti.webp",
+   "count": 2,
+   "featured": false
+  },
+  {
+   "slug": "pranam-mantras",
+   "name": "Pranam Mantras",
+   "description": "With humility and respect, devotees offer prayers through these sacred mantras before beginning devotional activities. They help us remember the Lord, spiritual master and great devotees while seeking their blessings. These prayers create a proper mood of gratitude, remembrance and devotion as we begin our spiritual practices.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/advait-acharya-pranam-mantra.webp",
+   "count": 22,
+   "featured": true
+  },
+  {
+   "slug": "spiritual-master",
+   "name": "Spiritual Master",
+   "description": "These songs express devotion, gratitude and respect towards the spiritual master, who guides devotees on the path of bhakti. Through prayers and glorification, they help devotees remember the guru’s teachings, mercy and service while seeking inspiration to deepen their connection with Krishna.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/prabhupoada_guru_puja.jpg",
+   "count": 27,
+   "featured": true
+  },
+  {
+   "slug": "sri-nityananda-prabhu",
+   "name": "Shri Nityananada Prabhu",
+   "description": "The devotion towards Sri Nityananda Prabhu is expressed through heartfelt songs and prayers that reflect His unlimited compassion, mercy and loving nature. These compositions remember His connection with Sri Chaitanya Mahaprabhu and His gift of Krishna consciousness, inspiring devotees to cultivate humility, faith and devotion.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/01-chaitanya-portrait.webp",
+   "count": 19,
+   "featured": true
+  },
+  {
+   "slug": "lord-sri-krishna",
+   "name": "Lord Shri Krishna ",
+   "description": "These special songs express devotion towards Sri Krishna by remembering His divine qualities, enchanting form and loving pastimes. Through heartfelt expressions of bhakti, they help devotees deepen their remembrance of Krishna, appreciate His mercy and develop a loving connection with the Supreme Lord.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/09-krishna-flute.webp",
+   "count": 64,
+   "featured": true
+  },
+  {
+   "slug": "srimati-radharani",
+   "name": "Shrimati Radharani",
+   "description": "These songs glorify the divine love, qualities and devotion of Srimati Radharani, the eternal beloved of Krishna. Through heartfelt prayers and remembrance, they express the devotee’s desire to seek Her mercy, follow Her mood of devotion and engage in the loving service of Sri Krishna.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/radha-rani-pranam-mantra.webp",
+   "count": 19,
+   "featured": true
+  },
+  {
+   "slug": "narasimha-prayers",
+   "name": "Narasimha Prayers",
+   "description": "These prayers remember Lord Narasimha, His powerful form and His loving protection of devotees. They are offered with faith and devotion, seeking shelter at the lotus feet of the Lord. These songs help devotees remember His mercy and divine presence during their spiritual journey.",
+   "image": "https://guptvrindavandham.org/media/songs/categories/narasimha-aarti.webp",
+   "count": 7,
+   "featured": true
+  }
+ ],
+ "authors": [
+  {
+   "slug": "bhaktivinoda-thakura",
+   "name": "Bhaktivinoda Thakura",
+   "description": "Srila Bhaktivinoda Thakura is remembered as a great Gaudiya Vaishnava acharya who revived and spread the teachings of Shri Chaitanya Mahaprabhu. His books and devotional collections like Saranagati, Gitavali and Kalyana-kalpataru contain beloved songs such as Jiva Jago, Manasa Deho Geho and Gurudeva Kripa Bindu Diya, expressing humility, surrender and devotion.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Bhaktivinoda_Thakura_A90q0id.webp",
+   "count": 77
+  },
+  {
+   "slug": "narottama-dasa-thakura",
+   "name": "Narottama Dasa Thakura",
+   "description": "Srila Narottama Dasa Thakura is remembered as one of the most beloved Gaudiya Vaishnava acharyas and a renowned kirtana composer. His famous works include Prarthana and Prema Bhakti Chandrika. Songs like Hari Hari Bifale and Gauranga Bolite Habe express humility, longing and the desire to attain pure devotion.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Narottama_Dasa_Thakura.webp",
+   "count": 26
+  },
+  {
+   "slug": "ac-bhaktivedanta-swami",
+   "name": "A.C. Bhaktivedanta Swami",
+   "description": "Srila Prabhupada is remembered for spreading the teachings of Shri Chaitanya Mahaprabhu and Krishna consciousness throughout the world. Along with his translations and books like Bhagavad-gita As It Is and Srimad-Bhagavatam, his devotional songs express surrender, gratitude and dedication to Guru and Krishna. His prayers reflect his desire to serve and share Krishna bhakti.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/A.C._Bhaktivedanta_Swami_3IEpkLB.webp",
+   "count": 13
+  },
+  {
+   "slug": "vrindavana-dasa-thakura",
+   "name": "Vrindavana Dasa Thakura",
+   "description": "Vrindavana Dasa Thakura holds a cherished place in the Gaudiya Vaishnava tradition through his writings on the life and teachings of Shri Chaitanya Mahaprabhu. His devotional works also celebrate Sri Nityananda Prabhu and the chanting of the holy name, preserving the deep devotional spirit of the early Gaudiya tradition.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Vrndavana_Dasa_Thakura.webp",
+   "count": 8
+  },
+  {
+   "slug": "krsnadasa-kaviraja-goswami",
+   "name": "Krsnadasa Kaviraja Goswami",
+   "description": "Krishna Dasa Kaviraja Goswami is one of the most respected Gaudiya Vaishnava acharyas and the author of Sri Chaitanya Charitamrita. His writings describe the life, teachings and mercy of Shri Chaitanya Mahaprabhu. His songs and prayers express deep devotion, humility and appreciation for Gauranga and Krishna.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Krsnadasa_Kaviraja_Goswami.webp",
+   "count": 7
+  },
+  {
+   "slug": "locana-dasa-thakura",
+   "name": "Locana Dasa Thakura",
+   "description": "Lochana Dasa Thakura was a great Gaudiya Vaishnava poet and devotee, famous for his work Chaitanya Mangala, which describes the life and pastimes of Shri Chaitanya Mahaprabhu. His songs express love for Gauranga, remembrance of His mercy and the joy of chanting the holy name.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Locana_Dasa_Thakura.webp",
+   "count": 7
+  },
+  {
+   "slug": "adi-sankaracarya",
+   "name": "Adi Sankaracarya",
+   "description": "Adi Shankaracharya is one of India’s greatest spiritual teachers, known for his commentaries on Vedanta and works like Bhaja Govindam. Among his devotional compositions, Kadacit Kalindi Tata Vipina is remembered for its loving remembrance of Krishna’s pastimes, showing his appreciation for devotional expression.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Adi_Sankaracarya_PkzPTp5.webp",
+   "count": 6
+  },
+  {
+   "slug": "vasudeva-ghosha",
+   "name": "Vasudeva Ghosha",
+   "description": "Vasudeva Ghosha is remembered as a renowned kirtana composer and devotee associated with the early Gaudiya Vaishnava tradition. His devotional songs celebrate Sri Chaitanya Mahaprabhu, Sri Nityananda Prabhu and Krishna, carrying heartfelt expressions of love, remembrance and devotion through the tradition of congregational chanting.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Vasudeva_Ghosha_LKcHFUq.webp",
+   "count": 6
+  },
+  {
+   "slug": "vyasadeva",
+   "name": "Krishna Dwipayana Vyasadeva",
+   "description": "Vyasadeva holds a central place in the sacred literature of the Vaishnava tradition and is traditionally regarded as the compiler of the Vedic literature and author of the Srimad Bhagavatam. His works preserve the teachings, pastimes and devotional wisdom centered on the Supreme Lord, providing an important foundation for understanding Krishna bhakti.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Vyasadeva.webp",
+   "count": 6
+  },
+  {
+   "slug": "rupa-goswami",
+   "name": "Rupa Goswami",
+   "description": "Among the Six Goswamis of Vrindavana, Srila Rupa Goswami holds a central place in shaping the teachings and devotional literature of the Gaudiya Vaishnava tradition. His writings, including Bhakti-rasamrita-sindhu and Ujjvala-nilamani, explore the depth of Krishna bhakti, devotional love and the service of Sri Radha and Krishna.",
+   "image": "https://guptvrindavandham.org/media/songs/authors/Rupa_Goswami.webp",
+   "count": 5
+  },
+  {
+   "slug": "sarvabhauma-bhattacarya",
+   "name": "Sarvabhauma Bhattacarya",
+   "description": "Sarvabhauma Bhattacarya holds an important place in the life and teachings of Sri Chaitanya Mahaprabhu. A renowned scholar of Vedanta, he later became a devoted follower of Mahaprabhu, and his prayers and devotional expressions reflect deep appreciation for Gauranga’s divine nature and mercy.",
+   "image": null,
+   "count": 4
+  },
+  {
+   "slug": "vishvanatha-cakravarti-thakura",
+   "name": "Vishvanatha Cakravarti Thakura",
+   "description": "Vishvanatha Chakravarti Thakura holds a distinguished place among the later Gaudiya Vaishnava acharyas, known for his profound writings on Krishna bhakti and devotional practice. His works, including Raga-vartma-chandrika and Madhurya-kadambini, offer deep insights into the stages of devotion, spiritual emotions and loving service to Sri Radha and Krishna.",
+   "image": null,
+   "count": 4
+  },
+  {
+   "slug": "bilvamangala-thakura",
+   "name": "Bilvamangala Thakura",
+   "description": "Bilvamangala Thakura, also known as Lilashuka, is remembered for his celebrated devotional work Krishna Karnamrita, which beautifully describes Krishna’s sweetness, beauty and divine pastimes. His writings express deep love, attraction and loving remembrance of Krishna, establishing him as one of the renowned poets of Krishna bhakti.",
+   "image": null,
+   "count": 3
+  },
+  {
+   "slug": "jayadeva-goswami",
+   "name": "Jayadeva Goswami",
+   "description": "Jayadeva Goswami is celebrated as one of the greatest Sanskrit poets and devotees of Lord Krishna. He is famous for Gita Govinda, which beautifully describes the loving pastimes of Sri Radha and Krishna. His compositions carry deep devotional emotions and have inspired generations of devotees through their poetic glorification of divine love.",
+   "image": null,
+   "count": 3
+  },
+  {
+   "slug": "bhaktisiddhanta-saraswati",
+   "name": "Bhaktisiddhanta Saraswati",
+   "description": "Srila Bhaktisiddhanta Saraswati Thakura was a prominent Gaudiya Vaishnava acharya and the founder of Gaudiya Math. Through his writings, teachings and devotional songs like Krishna Hoite Chaturmukha, he emphasized pure devotion, service to Guru and Krishna, and the teachings of Shri Chaitanya Mahaprabhu.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "govinda-dasa-kaviraja",
+   "name": "Govinda Dasa Kaviraja",
+   "description": "Govinda Dasa Kaviraja was a renowned Gaudiya Vaishnava poet famous for his heartfelt songs about Sri Krishna and Sri Radha. His compositions, found in collections like Padavali, express deep devotion, longing and remembrance. His famous song Bhaja Hu Re Mana guides the mind to take shelter of Krishna’s lotus feet.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "lord-brahma",
+   "name": "Lord Brahma",
+   "description": "Lord Brahma, the creator of the universe, is remembered as a great devotee who glorified Lord Krishna through his prayers. His famous Brahma Stuti from Srimad Bhagavatam expresses humility, realization and devotion towards Krishna’s supreme position and divine activities.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "lord-sri-caitanya-mahaprabhu",
+   "name": "Lord Sri Caitanya Mahaprabhu",
+   "description": "Sri Chaitanya Mahaprabhu is the central figure of the Gaudiya Vaishnava tradition and is remembered as the embodiment of devotion to Krishna. His teachings inspired the chanting of the holy name throughout the world. Songs about Gauranga glorify His mercy, sankirtana movement and loving devotion towards Krishna.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "radha-mohana-dasa",
+   "name": "Radha Mohana Dasa",
+   "description": "Radha Mohana Dasa is remembered as a Vaishnava poet whose devotional compositions express deep appreciation for Sri Chaitanya Mahaprabhu, the Vaishnavas and the path of bhakti. His songs such as Sakala Vaisnava Gosai and Vande Visvambhara Pada Kamalam carry heartfelt prayers, remembrance and devotion, reflecting the spirit of Gaudiya Vaishnava poetry.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "raghunatha-dasa-goswami",
+   "name": "Raghunatha Dasa Goswami",
+   "description": "Srila Raghunatha Dasa Goswami stands among the Six Goswamis of Vrindavana and is especially remembered for his intimate devotional prayers and writings centered on Sri Radha and Krishna. His works, including Manah-siksha, Vilapa-kusumanjali and Stavavali, express deep longing for devotional service, remembrance of Vraja and wholehearted dedication to the Divine Couple.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "vedanta-desika",
+   "name": "Vedanta Desika",
+   "description": "Vedanta Desika stands among the most celebrated scholars, poets and devotees of the Sri Vaishnava tradition. His extensive writings cover philosophy, devotion and Sanskrit poetry, while his devotional compositions express deep surrender, reverence and loving service to Lord Vishnu and His divine forms.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "vidyapati",
+   "name": "Vidyapati",
+   "description": "Vidyapati remains celebrated for his lyrical poetry centered on Sri Radha and Krishna, especially the intimate expressions of divine love found in his devotional songs. Writing in Maithili, he shaped a rich tradition of devotional poetry whose sweetness, longing and emotional depth continue to inspire Krishna bhakti.",
+   "image": null,
+   "count": 2
+  },
+  {
+   "slug": "ananta-dasa-sastri",
+   "name": "Ananta Dasa Sastri",
+   "description": "Ananta Dasa Shastri is remembered as a devotional scholar and writer whose works reflect deep spiritual understanding. His compositions carry the mood of remembrance, glorification and devotion, helping devotees connect with the Lord through heartfelt expressions of bhakti.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "bhakta-salabega",
+   "name": "Bhakta Salabega",
+   "description": "Bhakta Salabega was a great devotee of Lord Jagannatha from Odisha, famous for his heartfelt songs filled with love and longing for Jagannatha. His compositions, especially Ahe Nila Saila, reveal deep devotion and surrender, and remain an important part of Jagannatha’s devotional tradition.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "bhishma-deva",
+   "name": "Bhishma Deva",
+   "description": "Bhishma Deva, the great devotee from Mahabharata, is remembered for his heartfelt prayers glorifying Lord Krishna before leaving his body. His famous Bhishma Stuti describes Krishna’s divine form, qualities and mercy, revealing the heart of a devotee fully absorbed in remembrance and devotion to the Lord.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "budhakaushika",
+   "name": "Budhakaushika",
+   "description": "Budhakaushika is traditionally remembered as the composer of Rama Raksha Stotra, a revered Sanskrit prayer dedicated to Lord Rama. The stotra expresses devotion, faith and remembrance of Lord Rama, describing His divine qualities and seeking His protection and grace.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "candrasekhara-kavi",
+   "name": "Candrasekhara Kavi",
+   "description": "Candrasekhara Kavi is remembered for devotional poetry centered on the worship of Lord Krishna and Tulasi Devi. His well-known Tulasi Arati expresses reverence for Tulasi Maharani and a heartfelt prayer for pure devotion, reflecting the intimate devotional spirit found in Vaishnava worship.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "devakinandana-das-thakura",
+   "name": "Devakinandana Das Thakura",
+   "description": "Devakinandana Das Thakura was a Gaudiya Vaishnava poet known for his devotional compositions glorifying Shri Chaitanya Mahaprabhu and His associates. His songs carry the mood of remembrance, devotion and appreciation for Gauranga’s mercy, helping devotees connect with the loving teachings and pastimes of Mahaprabhu.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "gopis",
+   "name": "Gopis",
+   "description": "The Gopis of Vrindavana are remembered as the highest examples of loving devotion to Sri Krishna. Their feelings of love, dedication and constant remembrance are described in scriptures like Srimad Bhagavatam. Songs inspired by the Gopis express deep attachment, longing and the desire to serve Krishna with a selfless heart.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "hari-vyasa-devacarya",
+   "name": "Hari Vyasa Devacarya",
+   "description": "Hari Vyasa Devacarya was a respected Vaishnava acharya and poet known for his devotional compositions dedicated to Lord Krishna. His writings express deep devotion, remembrance and appreciation for the Lord’s divine qualities, reflecting the heartfelt emotions of a devotee absorbed in bhakti.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "jagannatha-dasa",
+   "name": "Jagannatha Dasa",
+   "description": "Jagannatha Dasa is remembered as a great Odia devotee and author of Odia Bhagavata, a beloved presentation of Srimad Bhagavatam in the Odia language. His devotional works express faith, surrender and love for Lord Krishna, making him one of the important figures in Odisha’s devotional tradition.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "jiva-goswami",
+   "name": "Jiva Goswami",
+   "description": "Srila Jiva Goswami was one of the prominent Gaudiya Vaishnava acharyas and a great philosopher of the tradition. His famous works include the Sat Sandarbhas, which present the teachings of Shri Chaitanya Mahaprabhu in detail. His writings and prayers reflect deep understanding of Krishna bhakti and devotion.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "kanu-ramadasa-thakura",
+   "name": "Kanu Ramadasa Thakura",
+   "description": "Kanu Ramadasa Thakura was a devotee and poet in the Gaudiya Vaishnava tradition known for devotional compositions glorifying Sri Krishna and Shri Chaitanya Mahaprabhu. His songs carry expressions of remembrance, devotion and love for the Lord, following the mood of surrender found in Vaishnava poetry.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "kulasekhara-alvar",
+   "name": "Kulasekhara Alvar",
+   "description": "Kulashekhara Alvar was one of the great Vaishnava saints of the Sri Vaishnava tradition. He is best known for works like Mukunda Mala Stotra, a beautiful collection of prayers that glorify Lord Krishna. His compositions express surrender, devotion and a strong desire to always remember the Lord’s lotus feet.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "kusakratha-dasa",
+   "name": "Kusakratha Dasa",
+   "description": "Kusakratha Dasa is remembered for his scholarship, translations, and dedication to making important Sanskrit and Bengali Vaishnava literature accessible to devotees. As a disciple of Srila Prabhupada, he translated numerous works of great Vaishnava acharyas, helping readers explore their teachings, prayers and devotional expressions.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "lord-shiva",
+   "name": "Lord Shiva",
+   "description": "Lord Shiva is honored in Vaishnava tradition as a great devotee of Lord Krishna. His prayers and glorifications, such as those found in Srimad Bhagavatam, reveal his devotion and appreciation for the Supreme Lord. He is remembered as a guide and well-wisher of devotees.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "madhvacharya",
+   "name": "Madhvacharya",
+   "description": "Madhvacharya is remembered as a great spiritual teacher and the founder of the Dvaita Vedanta tradition. His important works include Brahma Sutra Bhashya along with prayers glorifying Lord Vishnu. His teachings emphasize devotion, surrender and the eternal relationship between the soul and the Supreme Lord.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "narahari-sarakara",
+   "name": "Narahari Sarakara",
+   "description": "Narahari Sarakara Thakura was an associate of Sri Chaitanya Mahaprabhu and a respected Gaudiya Vaishnava poet. He is remembered for devotional songs glorifying Gauranga and Krishna. His compositions express deep affection for Mahaprabhu, remembrance of His qualities and loving devotion towards the Lord.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "nilakanta-goswami",
+   "name": "Nilakanta Goswami",
+   "description": "Nilakanta Goswami is remembered as a Vaishnava devotee and poet whose devotional compositions express love, remembrance, and dedication to the Lord. His works reflect the devotional spirit of Vaishnava poetry, offering heartfelt expressions of bhakti and appreciation for the divine.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "prabodhananda-sarasvati",
+   "name": "Prabodhananda Sarasvati",
+   "description": "Prabodhananda Sarasvati was a great devotee and spiritual teacher associated with Sri Chaitanya Mahaprabhu. He is famous for works like Chaitanya Chandrodya Nataka and Sri Radha Rasa Sudhanidhi. His writings glorify Sri Gauranga and Srimati Radharani with deep devotion and appreciation for their divine qualities.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "prahalad-maharaj",
+   "name": "Prahalad Maharaj",
+   "description": "Prahlada Maharaja, one of the twelve Mahajanas, stands among the most beloved devotees of Lord Krishna, remembered for his unwavering faith and devotion from childhood. His prayers in Srimad Bhagavatam express humility, compassion and complete dedication to the Lord, offering timeless inspiration on the path of pure bhakti.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "sanatana-goswami",
+   "name": "Sanatana Goswami",
+   "description": "Srila Sanatana Goswami made a lasting contribution to the Gaudiya Vaishnava tradition through his teachings, writings and guidance on devotional life. As one of the Six Goswamis of Vrindavana, his works such as Brihad-Bhagavatamrita and Hari-bhakti-vilasa provide insights into Krishna bhakti, spiritual practice and the principles of devotional service.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "satyavrata-muni",
+   "name": "Satyavrata Muni",
+   "description": "Satyavrata Muni is especially remembered for the Damodarashtakam, the eight-verse prayer describing Lord Krishna’s childhood pastimes as Damodara. The prayer beautifully recalls Mother Yashoda’s loving relationship with Krishna and expresses the devotee’s desire for His remembrance and pure devotional service, making it a cherished prayer during Kartika.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "shani-deva",
+   "name": "Shani Deva",
+   "description": "Shani Deva appears in devotional tradition through prayers that remember his position among the Navagrahas and his connection with Lord Narasimha. His devotional composition Sulabho Bhakti Yuktanam presents prayers offered to Lord Narasimha, expressing faith in His mercy and protection and highlighting Shani Deva’s devotion to the Supreme Lord.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "srinivasa-acharya",
+   "name": "Srinivasa Acharya",
+   "description": "Srinivasa Acarya is remembered as a great Gaudiya Vaishnava devotee and poet, closely connected with the Six Goswamis of Vrindavana. His devotional expressions reflect deep appreciation for their teachings, devotion and service to Sri Chaitanya Mahaprabhu, while inspiring remembrance of the devotional path established by these great acharyas.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "svarupa-damodara-goswami",
+   "name": "Svarupa Damodara Goswami",
+   "description": "Svarupa Damodara Goswami held a close place in the personal pastimes of Sri Chaitanya Mahaprabhu and served as His intimate associate in Puri. Known for his deep understanding of scripture, poetry and devotional principles, he carefully examined literary works offered to Mahaprabhu and expressed profound devotion through songs and prayers.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "vadiraja-tirtha",
+   "name": "Vadiraja Tirtha",
+   "description": "Vadiraja Tirtha holds an important place in the Madhva tradition as a respected saint, scholar, and poet. His devotional writings and prayers reflect deep devotion to Lord Vishnu, along with appreciation for the Lord’s divine qualities and the path of bhakti.",
+   "image": null,
+   "count": 1
+  },
+  {
+   "slug": "vallabhacarya",
+   "name": "Vallabhacarya",
+   "description": "Vallabhacharya is remembered as the founder of the Pushtimarga tradition and a respected teacher of Shuddhadvaita Vedanta. His writings and devotional prayers center on loving service to Sri Krishna, especially in His childlike form, and emphasize divine grace, devotion and a personal relationship with the Lord.",
+   "image": null,
+   "count": 1
+  }
+ ],
+ "festivals": [
+  {
+   "slug": "janmashtami",
+   "name": "Janmashtami",
+   "description": "$undefined",
+   "songs": [
+    "achyutam-kesavam",
+    "ambudanjanendra-nila",
+    "bhaja-govinda-bhaja-govinda",
+    "govindam-prayers",
+    "isvara-parama-krsna",
+    "jayati-te-dhikam-janmana-vrajah",
+    "kadacit-kalindi-tata-vipina",
+    "kararavindena-padaravindam",
+    "nanda-ke-ananda-bhaiyo",
+    "nava-nirada-nindita",
+    "ore-vrndavaner-nanda-dulal",
+    "satyam-jnanamanantam",
+    "sri-krishna-pranama",
+    "sucaru-vakrta-mandalam",
+    "sundara-kundala-naina",
+    "vande-krsna-nanda-kumara",
+    "vraje-prasiddham-navanita",
+    "yasomati-nandana",
+    "adharam-madhuram"
+   ]
+  },
+  {
+   "slug": "radhashtami",
+   "name": "Radhashtami",
+   "description": "$undefined",
+   "songs": [
+    "disi-disi-racayantim",
+    "jaya-radhe-jaya-radhe-radhe",
+    "krsna-prema-mayi-radha",
+    "kunkumakta-kancanabja",
+    "munindra-vrnda-vandite",
+    "radhe-jaya-jaya-madhava-dayite",
+    "radhika-carana-renu",
+    "radhika-sarada-indu-nindimukha",
+    "ramani-siromani",
+    "sri-radha-pranama"
+   ]
+  },
+  {
+   "slug": "gaura-purnima",
+   "name": "Gaura Purnima",
+   "description": "$undefined",
+   "songs": [
+    "avatara-sara-gora-avatara",
+    "gay-gora-madhura-sware",
+    "gouranga-sundara-prema-jaladhara",
+    "kabe-sri-caitanya-more-koribena-doya",
+    "kali-yuge-sri-caitanya",
+    "madana-mohana-tanu",
+    "maha-vadanya-isvara-sri-gaura-sundara",
+    "nava-gaura-varam",
+    "sacira-anginaya-nace",
+    "sakhe-kalaya-gauram-udaram",
+    "sri-gauranga-pranama",
+    "sri-krsna-caitanya-prabhu-doya-koro-more",
+    "sri-krsna-caitanya-prabhu-jive-doya-kori",
+    "sundara-bala-saci-dulala",
+    "ujjvala-varana",
+    "vande-visvambhara-pada-kamalam",
+    "yadi-gaura-na-hoito",
+    "gauranga-tumi-more-doya-na-chadiho",
+    "jaya-jaya-jagannatha-sacira"
+   ]
+  },
+  {
+   "slug": "nityananda-trayodashi",
+   "name": "Nityananda Trayodashi",
+   "description": "$undefined",
+   "songs": [
+    "akrodha-paramananda",
+    "amar-nitai-mile-na",
+    "antare-nitai-bahire-nitai",
+    "boro-sukher-khabor-gai",
+    "doya-koro-more-nitai",
+    "nadiya-godrume-nityananda-mahajana",
+    "nitai-guna-mani",
+    "nitai-ki-nam-eneche-re",
+    "nitai-mora-jibana-dhana-nitai-mora-jati",
+    "nitai-nam-hate-o-ke-jabire-bhai",
+    "nitai-pada-kamala",
+    "nitayando-vadhutendur",
+    "sarac-candra-bhrantim",
+    "dhana-mor-nityananda"
+   ]
+  },
+  {
+   "slug": "narasimha-chaturdashi",
+   "name": "Narasimha Chaturdashi",
+   "description": "$undefined",
+   "songs": [
+    "jaya-narasimha-sri-narasimha",
+    "namaste-narasimhaya",
+    "narasimha-kavacam-vaksye",
+    "narasimha-nakha-stuti",
+    "sulabho-bhakti-yuktanam",
+    "ugram-viram-mahavishnum"
+   ]
+  },
+  {
+   "slug": "ratha-yatra",
+   "name": "Ratha Yatra",
+   "description": "$undefined",
+   "songs": [
+    "ahe-nila-saila",
+    "jagannatha-tattva"
+   ]
+  },
+  {
+   "slug": "vyasa-puja",
+   "name": "Vyasa Puja",
+   "description": "$undefined",
+   "songs": [
+    "adore-adore-ye-all",
+    "gurudeva-boro-krpa-kori",
+    "krsnaika-ceta-mada-moha-vinasa",
+    "ohe-vaisnava-thakura",
+    "prabhupada-caranasraya",
+    "samsara-davanala-lidha-loka",
+    "sariram-surupam-tatha",
+    "sri-guru-carana-padma",
+    "sri-guru-pranama",
+    "sri-sri-navadvipa-para-pradipau",
+    "srila-prabhupada-pranati",
+    "yadi-prabhupada-na-hoito",
+    "gurudeva-krpa-bindu-diya"
+   ]
+  },
+  {
+   "slug": "kartik-damodar",
+   "name": "Kartik (Damodar Month)",
+   "description": "$undefined",
+   "songs": [
+    "namamisvaram-saccidananda-rupam"
+   ]
+  },
+  {
+   "slug": "govardhan-puja",
+   "name": "Govardhan Puja",
+   "description": "$undefined",
+   "songs": [
+    "jaya-radha-giri-vara-dhari",
+    "krsna-prasadena-samasta",
+    "nija-pati-bhuja"
+   ]
+  },
+  {
+   "slug": "ekadashi",
+   "name": "Ekadashi",
+   "description": "$undefined",
+   "songs": [
+    "sri-hari-vasare-hari-kirtana-vidhana"
+   ]
+  },
+  {
+   "slug": "rama-navami",
+   "name": "Rama Navami",
+   "description": "$undefined",
+   "songs": [
+    "rama-raksha-stotra"
+   ]
+  }
+ ],
+ "songs": [
+  {
+   "slug": "abanika-majhe-dekha-dona-bhai",
+   "title": "Abanika Majhe Dekha Dona Bhai",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": "https://guptvrindavandham.org/media/songs/1_16_ASwLEn9.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "abhidheyadhideva-pranama",
+   "title": "Abhidheyadhideva Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": "https://guptvrindavandham.org/media/songs/2_20_TaGliod.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "achyutam-kesavam",
+   "title": "Achyutam Kesavam",
+   "author": "Adi Sankaracarya",
+   "authorSlug": "adi-sankaracarya",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": "https://guptvrindavandham.org/media/songs/achuytam_keshavam.webp",
+   "featured": false,
+   "source": "Achyutastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "adore-adore-ye-all",
+   "title": "Adore Adore Ye All",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 8,
+   "image": "https://guptvrindavandham.org/media/songs/5_5_Kz0kjiT.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "agre-kurunam-atha",
+   "title": "Agre Kurunam Atha",
+   "author": "Bilvamangala Thakura",
+   "authorSlug": "bilvamangala-thakura",
+   "categories": [
+    "dependency",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "deep-longing",
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 71,
+   "image": "https://guptvrindavandham.org/media/songs/6_5_dJOwk86.webp",
+   "featured": false,
+   "source": "Sri Govinda Damodara Stotram",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ahe-nila-saila",
+   "title": "Ahe Nila Saila",
+   "author": "Bhakta Salabega",
+   "authorSlug": "bhakta-salabega",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "deep-longing",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": "https://guptvrindavandham.org/media/songs/7_3_pv8vHVp.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "akrodha-paramananda",
+   "title": "Akrodha Paramananda",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": "https://guptvrindavandham.org/media/songs/8_8_LZe3hem.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "amar-bolite-prabhu",
+   "title": "Amar Bolite Prabhu",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 7,
+   "image": "https://guptvrindavandham.org/media/songs/9_4_ii9uehL.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "amar-jivan",
+   "title": "Amar Jivan",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": "https://guptvrindavandham.org/media/songs/10_4_9kgKt6N.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "amar-nitai-mile-na",
+   "title": "Amar Nitai Mile Na",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "deep-longing"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ambudanjanendra-nila",
+   "title": "Ambudanjanendra Nila",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Krsna Candrastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ami-jamuna-puline",
+   "title": "Ami Jamuna Puline",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ami-to-durjana-ati-sada-duracar",
+   "title": "Ami To Durjana Ati Sada Duracar",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "anadi-karama-phale",
+   "title": "Anadi Karama Phale",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "antare-nitai-bahire-nitai",
+   "title": "Antare Nitai Bahire Nitai",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ar-ke-bajabe-bamsi",
+   "title": "Ar Ke Bajabe Bamsi",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "separation"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ar-keno-maya-jale",
+   "title": "Ar Keno Maya Jale",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "are-bhai-bhaja-mora",
+   "title": "Are Bhai Bhaja Mora",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "asalo-katha-bolte",
+   "title": "Asalo Katha Bolte",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "other",
+    "spiritual-master"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "atma-nivedana-tuwa-pade",
+   "title": "Atma Nivedana Tuwa Pade",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "avatara-sara-gora-avatara",
+   "title": "Avatara Sara Gora Avatara",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bandhu-sange-yadi-tava-range",
+   "title": "Bandhu Sange Yadi Tava Range",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bara-bara-plan-kori",
+   "title": "Bara Bara Plan Kori",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "batula-kahaye-setha-saba-nirakara",
+   "title": "Batula Kahaye Setha Saba Nirakara",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-bhaja-hari",
+   "title": "Bhaja Bhaja Hari",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-bhakata-vatsala",
+   "title": "Bhaja Bhakata Vatsala",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 17,
+   "image": null,
+   "featured": false,
+   "source": "Bhoga Arati",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-gauranga-kaha-gauranga",
+   "title": "Bhaja Gauranga Kaha Gauranga",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-govinda-bhaja-govinda",
+   "title": "Bhaja Govinda Bhaja Govinda",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-govindam",
+   "title": "Bhaja Govindam",
+   "author": "Adi Sankaracarya",
+   "authorSlug": "adi-sankaracarya",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 34,
+   "image": null,
+   "featured": false,
+   "source": "Sri Bhaja Govinda Stotram",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-re-bhaja-re-amar",
+   "title": "Bhaja Re Bhaja Re Amar",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhakti-ahaituki-hoy-sva-prakasita",
+   "title": "Bhakti Ahaituki Hoy Sva Prakasita",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhale-gaura-gadadharer-arati",
+   "title": "Bhale Gaura Gadadharer Arati",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 10,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhishma-stuti",
+   "title": "Bhishma Stuti",
+   "author": "Bhishma Deva",
+   "authorSlug": "bhishma-deva",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 11,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhratur-antakasya-pattane",
+   "title": "Bhratur Antakasya Pattane",
+   "author": "Rupa Goswami",
+   "authorSlug": "rupa-goswami",
+   "categories": [
+    "dependency",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Yamunastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhuliya-tomare",
+   "title": "Bhuliya Tomare",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bolo-hari-bolo",
+   "title": "Bolo Hari Bolo",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "boro-sukher-khabor-gai",
+   "title": "Boro Sukher Khabor Gai",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "separation",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 11,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "brahma-bole-catur-mukha",
+   "title": "Brahma Bole Catur Mukha",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ceto-darpana-marjanam",
+   "title": "Ceto Darpana Marjanam",
+   "author": "Lord Sri Caitanya Mahaprabhu",
+   "authorSlug": "lord-sri-caitanya-mahaprabhu",
+   "categories": [
+    "glories-of-holy-name",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "deep-longing",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "te",
+    "ne"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Sikshastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "dekhite-dekhite",
+   "title": "Dekhite Dekhite",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "devi-suresvari-bhagavati-gange",
+   "title": "Devi Suresvari Bhagavati Gange",
+   "author": "Adi Sankaracarya",
+   "authorSlug": "adi-sankaracarya",
+   "categories": [
+    "other",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 14,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Ganga Stotram",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "dhule-dhule-gora-chanda",
+   "title": "Dhule Dhule Gora Chanda",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "disi-disi-racayantim",
+   "title": "Disi Disi Racayantim",
+   "author": "Rupa Goswami",
+   "authorSlug": "rupa-goswami",
+   "categories": [
+    "stotram-ashtakam",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Radhikastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "doya-koro-more-nitai",
+   "title": "Doya Koro More Nitai",
+   "author": "Kanu Ramadasa Thakura",
+   "authorSlug": "kanu-ramadasa-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "doyal-nitai-caitanya",
+   "title": "Doyal Nitai Caitanya",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 3,
+   "image": "https://guptvrindavandham.org/media/songs/doyal_nitai_chaitanya.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "duhkher-sagore",
+   "title": "Duhkher Sagore",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "deep-longing",
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "durlabha-manava-janma",
+   "title": "Durlabha Manava Janma",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 13,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "e-dusta-hrdaye-kama",
+   "title": "E Dusta Hrdaye Kama",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ek-din-santipure",
+   "title": "Ek Din Santipure",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ekhona-bujhinu",
+   "title": "Ekhona Bujhinu",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "emona-durmati",
+   "title": "Emona Durmati",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gangeya-campeya",
+   "title": "Gangeya Campeya",
+   "author": "Vishvanatha Cakravarti Thakura",
+   "authorSlug": "vishvanatha-cakravarti-thakura",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Vrndadevi Astakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "garuda-dandakam",
+   "title": "Garuda Dandakam",
+   "author": "Vedanta Desika",
+   "authorSlug": "vedanta-desika",
+   "categories": [
+    "other",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gauranga-bolite-habe",
+   "title": "Gauranga Bolite Habe",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [],
+   "moods": [
+    "deep-longing"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "te",
+    "ne"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gauranga-karuna-koro",
+   "title": "Gauranga Karuna Koro",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gaurangera-duti-pada",
+   "title": "Gaurangera Duti Pada",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gay-gora-madhura-sware",
+   "title": "Gay Gora Madhura Sware",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gay-goracand-jiver-tore",
+   "title": "Gay Goracand Jiver Tore",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gopinath-amar-upaya",
+   "title": "Gopinath Amar Upaya",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Gopinath - Part three",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gopinath-ghucao-samsara",
+   "title": "Gopinath Ghucao Samsara",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Gopinath - Part two",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gora-guna-gao-suni",
+   "title": "Gora Guna Gao Suni",
+   "author": "Vasudeva Ghosha",
+   "authorSlug": "vasudeva-ghosha",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gora-pahun",
+   "title": "Gora Pahun",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [],
+   "moods": [
+    "deep-longing",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gouranga-sundara-prema-jaladhara",
+   "title": "Gouranga Sundara Prema Jaladhara",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "govindam-prayers",
+   "title": "Govindam Prayers",
+   "author": "Lord Brahma",
+   "authorSlug": "lord-brahma",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "te",
+    "ne"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gurau-gosthe-gosthalayisu",
+   "title": "Gurau Gosthe Gosthalayisu",
+   "author": "Raghunatha Dasa Goswami",
+   "authorSlug": "raghunatha-dasa-goswami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 12,
+   "image": null,
+   "featured": false,
+   "source": "Manah Siksa",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gurudeva-boro-krpa-kori",
+   "title": "Gurudeva! Boro Krpa Kori",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gurudeve-vraja-vane-vraja-bhumi",
+   "title": "Gurudeve Vraja Vane Vraja Bhumi",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hare-krishna-mahamantra",
+   "title": "Hare Krishna Mahamantra",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hari-bolo-hari-bolo-hari-bolo-bhai-re",
+   "title": "Hari Bolo Hari Bolo Hari Bolo Bhai Re",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hari-haraye-namah-krsna-yadavaya",
+   "title": "Hari Haraye Namah Krsna Yadavaya",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 10,
+   "image": "https://guptvrindavandham.org/media/songs/hari_haraya_namah.webp",
+   "featured": false,
+   "source": "Nama Sankirtana",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hari-hari-kabe-mora-hobe-heno-dina",
+   "title": "Hari Hari Kabe Mora Hobe Heno Dina",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hari-hari-kabe-more-hoibe-su-dina",
+   "title": "Hari Hari Kabe More Hoibe Su-Dina",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "harinama-tuwa-anek-swarupa",
+   "title": "Harinama Tuwa Anek Swarupa",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "he-govinda-he-gopal-kesava-madhava",
+   "title": "He Govinda He Gopal Kesava Madhava",
+   "author": "Jayadeva Goswami",
+   "authorSlug": "jayadeva-goswami",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hera-dekhiya-nayana-bhariya",
+   "title": "Hera Dekhiya Nayana Bhariya",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "huhunkara-garjanadi-aho",
+   "title": "Huhunkara Garjanadi Aho",
+   "author": "Sarvabhauma Bhattacarya",
+   "authorSlug": "sarvabhauma-bhattacarya",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Advaitastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "isvara-parama-krsna",
+   "title": "Isvara Parama Krsna",
+   "author": "Lord Brahma",
+   "authorSlug": "lord-brahma",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "te",
+    "ne"
+   ],
+   "verseCount": 29,
+   "image": null,
+   "featured": false,
+   "source": "Brahma Samhita",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jagannatha-tattva",
+   "title": "Jagannatha Tattva",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "janu-lambita-bahu-jugala",
+   "title": "Janu Lambita Bahu Jugala",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jar-mukhe-bhai-hari-katha-nai",
+   "title": "Jar Mukhe Bhai Hari Katha Nai",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "deep-longing",
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-jaya-goracander-arotik",
+   "title": "Jaya Jaya Goracander Arotik",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": "Sri Gaura Arati",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-jaya-radha-krsna",
+   "title": "Jaya Jaya Radha Krsna",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-jaya-sri-krsna-caitanya-nityananda",
+   "title": "Jaya Jaya Sri Krsna Caitanya Nityananda",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-narasimha-sri-narasimha",
+   "title": "Jaya Narasimha Sri Narasimha",
+   "author": "Krishna Dwipayana Vyasadeva",
+   "authorSlug": "vyasadeva",
+   "categories": [
+    "stotram-ashtakam",
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-radha-giri-vara-dhari",
+   "title": "Jaya Radha Giri Vara Dhari",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-radha-madhava",
+   "title": "Jaya Radha Madhava",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "self-surrender",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 1,
+   "image": "https://guptvrindavandham.org/media/songs/jay-radha-madhav.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-radha-madhava-radha-madhava",
+   "title": "Jaya Radha Madhava Radha Madhava",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "humility",
+    "separation"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 15,
+   "image": null,
+   "featured": false,
+   "source": "Jaya Radha Krsna Giti",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-radhe-jaya-krsna-jaya-vrndavana",
+   "title": "Jaya Radhe Jaya Krsna Jaya Vrndavana",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 11,
+   "image": "https://guptvrindavandham.org/media/songs/jaya_radhe_jaya_krsna_AAJrCOl.webp",
+   "featured": false,
+   "source": "Sri Vraja Dhama Mahimamrta",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-radhe-jaya-radhe-radhe",
+   "title": "Jaya Radhe Jaya Radhe Radhe",
+   "author": "Hari Vyasa Devacarya",
+   "authorSlug": "hari-vyasa-devacarya",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 11,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jayati-te-dhikam-janmana-vrajah",
+   "title": "Jayati Te Dhikam Janmana Vrajah",
+   "author": "Gopis",
+   "authorSlug": "gopis",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "separation",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 19,
+   "image": null,
+   "featured": false,
+   "source": "Gopi Gitam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "je-anilo-prema-dhana",
+   "title": "Je Anilo Prema Dhana",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "deep-longing",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "te",
+    "ne"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": "Swa Parsada Bhagavad Viraha Janita Vilapa",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jiv-jago-jiv-jago",
+   "title": "Jiv Jago Jiv Jago",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": "Arunodaya Kirtana 2",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kabe-gaura-vane",
+   "title": "Kabe Gaura Vane",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kabe-habe-bolo",
+   "title": "Kabe Habe Bolo",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kabe-habe-heno-dasa-mor",
+   "title": "Kabe Habe Heno Dasa Mor",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "deep-longing"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kabe-krsna-dhan-pabo",
+   "title": "Kabe Krsna Dhan Pabo",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kabe-mui-vaisnava-cinibo",
+   "title": "Kabe Mui Vaisnava Cinibo",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kabe-sri-caitanya-more-koribena-doya",
+   "title": "Kabe Sri Caitanya More Koribena Doya",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "deep-longing"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kadacit-kalindi-tata-vipina",
+   "title": "Kadacit Kalindi Tata Vipina",
+   "author": "Adi Sankaracarya",
+   "authorSlug": "adi-sankaracarya",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "humility",
+    "separation",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Jagannathastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kali-kukkura-kadan",
+   "title": "Kali Kukkura Kadan",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kali-yuge-sri-caitanya",
+   "title": "Kali Yuge Sri Caitanya",
+   "author": "Govinda Dasa Kaviraja",
+   "authorSlug": "govinda-dasa-kaviraja",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kararavindena-padaravindam",
+   "title": "Kararavindena Padaravindam",
+   "author": "Bilvamangala Thakura",
+   "authorSlug": "bilvamangala-thakura",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Bala Mukundastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "karma-phale-ase-saba-nana-vesa-dhari",
+   "title": "Karma Phale Ase Saba Nana Vesa Dhari",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "dependency"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ke-jabi-ke-jabi-bhai-bhava-sindhu-para",
+   "title": "Ke Jabi Ke Jabi Bhai Bhava Sindhu Para",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "keno-hare-krsna-nam",
+   "title": "Keno Hare Krsna Nam",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kesava-tuwa-jagata-vicitra",
+   "title": "Kesava Tuwa Jagata Vicitra",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ki-jani-ki-bale",
+   "title": "Ki Jani Ki Bale",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "deep-longing",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ki-rupe-paibo-seva",
+   "title": "Ki Rupe Paibo Seva",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "dependency",
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krpa-koro-vaisnava-thakura",
+   "title": "Krpa Koro Vaisnava Thakura",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-deva-bhavantam-vande",
+   "title": "Krsna Deva Bhavantam Vande",
+   "author": "Rupa Goswami",
+   "authorSlug": "rupa-goswami",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-hoite-caturmukha",
+   "title": "Krsna Hoite Caturmukha",
+   "author": "Bhaktisiddhanta Saraswati",
+   "authorSlug": "bhaktisiddhanta-saraswati",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "spiritual-master",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 10,
+   "image": null,
+   "featured": false,
+   "source": "Sri Guru Parampara",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-krsna-krsna-krsna",
+   "title": "Krsna Krsna Krsna Krsna",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "dependency",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-nama-dhare-koto-bal",
+   "title": "Krsna Nama Dhare Koto Bal",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-prasadena-samasta",
+   "title": "Krsna Prasadena Samasta",
+   "author": "Vishvanatha Cakravarti Thakura",
+   "authorSlug": "vishvanatha-cakravarti-thakura",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Govardhanastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-prema-mayi-radha",
+   "title": "Krsna Prema Mayi Radha",
+   "author": "Jiva Goswami",
+   "authorSlug": "jiva-goswami",
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Yugalastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsna-tava-punya-habe-bhai",
+   "title": "Krsna Tava Punya Habe Bhai",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "deep-longing",
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Bhagavan Krsner Pada Padme Prarthana",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsnaika-ceta-mada-moha-vinasa",
+   "title": "Krsnaika Ceta Mada Moha Vinasa",
+   "author": "Ananta Dasa Sastri",
+   "authorSlug": "ananta-dasa-sastri",
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": "Srila Prabhupada Stotram",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "krsnotkirtana-gana-nartana",
+   "title": "Krsnotkirtana Gana Nartana",
+   "author": "Srinivasa Acharya",
+   "authorSlug": "srinivasa-acharya",
+   "categories": [
+    "glories-of-holy-name",
+    "other",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Shad Goswami-astakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kunkumakta-kancanabja",
+   "title": "Kunkumakta Kancanabja",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Radhikastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "kusumita-vrndavane-nacata-sikhi-gane",
+   "title": "Kusumita Vrndavane Nacata Sikhi Gane",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "madana-mohana-tanu",
+   "title": "Madana Mohana Tanu",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "madhava-bahuta-minati-kari-toya",
+   "title": "Madhava Bahuta Minati Kari Toya",
+   "author": "Vidyapati",
+   "authorSlug": "vidyapati",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "madhuram-madhurebhyo-pi",
+   "title": "Madhuram Madhurebhyo Pi",
+   "author": "Nilakanta Goswami",
+   "authorSlug": "nilakanta-goswami",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Kevalastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "maha-prasade-govinde",
+   "title": "Maha Prasade Govinde",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 3,
+   "image": "https://guptvrindavandham.org/media/songs/maha-prasade-govinde_EojVNO3.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "maha-vadanya-isvara-sri-gaura-sundara",
+   "title": "Maha Vadanya Isvara Sri Gaura Sundara",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "mama-mana-mandire",
+   "title": "Mama Mana Mandire",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "mana-re-kaha-na-gaura-katha",
+   "title": "Mana Re Kaha Na Gaura Katha",
+   "author": "Narahari Sarakara",
+   "authorSlug": "narahari-sarakara",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "manasa-deho-geho-jo-kichu-mor",
+   "title": "Manasa Deho Geho Jo Kichu Mor",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "mangalacaran",
+   "title": "Mangalacaran",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "mangalacarana-full",
+   "title": "Mangalacarana (Full)",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 22,
+   "image": "https://guptvrindavandham.org/media/songs/manglacarana.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "mangalacarana-short",
+   "title": "Mangalacarana (Short)",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 11,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "munindra-vrnda-vandite",
+   "title": "Munindra Vrnda Vandite",
+   "author": "Lord Shiva",
+   "authorSlug": "lord-shiva",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 19,
+   "image": null,
+   "featured": false,
+   "source": "Sri Radha Kripa Kataksa Stava Raja",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "na-korolun-karama",
+   "title": "Na Korolun Karama",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "na-yoga-siddhir-na-mamastu",
+   "title": "Na Yoga Siddhir Na Mamastu",
+   "author": "Vishvanatha Cakravarti Thakura",
+   "authorSlug": "vishvanatha-cakravarti-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Vrndavanastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nace-nace-nitai-gaur-guna-maniya",
+   "title": "Nace Nace Nitai Gaur Guna Maniya",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nadiya-godrume-nityananda-mahajana",
+   "title": "Nadiya Godrume Nityananda Mahajana",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nama-tattva",
+   "title": "Nama Tattva",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "reverence",
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 15,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "namamisvaram-saccidananda-rupam",
+   "title": "Namamisvaram Saccidananda Rupam",
+   "author": "Satyavrata Muni",
+   "authorSlug": "satyavrata-muni",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Damodarastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "namaste-narasimhaya",
+   "title": "Namaste Narasimhaya",
+   "author": "Krishna Dwipayana Vyasadeva",
+   "authorSlug": "vyasadeva",
+   "categories": [
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": "Sri Nrsimha Arati",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "namo-namah-tulasi-krsna-preyasi",
+   "title": "Namo Namah Tulasi Krsna Preyasi",
+   "author": "Krsnadasa Kaviraja Goswami",
+   "authorSlug": "krsnadasa-kaviraja-goswami",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "tulasi-songs"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender",
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": "Sri Tulasi Arati",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "namo-namah-tulasi-maharani",
+   "title": "Namo Namah Tulasi Maharani",
+   "author": "Candrasekhara Kavi",
+   "authorSlug": "candrasekhara-kavi",
+   "categories": [
+    "tulasi-songs"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "namo-namaste-tridasesvaraya",
+   "title": "Namo Namaste Tridasesvaraya",
+   "author": "Lord Sri Caitanya Mahaprabhu",
+   "authorSlug": "lord-sri-caitanya-mahaprabhu",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sivastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nana-dravya-ayojana",
+   "title": "Nana Dravya Ayojana",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": "Sri Nama Sankirtana Adhivasa",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nanda-ke-ananda-bhaiyo",
+   "title": "Nanda Ke Ananda Bhaiyo",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "narada-muni-bajay-vina",
+   "title": "Narada Muni Bajay Vina",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "narasimha-kavacam-vaksye",
+   "title": "Narasimha Kavacam Vaksye",
+   "author": "Prahalad Maharaj",
+   "authorSlug": "prahalad-maharaj",
+   "categories": [
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 31,
+   "image": null,
+   "featured": false,
+   "source": "Narasimha Kavacam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "narasimha-nakha-stuti",
+   "title": "Narasimha Nakha Stuti",
+   "author": "Madhvacharya",
+   "authorSlug": "madhvacharya",
+   "categories": [
+    "stotram-ashtakam",
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "narayana-kavacam",
+   "title": "Narayana Kavacam",
+   "author": "Krishna Dwipayana Vyasadeva",
+   "authorSlug": "vyasadeva",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 26,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nava-gaura-varam",
+   "title": "Nava Gaura Varam",
+   "author": "Sarvabhauma Bhattacarya",
+   "authorSlug": "sarvabhauma-bhattacarya",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Sacisutastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nava-nirada-nindita",
+   "title": "Nava Nirada Nindita",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Vrajaraja Sutastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nija-karma-dose-phale",
+   "title": "Nija Karma Dose Phale",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nija-pati-bhuja",
+   "title": "Nija Pati Bhuja",
+   "author": "Raghunatha Dasa Goswami",
+   "authorSlug": "raghunatha-dasa-goswami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "deep-longing",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 11,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Govardhana Vasa Prarthana Dasakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nikhila-sruti-mauli-ratna",
+   "title": "Nikhila Sruti Mauli Ratna",
+   "author": "Rupa Goswami",
+   "authorSlug": "rupa-goswami",
+   "categories": [
+    "dependency",
+    "glories-of-holy-name",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Namastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitai-guna-mani",
+   "title": "Nitai Guna Mani",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitai-ki-nam-eneche-re",
+   "title": "Nitai Ki Nam Eneche Re",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitai-mora-jibana-dhana-nitai-mora-jati",
+   "title": "Nitai Mora Jibana Dhana Nitai Mora Jati",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "self-surrender",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitai-nam-hate-o-ke-jabire-bhai",
+   "title": "Nitai Nam Hate O Ke Jabire Bhai",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitai-pada-kamala",
+   "title": "Nitai Pada Kamala",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitayando-vadhutendur",
+   "title": "Nitayando Vadhutendur",
+   "author": "Sarvabhauma Bhattacarya",
+   "authorSlug": "sarvabhauma-bhattacarya",
+   "categories": [
+    "stotram-ashtakam",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": "Nityananda Candrasya Nama Dvadasakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "nitya-siddha-parsada-saba-radha-krsna-smare",
+   "title": "Nitya Siddha Parsada Saba Radha Krsna Smare",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ohe-premera-thakura-gora",
+   "title": "Ohe Premera Thakura Gora",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ohe-vaisnava-thakura",
+   "title": "Ohe Vaisnava Thakura",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ore-mana-bhalonahi-lage-e-samsar",
+   "title": "Ore Mana Bhalonahi Lage E Samsar",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "separation"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ore-vrndavaner-nanda-dulal",
+   "title": "Ore Vrndavaner Nanda Dulal",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "deep-longing",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "palayachyutha-ashtakam",
+   "title": "Palayachyutha Ashtakam",
+   "author": "Vadiraja Tirtha",
+   "authorSlug": "vadiraja-tirtha",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "panca-tattva-mahamantra",
+   "title": "Panca Tattva Mahamantra",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "parama-karuna-pahu-dui-jana",
+   "title": "Parama Karuna Pahu Dui Jana",
+   "author": "Locana Dasa Thakura",
+   "authorSlug": "locana-dasa-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "reverence",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "paramananda-he-madhava",
+   "title": "Paramananda He Madhava",
+   "author": "Jagannatha Dasa",
+   "authorSlug": "jagannatha-dasa",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "prabhu-tava-pada-yuge",
+   "title": "Prabhu Tava Pada Yuge",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "prabhupada-caranasraya",
+   "title": "Prabhupada Caranasraya",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "pralaya-payodhi-jale",
+   "title": "Pralaya Payodhi Jale",
+   "author": "Jayadeva Goswami",
+   "authorSlug": "jayadeva-goswami",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 12,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Dasavatara Stotra",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "pranam-tomai-ghana-syam",
+   "title": "Pranam Tomai Ghana Syam",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "dependency",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "prapance-poriya-agati",
+   "title": "Prapance Poriya Agati",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "prayojanadhideva-pranama",
+   "title": "Prayojanadhideva Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "prema-dhvani-prayers",
+   "title": "Prema Dhvani Prayers",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 21,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "purusa-sukta",
+   "title": "Purusa Sukta",
+   "author": "Krishna Dwipayana Vyasadeva",
+   "authorSlug": "vyasadeva",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 24,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radha-krsna-bol-bol",
+   "title": "Radha Krsna Bol Bol",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radha-krsna-sevon-mui",
+   "title": "Radha Krsna Sevon Mui",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "other"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radha-kunda-tata-kunja-kutir",
+   "title": "Radha Kunda Tata Kunja Kutir",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "deep-longing",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radhe-jaya-jaya-madhava-dayite",
+   "title": "Radhe Jaya Jaya Madhava Dayite",
+   "author": "Rupa Goswami",
+   "authorSlug": "rupa-goswami",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "deep-longing",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": "Sri Radhika Stava",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radhika-carana-renu",
+   "title": "Radhika Carana Renu",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "self-surrender",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radhika-sarada-indu-nindimukha",
+   "title": "Radhika Sarada Indu Nindimukha",
+   "author": "Sanatana Goswami",
+   "authorSlug": "sanatana-goswami",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Radhikastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "rama-raksha-stotra",
+   "title": "Rama Raksha Stotra",
+   "author": "Budhakaushika",
+   "authorSlug": "budhakaushika",
+   "categories": [
+    "other",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 40,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ramani-siromani",
+   "title": "Ramani Siromani",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "srimati-radharani"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sacira-anginaya-nace",
+   "title": "Sacira Anginaya Nace",
+   "author": "Vasudeva Ghosha",
+   "authorSlug": "vasudeva-ghosha",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sakhe-kalaya-gauram-udaram",
+   "title": "Sakhe Kalaya Gauram Udaram",
+   "author": "Radha Mohana Dasa",
+   "authorSlug": "radha-mohana-dasa",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sambandha-janiya-yeba-jivana-yuddha-kore",
+   "title": "Sambandha Janiya Yeba Jivana Yuddha Kore",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sambandhadhideva-pranama",
+   "title": "Sambandhadhideva Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "samsara-davanala-lidha-loka",
+   "title": "Samsara Davanala Lidha Loka",
+   "author": "Vishvanatha Cakravarti Thakura",
+   "authorSlug": "vishvanatha-cakravarti-thakura",
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": "https://guptvrindavandham.org/media/songs/samsara-dava.webp",
+   "featured": false,
+   "source": "Sri Sri Gurvastakam - Mangala Arati",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "samudrena-phena-yena",
+   "title": "Samudrena Phena Yena",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sarac-candra-bhrantim",
+   "title": "Sarac Candra Bhrantim",
+   "author": "Prabodhananda Sarasvati",
+   "authorSlug": "prabodhananda-sarasvati",
+   "categories": [
+    "stotram-ashtakam",
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Nityanandastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sarira-avidya-jala",
+   "title": "Sarira Avidya Jala",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "other"
+   ],
+   "moods": [
+    "reverence",
+    "teachings-and-guidance"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sariram-surupam-tatha",
+   "title": "Sariram Surupam Tatha",
+   "author": "Adi Sankaracarya",
+   "authorSlug": "adi-sankaracarya",
+   "categories": [
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 10,
+   "image": null,
+   "featured": false,
+   "source": "Gurorastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sarvasva-tomar-carane",
+   "title": "Sarvasva Tomar Carane",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "satyam-jnanamanantam",
+   "title": "Satyam Jnanamanantam",
+   "author": "Adi Sankaracarya",
+   "authorSlug": "adi-sankaracarya",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Govindastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sisya-hoiya-kore-yei-gitar-sravana",
+   "title": "Sisya Hoiya Kore Yei Gitar Sravana",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-gauranga-pranama",
+   "title": "Sri Gauranga Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-guru-carana-padma",
+   "title": "Sri Guru Carana Padma",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "deep-longing",
+    "reverence",
+    "self-surrender",
+    "teachings-and-guidance",
+    "humility",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": "https://guptvrindavandham.org/media/songs/sri-guru-carana-padma.webp",
+   "featured": false,
+   "source": "Sri Guru Vandana - Guru Puja",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-guru-pranama",
+   "title": "Sri Guru Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-hari-vasare-hari-kirtana-vidhana",
+   "title": "Sri Hari Vasare Hari Kirtana Vidhana",
+   "author": "Vrindavana Dasa Thakura",
+   "authorSlug": "vrindavana-dasa-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 29,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-krishna-pranama",
+   "title": "Sri Krishna Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-krsna-caitanya-prabhu-doya-koro-more",
+   "title": "Sri Krsna Caitanya Prabhu Doya Koro More",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-krsna-caitanya-prabhu-jive-doya-kori",
+   "title": "Sri Krsna Caitanya Prabhu Jive Doya Kori",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 7,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-krsna-kirtane-jadi-manasa-tohar",
+   "title": "Sri Krsna kirtane Jadi Manasa Tohar",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-panca-tattva-pranama",
+   "title": "Sri Panca Tattva Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-radha-pranama",
+   "title": "Sri Radha Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-rupa-manjari-pada-sei-mora-sampada",
+   "title": "Sri Rupa Manjari Pada Sei Mora Sampada",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "separation"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-rupa-pranama",
+   "title": "Sri Rupa Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-sri-navadvipa-para-pradipau",
+   "title": "Sri Sri Navadvipa Para Pradipau",
+   "author": "Kusakratha Dasa",
+   "authorSlug": "kusakratha-dasa",
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Srila Prabhupadevastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-vaishnava-pranama",
+   "title": "Sri Vaishnava Pranama",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sri-vallabheti-vara-deti",
+   "title": "Sri Vallabheti Vara Deti",
+   "author": "Kulasekhara Alvar",
+   "authorSlug": "kulasekhara-alvar",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 53,
+   "image": null,
+   "featured": false,
+   "source": "Mukunda Mala Stotra",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "srila-bhaktisiddhanta-sarasvati-pranati",
+   "title": "Srila Bhaktisiddhanta Sarasvati Pranati",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "srila-bhaktivinoda-pranati",
+   "title": "Srila Bhaktivinoda Pranati",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "srila-gaurakisora-pranati",
+   "title": "Srila Gaurakisora Pranati",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "srila-jagannatha-pranati",
+   "title": "Srila Jagannatha Pranati",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "srila-prabhupada-pranati",
+   "title": "Srila Prabhupada Pranati",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "pranam-mantras",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 2,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "srita-kamala",
+   "title": "Srita Kamala",
+   "author": "Jayadeva Goswami",
+   "authorSlug": "jayadeva-goswami",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Mangala Gitam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sucaru-vakrta-mandalam",
+   "title": "Sucaru Vakrta Mandalam",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Nanda Nandanastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sudarshana-ashtakam",
+   "title": "Sudarshana Ashtakam",
+   "author": "Vedanta Desika",
+   "authorSlug": "vedanta-desika",
+   "categories": [
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "suddha-bhakata-carana-renu",
+   "title": "Suddha Bhakata Carana Renu",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sulabho-bhakti-yuktanam",
+   "title": "Sulabho Bhakti Yuktanam",
+   "author": "Shani Deva",
+   "authorSlug": "shani-deva",
+   "categories": [
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 16,
+   "image": null,
+   "featured": false,
+   "source": "Sri Narasimha Stuti",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sundara-bala-saci-dulala",
+   "title": "Sundara Bala Saci Dulala",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sundara-kundala-naina",
+   "title": "Sundara Kundala Naina",
+   "author": "Vasudeva Ghosha",
+   "authorSlug": "vasudeva-ghosha",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "suniyachi-sadhu-mukhe-bole",
+   "title": "Suniyachi Sadhu Mukhe Bole",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "separation"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "sva-bhakti-yoga-lasinam",
+   "title": "Sva Bhakti Yoga Lasinam",
+   "author": "Svarupa Damodara Goswami",
+   "authorSlug": "svarupa-damodara-goswami",
+   "categories": [
+    "stotram-ashtakam",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 9,
+   "image": null,
+   "featured": false,
+   "source": "Gadadharastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "tatala-saikate",
+   "title": "Tatala Saikate",
+   "author": "Vidyapati",
+   "authorSlug": "vidyapati",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": "Kahe Visaya Mana",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ten-offenses",
+   "title": "Ten Offenses",
+   "author": "Krishna Dwipayana Vyasadeva",
+   "authorSlug": "vyasadeva",
+   "categories": [
+    "glories-of-holy-name"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 10,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "thakura-vaisnava-gana",
+   "title": "Thakura Vaisnava Gana",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "thakura-vaisnava-pada",
+   "title": "Thakura Vaisnava Pada",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "tumi-sarveswareswara-vrajendra-kumar",
+   "title": "Tumi Sarveswareswara Vrajendra Kumar",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "self-surrender"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "tumi-to-maribe-jare",
+   "title": "Tumi To Maribe Jare",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "tuwa-pade-e-minoti-mor",
+   "title": "Tuwa Pade E Minoti Mor",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "udilo-aruna",
+   "title": "Udilo Aruna",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Arunodaya Kirtana 1",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ugram-viram-mahavishnum",
+   "title": "Ugram Viram Mahavishnum",
+   "author": "Krishna Dwipayana Vyasadeva",
+   "authorSlug": "vyasadeva",
+   "categories": [
+    "stotram-ashtakam",
+    "narasimha-prayers"
+   ],
+   "moods": [
+    "reverence"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 1,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ujjvala-varana",
+   "title": "Ujjvala Varana",
+   "author": "Sarvabhauma Bhattacarya",
+   "authorSlug": "sarvabhauma-bhattacarya",
+   "categories": [
+    "sri-chaitanya-mahaprabhu",
+    "stotram-ashtakam"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Sacitanayastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vande-krsna-nanda-kumara",
+   "title": "Vande Krsna Nanda Kumara",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vande-visvambhara-pada-kamalam",
+   "title": "Vande Visvambhara Pada Kamalam",
+   "author": "Radha Mohana Dasa",
+   "authorSlug": "radha-mohana-dasa",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vibhavari-sesa",
+   "title": "Vibhavari Sesa",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vidyara-vilase",
+   "title": "Vidyara Vilase",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vraje-prasiddham-navanita",
+   "title": "Vraje Prasiddham Navanita",
+   "author": "Bilvamangala Thakura",
+   "authorSlug": "bilvamangala-thakura",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Sri Sri Corastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vrndavana-dhame-ami-boseyachi-eka",
+   "title": "Vrndavana Dhame Ami Boseyachi Eka",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "dependency",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "separation"
+   ],
+   "languages": [
+    "en"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vrndavana-ramya-sthana",
+   "title": "Vrndavana Ramya Sthana",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "glories-of-holy-name",
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "longing-aspiration",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "vrndavana-vasi-jata-vaisnavera-gana",
+   "title": "Vrndavana Vasi Jata Vaisnavera Gana",
+   "author": "Devakinandana Das Thakura",
+   "authorSlug": "devakinandana-das-thakura",
+   "categories": [
+    "pranam-mantras"
+   ],
+   "moods": [
+    "reverence",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 12,
+   "image": null,
+   "featured": false,
+   "source": "Vaisnava Vandana",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "yadi-gaura-na-hoito",
+   "title": "Yadi Gaura Na Hoito",
+   "author": "Vasudeva Ghosha",
+   "authorSlug": "vasudeva-ghosha",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "separation",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "yadi-prabhupada-na-hoito",
+   "title": "Yadi Prabhupada Na Hoito",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "spiritual-master"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "yadi-te-hari-pada-saroja-sudha",
+   "title": "Yadi Te Hari Pada Saroja Sudha",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 20,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "yasomati-nandana",
+   "title": "Yasomati Nandana",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": "Sri Nama Kirtana",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gurudeva-krpa-bindu-diya",
+   "title": "Gurudeva Krpa Bindu Diya",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "spiritual-master"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "radha-krsna-prana-mora",
+   "title": "Radha Krsna Prana Mora",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "lord-sri-krishna",
+    "srimati-radharani"
+   ],
+   "moods": [
+    "deep-longing",
+    "self-surrender",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 6,
+   "image": "https://guptvrindavandham.org/media/songs/radha_krsna_pran_mora.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "adharam-madhuram",
+   "title": "Adharam Madhuram",
+   "author": "Vallabhacarya",
+   "authorSlug": "vallabhacarya",
+   "categories": [
+    "stotram-ashtakam",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 8,
+   "image": "https://guptvrindavandham.org/media/songs/adharam_madhuram.webp",
+   "featured": false,
+   "source": "Sri Sri Madhurastakam",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "dhana-mor-nityananda",
+   "title": "Dhana Mor Nityananda",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "sri-nityananda-prabhu"
+   ],
+   "moods": [
+    "reverence",
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 3,
+   "image": "https://guptvrindavandham.org/media/songs/dhana_mora_nitayananda.webp",
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "bhaja-hu-re-mana",
+   "title": "Bhaja Hu Re Mana",
+   "author": "Govinda Dasa Kaviraja",
+   "authorSlug": "govinda-dasa-kaviraja",
+   "categories": [
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "boro-krpa-koile-krsna",
+   "title": "Boro Krpa Koile Krsna",
+   "author": "A.C. Bhaktivedanta Swami",
+   "authorSlug": "ac-bhaktivedanta-swami",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 16,
+   "image": null,
+   "featured": false,
+   "source": "Markine Bhagavata Dharma",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "dusta-mana",
+   "title": "Dusta Mana",
+   "author": "Bhaktisiddhanta Saraswati",
+   "authorSlug": "bhaktisiddhanta-saraswati",
+   "categories": [
+    "other"
+   ],
+   "moods": [
+    "teachings-and-guidance",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 19,
+   "image": null,
+   "featured": false,
+   "source": "Vaisnava Ke",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "ei-baro-karuna-koro",
+   "title": "Ei Baro Karuna Koro",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 6,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gauranga-tumi-more-doya-na-chadiho",
+   "title": "Gauranga Tumi More Doya Na Chadiho",
+   "author": "Vasudeva Ghosha",
+   "authorSlug": "vasudeva-ghosha",
+   "categories": [
+    "kripa-prarthana",
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "gopinath-mama-nivedana-suno",
+   "title": "Gopinath Mama Nivedana Suno",
+   "author": "Bhaktivinoda Thakura",
+   "authorSlug": "bhaktivinoda-thakura",
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "self-surrender",
+    "humility"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 8,
+   "image": null,
+   "featured": false,
+   "source": "Gopinath - Part one",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hari-hari-biphale-janama",
+   "title": "Hari Hari Biphale Janama",
+   "author": "Narottama Dasa Thakura",
+   "authorSlug": "narottama-dasa-thakura",
+   "categories": [
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "humility",
+    "separation"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 4,
+   "image": null,
+   "featured": false,
+   "source": "Ista Deve Vijnapti",
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "hari-he-doyal-mor",
+   "title": "Hari He Doyal Mor",
+   "author": "Traditional",
+   "authorSlug": null,
+   "categories": [
+    "dependency",
+    "kripa-prarthana",
+    "lord-sri-krishna"
+   ],
+   "moods": [
+    "humility",
+    "longing-aspiration"
+   ],
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  },
+  {
+   "slug": "jaya-jaya-jagannatha-sacira",
+   "title": "Jaya Jaya Jagannatha Sacira",
+   "author": "Vasudeva Ghosha",
+   "authorSlug": "vasudeva-ghosha",
+   "categories": [
+    "sri-chaitanya-mahaprabhu"
+   ],
+   "moods": [
+    "glorification-praise"
+   ],
+   "languages": [
+    "en",
+    "hi",
+    "ne",
+    "te"
+   ],
+   "verseCount": 5,
+   "image": null,
+   "featured": false,
+   "source": null,
+   "tradition": "Bhajan"
+  }
+ ]
+}
