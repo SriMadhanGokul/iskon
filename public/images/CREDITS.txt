@@ -73,3 +73,9 @@ fruit-offering.webp
   License: CC BY-SA 4.0
   Source: https://commons.wikimedia.org/wiki/File:Fruit_offering.jpg
   License terms: https://creativecommons.org/licenses/by-sa/4.0/
+
+khichdi-prasadam.webp
+  "Khichdi Prasadam in Donna (Iskcon Bangalore).jpg" by Yuv103m
+  License: CC BY-SA 4.0
+  Source: https://commons.wikimedia.org/wiki/File:Khichdi_Prasadam_in_Donna_(Iskcon_Bangalore).jpg
+  License terms: https://creativecommons.org/licenses/by-sa/4.0/

@@ -61,6 +61,7 @@ const siteConfig = {
     guestHouse: '/images/guest-house-room.webp',
     kirtan: '/images/kirtan.webp',
     prasadam: '/images/fruit-offering.webp',
+    khichdiPrasadam: '/images/khichdi-prasadam.webp',
   },
   imageCredits: {
     gitaBook: {
@@ -146,6 +147,13 @@ const siteConfig = {
       license: 'CC BY-SA 4.0',
       licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
       url: 'https://commons.wikimedia.org/wiki/File:Fruit_offering.jpg',
+    },
+    khichdiPrasadam: {
+      title: 'Khichdi Prasadam in Donna (Iskcon Bangalore)',
+      author: 'Yuv103m',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      url: 'https://commons.wikimedia.org/wiki/File:Khichdi_Prasadam_in_Donna_(Iskcon_Bangalore).jpg',
     },
   },
 };
