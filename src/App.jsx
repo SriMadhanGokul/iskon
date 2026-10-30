@@ -19,6 +19,7 @@ const NotFound = lazy(() => import('./pages/NotFound.jsx'));
 const InformationPage = lazy(() => import('./pages/InformationPage.jsx'));
 const Darshan = lazy(() => import('./pages/Darshan.jsx'));
 const Darshans = lazy(() => import('./pages/Darshans.jsx'));
+const DarshanUpload = lazy(() => import('./pages/DarshanUpload.jsx'));
 const Bhajans = lazy(() => import('./pages/Bhajans.jsx'));
 const BhajanCollection = lazy(() => import('./pages/BhajanCollection.jsx'));
 const BhajanSong = lazy(() => import('./pages/BhajanSong.jsx'));
@@ -60,6 +61,7 @@ export default function App() {
             <Route path="/donate" element={<Donate />} />
             <Route path="/darshan" element={<Darshan />} />
             <Route path="/mandir/darshans" element={<Darshans />} />
+            <Route path="/mandir/darshans/upload" element={<DarshanUpload />} />
             <Route path="/bhajans" element={<Bhajans />} />
             {['moods', 'categories', 'authors', 'festivals'].map((type) => (
               <Route key={type} path={`/bhajans/${type}/:slug`} element={<BhajanCollection type={type} />} />

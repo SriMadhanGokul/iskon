@@ -5,6 +5,8 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import siteConfig from '../data/siteConfig.js';
 import { photo } from '../lib/photo.js';
 
+// Donation categories. `banner` (optional) is the temple's own wide photo for the top of the
+// seva page, e.g. '/images/sevas/anna-daan.jpg' in public/; without it `image` is used.
 export const donationCategories = [
   {
     id: 'gita-daan',
@@ -409,14 +411,6 @@ export function DonationSevaPage() {
         <meta name="description" content={category.detail} />
       </Helmet>
 
-      <header className="bg-gradient-to-r from-[#4a1638] via-[#30102f] to-[#180a25] text-white">
-        <div className="container-page py-7 sm:py-9">
-          <p className="text-sm font-medium tracking-wide text-white/80">Serve the Lord, share the mercy</p>
-          <h1 className="mt-2 font-heading text-3xl font-bold sm:text-4xl">{category.title}</h1>
-          <p className="mt-3 max-w-3xl text-sm leading-6 text-white/85 sm:text-base">{category.detail}</p>
-        </div>
-      </header>
-
       <div className="border-b border-slate-200 bg-white">
         <div className="container-page py-3 text-xs text-maroon/65">
           <Link to="/" className="hover:underline">Home</Link>
@@ -427,17 +421,42 @@ export function DonationSevaPage() {
         </div>
       </div>
 
+      {/* Laid out like the temple's donation site: a full-width photo first, then the seva
+          details and the offering choices each running the full width of the page. */}
       <main className="bg-slate-50 py-6 sm:py-10">
-        <div className="container-page">
-          <div className="grid items-start gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
-            <section aria-labelledby="choose-seva-title" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft sm:p-6">
+        <div className="container-page space-y-6 sm:space-y-8">
+          <figure>
+            <div className="overflow-hidden rounded-3xl bg-cream shadow-soft">
+              {category.banner
+                ? <img src={category.banner} alt={category.alt} className="aspect-[16/9] w-full object-cover sm:aspect-[21/8]" />
+                : <img {...photo(category.image, '(min-width: 1152px) 1152px, 100vw')} alt={category.alt} className="aspect-[16/9] w-full object-cover sm:aspect-[21/8]" />}
+            </div>
+            {!category.banner && (
+              <figcaption className="mt-2 text-right text-xs leading-5 text-maroon/60">
+                Representative photo · <a href={category.credit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.title}</a>
+                {' '}by {category.credit.author} · <a href={category.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.license}</a>
+              </figcaption>
+            )}
+          </figure>
+
+          <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary-dark">Serve the Lord, share the mercy</p>
+            <h1 className="mt-2 font-heading text-3xl font-bold text-maroon sm:text-4xl">{category.title}</h1>
+            <p className="mt-4 text-base leading-7 text-maroon/80 sm:text-lg sm:leading-8">{category.detail}</p>
+            <p className="mt-5 rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm leading-6 text-amber-950">
+              Payment setup is pending. This page is a UI preview and does not display a QR code or accept donations.
+            </p>
+          </section>
+
+          <div>
+            <section aria-labelledby="choose-seva-title" className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft sm:p-8">
               <div className="flex items-center justify-between gap-3">
                 <h2 id="choose-seva-title" className="font-heading text-xl font-bold">Choose a Seva</h2>
                 <span className="rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold text-primary-dark">{category.title}</span>
               </div>
               <p className="mt-2 text-sm text-maroon/70">Select an amount to offer. Amounts are sample values for this preview.</p>
 
-              <div className="mt-5 grid gap-2 sm:grid-cols-2">
+              <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {category.amounts.map((value) => (
                   <button
                     key={value}
@@ -486,28 +505,9 @@ export function DonationSevaPage() {
                 <p className="mt-3 text-xs leading-5 text-maroon/65">Sample offerings only. No payment is processed from this page.</p>
               </div>
             </section>
-
-            <aside className="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft sm:p-5">
-              <figure>
-                <div className="overflow-hidden rounded-xl bg-cream">
-                  <img {...photo(category.image, '(min-width: 1024px) 45vw, 100vw')} alt={category.alt} className="max-h-[420px] min-h-64 w-full object-contain" />
-                </div>
-                <figcaption className="mt-3 text-center text-xs leading-5 text-maroon/65">
-                  Representative photo · <a href={category.credit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.title}</a>
-                  {' '}by {category.credit.author} · <a href={category.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.license}</a>
-                </figcaption>
-              </figure>
-              <div className="mt-4 border-t border-slate-100 pt-4">
-                <h2 className="font-heading text-lg font-bold">{category.title}</h2>
-                <p className="mt-2 text-sm leading-6 text-maroon/75">{category.detail}</p>
-                <p className="mt-3 rounded-xl border border-amber-300 bg-amber-50 p-3 text-xs leading-5 text-amber-950">
-                  Payment setup is pending. This page is a UI preview and does not display a QR code or accept donations.
-                </p>
-              </div>
-            </aside>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap items-center justify-between gap-3">
             <Link to="/donate" className="text-sm font-medium text-primary-dark underline underline-offset-2">← Back to all donation categories</Link>
             <p className="text-xs text-maroon/60">Gupt Vrindavan Dham · Jagatpura, Jaipur</p>
           </div>

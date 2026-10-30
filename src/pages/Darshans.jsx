@@ -1,9 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useSearchParams } from 'react-router-dom';
-import { CalendarDays, ChevronLeft, ChevronRight, Clock3, Download, ExternalLink, ImageIcon, X } from 'lucide-react';
+import { CalendarDays, ChevronLeft, ChevronRight, Clock3, Download, ExternalLink, ImageIcon, Upload, X } from 'lucide-react';
 import siteConfig from '../data/siteConfig.js';
-import { DARSHAN_PHOTOS, DARSHAN_TYPES } from '../data/darshans.js';
+import { DARSHAN_PHOTOS, DARSHAN_TYPES, DEFAULT_DARSHAN_TYPE } from '../data/darshans.js';
+import { useUploadedDarshans } from '../lib/darshanStore.js';
 
 const STRIP_DAYS = 7;
 
@@ -73,6 +74,7 @@ function Lightbox({ photos, index, onChange, onClose }) {
           </>
         )}
       </div>
+      {(photo.festival || photo.caption) && <p className="px-4 pb-2 text-center text-sm font-semibold text-white">{[photo.festival && `${photo.festival} Darshan`, photo.caption].filter(Boolean).join(' · ')}</p>}
       {photo.credit && <p className="pb-4 text-center text-xs text-white/60">Photo: {photo.credit}</p>}
     </div>
   );
@@ -84,21 +86,37 @@ export default function Darshans() {
   const dateInput = useRef(null);
   const stripRef = useRef(null);
   const [params, setParams] = useSearchParams();
+  const uploaded = useUploadedDarshans();
 
-  // Date, darshan type and open photo live in the URL, so a view can be shared or bookmarked.
+  // Date, darshan type, festival and open photo live in the URL, so a view can be shared or bookmarked.
   const requested = params.get('date');
   const date = isValidDate(requested) && requested <= today ? requested : today;
-  const type = DARSHAN_TYPES.some(({ id }) => id === params.get('type')) ? params.get('type') : DARSHAN_TYPES[0].id;
-  const photos = DARSHAN_PHOTOS[date]?.[type] ?? [];
-  const openIndex = Number(params.get('photo'));
-  const lightboxOpen = params.has('photo') && Number.isInteger(openIndex) && openIndex >= 0 && openIndex < photos.length;
+  const type = DARSHAN_TYPES.some(({ id }) => id === params.get('type')) ? params.get('type') : DEFAULT_DARSHAN_TYPE;
   const typeInfo = DARSHAN_TYPES.find(({ id }) => id === type);
 
+  // Photos for one darshan on the chosen date: this browser's uploads first, then the built-in set.
+  const photosFor = (typeId) => [
+    ...uploaded.filter((p) => p.date === date && p.type === typeId).map((p) => ({
+      id: p.id, thumb: p.url, full: p.url, festival: p.festival, caption: p.caption, postUrl: null, credit: null,
+      alt: [p.festival ? `${p.festival} darshan` : `${DARSHAN_TYPES.find(({ id }) => id === typeId)?.label} darshan`, p.caption].filter(Boolean).join(', '),
+    })),
+    ...(DARSHAN_PHOTOS[date]?.[typeId] ?? []),
+  ];
+  const typePhotos = photosFor(type);
+  const festivals = type === 'festival' ? [...new Set(typePhotos.map((p) => p.festival).filter(Boolean))] : [];
+  const fest = festivals.includes(params.get('fest')) ? params.get('fest') : null;
+  const photos = fest ? typePhotos.filter((p) => p.festival === fest) : typePhotos;
+  const openIndex = Number(params.get('photo'));
+  const lightboxOpen = params.has('photo') && Number.isInteger(openIndex) && openIndex >= 0 && openIndex < photos.length;
+  const heading = fest ? `${fest} Darshan` : `${typeInfo.label} Darshan`;
+
   const update = (changes) => {
-    const next = { date, type, ...changes };
+    const next = { date, type, fest, ...changes };
+    if (('type' in changes || 'date' in changes) && !('fest' in changes)) next.fest = null;
     const search = new URLSearchParams();
     if (next.date !== today) search.set('date', next.date);
-    if (next.type !== DARSHAN_TYPES[0].id) search.set('type', next.type);
+    if (next.type !== DEFAULT_DARSHAN_TYPE) search.set('type', next.type);
+    if (next.fest) search.set('fest', next.fest);
     if (next.photo !== undefined && next.photo !== null) search.set('photo', String(next.photo));
     setParams(search, { replace: next.photo !== undefined });
   };
@@ -124,7 +142,7 @@ export default function Darshans() {
     <>
       <Helmet>
         <title>Darshans – {brandName}</title>
-        <meta name="description" content="Browse daily Shringar and Mangala darshan photos by date, open a high-quality preview, and download or visit the original post." />
+        <meta name="description" content="Browse daily darshan photos (Mangala, Shringar, Bhog, Rajbhog, Dhoop, Sandhya, Shayan) and festival darshans by date." />
       </Helmet>
 
       <header className="relative flex h-[300px] items-end justify-center overflow-hidden rounded-b-3xl text-white sm:h-[375px]">
@@ -146,38 +164,52 @@ export default function Darshans() {
 
       <section className="container-page py-6 sm:py-12">
         <div className="relative overflow-hidden rounded-[28px] border border-gold/70 bg-[radial-gradient(circle_at_15%_0%,rgba(255,153,51,0.16),transparent_32%),radial-gradient(circle_at_90%_20%,rgba(184,60,0,0.10),transparent_36%),linear-gradient(135deg,#fff,#FFF8F1)] p-3 shadow-[0_24px_60px_-30px_rgba(74,26,8,0.35)] sm:p-6">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-xl">
               <p className="hidden items-center gap-2 rounded-full border border-gold/70 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary-dark shadow-sm sm:inline-flex">
                 <ImageIcon size={14} aria-hidden="true" /> Darshan Gallery
               </p>
               <div className="flex items-baseline justify-between gap-3 sm:block">
-                <h2 className="font-heading text-xl font-semibold text-maroon sm:mt-3 sm:text-4xl">{typeInfo.label} Darshan</h2>
+                <h2 className="font-heading text-xl font-semibold text-maroon sm:mt-3 sm:text-4xl">{heading}</h2>
                 <p className="text-xs font-semibold text-primary-dark sm:hidden">{photoCount}</p>
               </div>
-              <p className="mt-2 hidden leading-7 text-maroon/75 sm:block">Browse daily darshan photos by date, open a high-quality preview, and download or visit the original post.</p>
+              <p className="mt-2 hidden leading-7 text-maroon/75 sm:block">{typeInfo.note}. Pick a darshan and a date, open a photo for a large preview, and download it.</p>
             </div>
-
-            <div role="radiogroup" aria-label="Darshan type" className="grid grid-cols-2 gap-1.5 rounded-2xl bg-white/80 p-1.5 shadow-inner shadow-maroon/5 lg:min-w-[420px]">
-              {DARSHAN_TYPES.map(({ id, label, note }) => {
-                const selected = id === type;
-                return (
-                  <button
-                    key={id}
-                    type="button"
-                    role="radio"
-                    aria-checked={selected}
-                    onClick={() => update({ type: id })}
-                    className={`rounded-xl px-3 py-2 text-left transition sm:px-5 sm:py-4 ${selected ? 'bg-gradient-to-br from-primary-dark to-primary text-white shadow-[0_10px_24px_-10px_rgba(184,60,0,0.7)]' : 'text-maroon hover:bg-cream'}`}
-                  >
-                    <span className={`mb-3 hidden h-1.5 w-10 rounded-full sm:block ${selected ? 'bg-white/85' : 'bg-primary/30'}`} />
-                    <span className="block text-center text-sm font-bold sm:text-left sm:text-base">{label}</span>
-                    <span className={`mt-1 hidden text-xs font-medium sm:block ${selected ? 'text-white/85' : 'text-maroon/60'}`}>{note}</span>
-                  </button>
-                );
-              })}
-            </div>
+            <Link to="/mandir/darshans/upload" className="inline-flex h-10 w-fit shrink-0 items-center gap-2 rounded-full border border-primary-dark/40 bg-white px-4 text-sm font-semibold text-primary-dark shadow-sm transition hover:bg-primary-dark hover:text-white">
+              <Upload size={16} aria-hidden="true" /> Upload darshan photos
+            </Link>
           </div>
+
+          {/* Every darshan of the day, then festival darshans. The count shows photos for the chosen date. */}
+          <div role="radiogroup" aria-label="Darshan type" className="-mx-1 mt-4 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:flex-wrap sm:overflow-visible">
+            {DARSHAN_TYPES.map(({ id, label }) => {
+              const selected = id === type;
+              const count = photosFor(id).length;
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  role="radio"
+                  aria-checked={selected}
+                  onClick={() => update({ type: id })}
+                  className={`inline-flex h-10 shrink-0 items-center gap-2 rounded-full border px-4 text-sm font-bold transition ${selected ? 'border-primary-dark bg-gradient-to-br from-primary-dark to-primary text-white shadow-[0_10px_24px_-10px_rgba(184,60,0,0.7)]' : 'border-gold/70 bg-white/85 text-maroon hover:bg-cream'}`}
+                >
+                  {label}
+                  {count > 0 && <span className={`rounded-full px-1.5 text-[11px] ${selected ? 'bg-white/25' : 'bg-primary/15 text-primary-dark'}`}>{count}</span>}
+                </button>
+              );
+            })}
+          </div>
+
+          {type === 'festival' && festivals.length > 0 && (
+            <div className="-mx-1 mt-2 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:flex-wrap sm:overflow-visible" role="group" aria-label="Festival">
+              {[null, ...festivals].map((name) => (
+                <button key={name ?? 'all'} type="button" onClick={() => update({ fest: name })} aria-pressed={fest === name} className={`h-8 shrink-0 rounded-full px-3 text-xs font-semibold transition ${fest === name ? 'bg-maroon text-white' : 'bg-white text-maroon ring-1 ring-gold/70 hover:bg-cream'}`}>
+                  {name ?? 'All festivals'}
+                </button>
+              ))}
+            </div>
+          )}
 
           <div className="mt-4 flex flex-col gap-3 rounded-2xl border border-gold/60 bg-white/85 p-2 shadow-sm sm:mt-5 sm:p-3 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-2">
@@ -239,8 +271,14 @@ export default function Darshans() {
             <ul className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
               {photos.map((photo, i) => (
                 <li key={`${photo.id}-${i}`}>
-                  <button type="button" onClick={() => update({ photo: i })} aria-label={`Open photo ${i + 1}: ${photo.alt}`} className="group block aspect-[4/5] w-full overflow-hidden rounded-2xl border border-gold/60 bg-cream shadow-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-dark">
+                  <button type="button" onClick={() => update({ photo: i })} aria-label={`Open photo ${i + 1}: ${photo.alt}`} className="group relative block aspect-[4/5] w-full overflow-hidden rounded-2xl border border-gold/60 bg-cream shadow-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-dark">
                     <img src={photo.thumb} alt="" loading="lazy" decoding="async" width="640" height="480" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    {(photo.festival || photo.caption) && (
+                      <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-3 pb-2 pt-6 text-left text-xs font-semibold text-white">
+                        {photo.festival && <span className="block">{photo.festival}</span>}
+                        {photo.caption && <span className="block truncate font-medium text-white/85">{photo.caption}</span>}
+                      </span>
+                    )}
                   </button>
                 </li>
               ))}
@@ -248,8 +286,11 @@ export default function Darshans() {
           ) : (
             <div className="flex min-h-[42vh] items-center justify-center rounded-3xl border border-dashed border-primary/40 bg-primary/5 px-6 py-12 text-center">
               <div className="max-w-sm">
-                <p className="mb-2 text-lg font-semibold text-maroon">No darshan images found</p>
-                <p className="text-sm text-maroon/70">Try another date or switch between Shringar and Mangala darshan.</p>
+                <p className="mb-2 text-lg font-semibold text-maroon">No {heading.toLowerCase()} photos for this date</p>
+                <p className="text-sm text-maroon/70">Try another date or another darshan.</p>
+                <Link to={`/mandir/darshans/upload?date=${date}&type=${type}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary-dark underline underline-offset-4">
+                  <Upload size={15} aria-hidden="true" /> Upload photos for this darshan
+                </Link>
               </div>
             </div>
           )}

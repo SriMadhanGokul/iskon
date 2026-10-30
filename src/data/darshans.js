@@ -5,9 +5,26 @@
 // Wikimedia Commons deity photos already in public/images/deity (Banke Bihari and Radha
 // Syamasundar, Vrindavan). Replace them with the Dham's photos and the matching post links.
 
+// The day's darshans in temple order, then festival darshans. Photos are filed under one of
+// these ids; festival photos also carry the festival's name.
 export const DARSHAN_TYPES = [
+  { id: 'mangala', label: 'Mangala', note: 'Mangala aarti · early morning' },
   { id: 'shringar', label: 'Shringar', note: 'Daily adornment' },
-  { id: 'mangala', label: 'Mangala', note: 'Morning darshan' },
+  { id: 'bhog', label: 'Bhog', note: 'Morning bhog offering' },
+  { id: 'rajbhog', label: 'Rajbhog', note: 'Rajbhog aarti · noon' },
+  { id: 'dhoop', label: 'Dhoop', note: 'Dhoop aarti · afternoon' },
+  { id: 'sandhya', label: 'Sandhya', note: 'Sandhya aarti · evening' },
+  { id: 'shayan', label: 'Shayan', note: 'Shayan aarti · night' },
+  { id: 'festival', label: 'Festival', note: 'Special festival darshan' },
+];
+
+export const DEFAULT_DARSHAN_TYPE = 'shringar';
+
+// Festivals offered when filing a festival darshan. Uploaders can also type any other name.
+export const FESTIVAL_DARSHANS = [
+  'Janmashtami', 'Radhashtami', 'Kartik (Damodar Month)', 'Diwali', 'Govardhan Puja', 'Gaura Purnima',
+  'Nityananda Trayodashi', 'Narasimha Chaturdashi', 'Rama Navami', 'Ratha Yatra', 'Gita Jayanti',
+  'Vyasa Puja', 'Ekadashi',
 ];
 
 const SAMPLE_PHOTOS = [

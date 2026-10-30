@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="border-t border-maroon/25 py-4 text-center text-sm">©2026 {siteConfig.brandName}</p>
+      <p className="border-t border-maroon/25 py-4 text-center text-sm">UKD Copyright © 2026 Srila Prabhupada’s ISKCON, Govardhan Dham - Jodhpur</p>
     </footer>
   );
 }
