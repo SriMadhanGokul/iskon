@@ -7,6 +7,7 @@ import FestivalGifs from './components/FestivalGifs.jsx';
 import Footer from './components/Footer.jsx';
 import PhotoStrip from './components/PhotoStrip.jsx';
 import OfferDiya from './components/OfferDiya.jsx';
+import WhatsAppButton from './components/WhatsAppButton.jsx';
 import { PAGE_BY_PATH, SITE_PAGES } from './data/pages.js';
 import { FESTIVAL_PAGE_BY_PATH } from './data/festivalPages.js';
 // The landing page ships in the main bundle so the hero paints without waiting on another chunk.
@@ -52,6 +53,7 @@ export default function App() {
       </a>
       <ScrollTop />
       <OfferDiya />
+      <WhatsAppButton />
       <FestivalGifs />
       <Header />
       <main id="main">

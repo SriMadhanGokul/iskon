@@ -40,7 +40,7 @@ export default function OfferDiya() {
             offer();
           }
         }}
-        className="fixed bottom-[8vh] right-0 z-[60] w-[clamp(160px,46vw,200px)] origin-[100%_70%] cursor-pointer select-none outline-none [container-type:inline-size] motion-safe:animate-diya-in md:w-[clamp(200px,17vw,440px)]"
+        className="fixed bottom-[calc(8vh+4rem)] right-0 z-[60] sm:bottom-[calc(8vh+3rem)] w-[clamp(160px,46vw,200px)] origin-[100%_70%] cursor-pointer select-none outline-none [container-type:inline-size] motion-safe:animate-diya-in md:w-[clamp(200px,17vw,440px)]"
       >
         <div className="relative origin-[100%_70%] motion-safe:animate-diya-aarti">
           <span className="absolute inset-0 bg-[radial-gradient(circle_38cqw_at_39.5%_54%,rgba(255,110,0,0.85)_0%,rgba(215,70,0,0.6)_25%,rgba(150,40,0,0.3)_55%,rgba(120,30,0,0)_100%)] motion-safe:animate-diya-glow" />

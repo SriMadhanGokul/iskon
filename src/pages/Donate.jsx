@@ -5,8 +5,10 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import siteConfig from '../data/siteConfig.js';
 import { photo } from '../lib/photo.js';
 
-// Donation categories. `banner` (optional) is the temple's own wide photo for the top of the
-// seva page, e.g. '/images/sevas/anna-daan.jpg' in public/; without it `image` is used.
+// Donation categories. `banner` (optional) is the temple's own photo for the strip at the top
+// of the seva page, e.g. '/images/sevas/anna-daan.jpg' in public/; without it `image` is used.
+// `tiers` (optional) names each amount, e.g. { 1100: 'Feed 20 devotees' }, once the temple
+// confirms what each amount provides; otherwise the seva title is shown.
 export const donationCategories = [
   {
     id: 'gita-daan',
@@ -421,42 +423,40 @@ export function DonationSevaPage() {
         </div>
       </div>
 
-      {/* Laid out like the temple's donation site: a full-width photo first, then the seva
-          details and the offering choices each running the full width of the page. */}
+      {/* A thin strip with the seva photo and its description, then the offering choices
+          directly below it, running the full width of the page. */}
       <main className="bg-slate-50 py-6 sm:py-10">
-        <div className="container-page space-y-6 sm:space-y-8">
-          <figure>
-            <div className="overflow-hidden rounded-3xl bg-cream shadow-soft">
-              {category.banner
-                ? <img src={category.banner} alt={category.alt} className="aspect-[16/9] w-full object-cover sm:aspect-[21/8]" />
-                : <img {...photo(category.image, '(min-width: 1152px) 1152px, 100vw')} alt={category.alt} className="aspect-[16/9] w-full object-cover sm:aspect-[21/8]" />}
+        <div className="container-page space-y-5 sm:space-y-6">
+          <section className="flex items-center gap-4 overflow-hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-soft sm:gap-6 sm:p-4">
+            {category.banner
+              ? <img src={category.banner} alt={category.alt} className="h-24 w-28 shrink-0 rounded-xl object-cover sm:h-36 sm:w-64" />
+              : <img {...photo(category.image, '(min-width: 640px) 256px, 112px')} alt={category.alt} className="h-24 w-28 shrink-0 rounded-xl object-cover sm:h-36 sm:w-64" />}
+            <div className="min-w-0">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-dark sm:text-xs">Serve the Lord, share the mercy</p>
+              <h1 className="mt-1 font-heading text-xl font-bold text-maroon sm:text-3xl">{category.title}</h1>
+              <p className="mt-1 text-sm leading-6 text-maroon/75 sm:mt-2 sm:text-base">{category.detail}</p>
+              {!category.banner && (
+                <p className="mt-1 hidden text-[11px] text-maroon/50 sm:block">
+                  Photo: <a href={category.credit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.title}</a>
+                  {' '}by {category.credit.author} · <a href={category.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.license}</a>
+                </p>
+              )}
             </div>
-            {!category.banner && (
-              <figcaption className="mt-2 text-right text-xs leading-5 text-maroon/60">
-                Representative photo · <a href={category.credit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.title}</a>
-                {' '}by {category.credit.author} · <a href={category.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.license}</a>
-              </figcaption>
-            )}
-          </figure>
-
-          <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft sm:p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary-dark">Serve the Lord, share the mercy</p>
-            <h1 className="mt-2 font-heading text-3xl font-bold text-maroon sm:text-4xl">{category.title}</h1>
-            <p className="mt-4 text-base leading-7 text-maroon/80 sm:text-lg sm:leading-8">{category.detail}</p>
-            <p className="mt-5 rounded-xl border border-amber-300 bg-amber-50 p-3 text-sm leading-6 text-amber-950">
-              Payment setup is pending. This page is a UI preview and does not display a QR code or accept donations.
-            </p>
           </section>
 
           <div>
             <section aria-labelledby="choose-seva-title" className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft sm:p-8">
-              <div className="flex items-center justify-between gap-3">
-                <h2 id="choose-seva-title" className="font-heading text-xl font-bold">Choose a Seva</h2>
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <h2 id="choose-seva-title" className="font-heading text-2xl font-bold">Choose your offering</h2>
                 <span className="rounded-full bg-primary/20 px-3 py-1 text-xs font-semibold text-primary-dark">{category.title}</span>
               </div>
-              <p className="mt-2 text-sm text-maroon/70">Select an amount to offer. Amounts are sample values for this preview.</p>
+              <p className="mt-2 text-sm text-maroon/70">Tap an amount to offer it. Amounts are sample values for this preview.</p>
+              <p className="mt-3 rounded-xl border border-amber-300 bg-amber-50 p-3 text-xs leading-5 text-amber-950 sm:text-sm">
+                Payment setup is pending. This page is a UI preview and does not display a QR code or accept donations.
+              </p>
 
-              <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Each option shows its amount large and its full name, so they read apart at a glance. */}
+              <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {category.amounts.map((value) => (
                   <button
                     key={value}
@@ -467,13 +467,16 @@ export function DonationSevaPage() {
                       setDialogAmount(value);
                       setShowDialog(true);
                     }}
-                    className="flex min-h-12 items-center justify-between gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-left text-sm transition-colors hover:border-primary hover:bg-primary/10"
+                    className="group flex min-h-[7.5rem] flex-col justify-between gap-3 rounded-2xl border-2 border-slate-200 bg-white p-4 text-left transition-colors hover:border-primary hover:bg-primary/5 sm:p-5"
                   >
-                    <span className="inline-flex min-w-0 items-center gap-2">
-                      <Icon size={16} className="shrink-0 text-primary-dark" aria-hidden="true" />
-                      <span className="truncate">Offer {category.title}</span>
+                    <span className="flex items-start justify-between gap-3">
+                      <span className="font-heading text-2xl font-bold text-maroon sm:text-3xl">{inr(value)}</span>
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/15 text-primary-dark"><Icon size={18} aria-hidden="true" /></span>
                     </span>
-                    <span className="shrink-0 rounded-md border border-slate-300 bg-white px-2 py-1 font-semibold">{inr(value)}</span>
+                    <span>
+                      <span className="block text-sm font-semibold text-maroon">{category.tiers?.[value] ?? category.title}</span>
+                      <span className="mt-1 block text-xs font-semibold text-primary-dark group-hover:underline">Offer this seva →</span>
+                    </span>
                   </button>
                 ))}
               </div>

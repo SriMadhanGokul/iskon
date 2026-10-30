@@ -16,6 +16,15 @@ const siteConfig = {
     mapLink: 'https://www.google.com/maps/search/?api=1&query=Gupt+Vrindavan+Dham+Jagatpura+Jaipur',
   },
   social: { youtube: '', instagram: '', facebook: '', x: '' }, // full URLs; empty ones are hidden
+  // Floating "Hare Krishna" WhatsApp button in the bottom-right corner. Change `number` when the
+  // contact person changes (digits only, country code first), or set `link` to any full URL
+  // (e.g. a WhatsApp channel or group invite), which then takes priority over the number.
+  whatsappButton: {
+    label: 'Hare Krishna',
+    number: '919799999881',
+    message: 'Hare Krishna! I would like to know more about Gupt Vrindavan Dham.',
+    link: '',
+  },
   openingDate: '2027-05-12T00:00:00+05:30',
   donation: {
     upi: { id: PLACEHOLDER, payeeName: 'Gupt Vrindavan Dham' },
