@@ -83,6 +83,15 @@ function MoreMenu({ exclude, pathname, onNavigate }) {
   );
 }
 
+// Full-width Donate Now button at the foot of the phone and tablet menus.
+function DonateNowLink({ onClick }) {
+  return (
+    <Link to="/donate" onClick={onClick} className="shine-animation relative mt-3 flex h-12 w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary-dark to-[#d9531c] text-[15px] font-bold text-white shadow-[0_8px_20px_-6px_rgba(184,60,0,0.6)]">
+      <Heart aria-hidden="true" className="h-[18px] w-[18px] fill-white motion-safe:animate-heartbeat" />Donate Now
+    </Link>
+  );
+}
+
 const navText = (active) =>
   `inline-flex h-10 items-center gap-1 whitespace-nowrap rounded-full px-2 text-base min-[1400px]:px-3 font-medium tracking-wide transition-colors ${active ? 'text-primary-dark' : 'text-maroon hover:text-primary-dark'}`;
 
@@ -214,6 +223,7 @@ export default function Header() {
         {moreOpen && (
           <nav aria-label="More navigation" className="container-page hidden max-h-[calc(100vh-8rem)] overflow-y-auto border-t border-gold/60 bg-white py-2 sm:block xl:hidden">
             <MoreMenu exclude={['/donate']} pathname={pathname} onNavigate={() => setMoreOpen(false)} />
+            <DonateNowLink onClick={() => setMoreOpen(false)} />
           </nav>
         )}
       </motion.header>
@@ -227,11 +237,11 @@ export default function Header() {
       {moreOpen && (
         <nav aria-label="More navigation" className="fixed inset-x-0 bottom-[calc(4rem+env(safe-area-inset-bottom))] z-[65] max-h-[70vh] overflow-y-auto rounded-t-3xl border-t border-gold/60 bg-white px-4 pb-3 pt-2 shadow-[0_-18px_40px_-12px_rgba(74,26,8,0.35)] sm:hidden">
           <span aria-hidden="true" className="mx-auto mb-1 block h-1.5 w-10 rounded-full bg-maroon/20" />
-          <div className="flex items-center justify-between pb-1">
-            <p className="font-heading text-lg font-bold text-maroon">Menu</p>
+          <div className="flex justify-end">
             <button type="button" onClick={() => setMoreOpen(false)} aria-label="Close menu" className="flex h-9 w-9 items-center justify-center rounded-full text-maroon hover:bg-cream"><X size={18} aria-hidden="true" /></button>
           </div>
           <MoreMenu exclude={BOTTOM_BAR_PATHS} pathname={pathname} onNavigate={() => setMoreOpen(false)} />
+          <DonateNowLink onClick={() => setMoreOpen(false)} />
         </nav>
       )}
       <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-primary-dark/25 bg-primary pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_20px_rgba(74,26,8,0.1)] sm:hidden">

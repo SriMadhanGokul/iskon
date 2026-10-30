@@ -449,7 +449,7 @@ export const SITE_PAGES = [
     eyebrow: 'Visitor information',
     description: 'Find the address, published worship timings and contact information for Gupt Vrindavan Dham.',
     image: templePhoto,
-    intro: 'Gupt Vrindavan Dham is in Jagatpura, Jaipur. The schedule below is published by the temple; timings and access can change, especially during festivals or construction. Please call ahead to confirm before travelling.',
+    intro: 'The temple is in Jodhpur, Rajasthan. The schedule below is published by the temple; timings and access can change, especially during festivals or construction. Please call ahead to confirm before travelling.',
     showTimings: true,
     showDirections: true,
     sections: [

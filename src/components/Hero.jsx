@@ -7,7 +7,7 @@ import { photo } from '../lib/photo.js';
 import Countdown from './Countdown.jsx';
 
 const EASE = [0.22, 1, 0.36, 1];
-const HEADLINE = 'Discover a sacred home in Jaipur';
+const HEADLINE = 'Discover a sacred home in Jodhpur';
 const slides = [
   {
     src: siteConfig.images.hero,
@@ -137,7 +137,7 @@ export default function Hero() {
             </motion.figure>
 
             <motion.p variants={rise} className="mt-5 max-w-xl text-base leading-7 text-white/90 sm:text-lg">
-              Visit Gupt Vrindavan Dham in Jagatpura for darshan, kirtan, spiritual learning and service inspired by the teachings of Krishna.
+              Visit Govardhan Dham in Jodhpur for darshan, kirtan, spiritual learning and service inspired by the teachings of Krishna.
             </motion.p>
 
             <motion.div variants={rise} className="mt-7 flex flex-wrap gap-3">
@@ -148,7 +148,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.p variants={rise} className="mt-6 flex items-center gap-2 text-sm text-white/90">
-              <MapPin size={16} aria-hidden="true" /> Jagatpura, Jaipur, Rajasthan
+              <MapPin size={16} aria-hidden="true" /> Jodhpur, Rajasthan
             </motion.p>
           </motion.div>
 

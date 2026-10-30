@@ -512,7 +512,7 @@ export function DonationSevaPage() {
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             <Link to="/donate" className="text-sm font-medium text-primary-dark underline underline-offset-2">← Back to all donation categories</Link>
-            <p className="text-xs text-maroon/60">Gupt Vrindavan Dham · Jagatpura, Jaipur</p>
+            <p className="text-xs text-maroon/60">Govardhan Dham · Jodhpur, Rajasthan</p>
           </div>
         </div>
       </main>

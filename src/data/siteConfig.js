@@ -12,8 +12,8 @@ const siteConfig = {
     phoneHref: '+919799999881',
     whatsapp: '919799999881', // digits only, country code first. Confirm with temple.
     email: 'info@guptvrindavandham.org',
-    address: 'C6-C11, Mahal Scheme, Goner Road, Jagatpura, Jaipur-302017',
-    mapLink: 'https://www.google.com/maps/search/?api=1&query=Gupt+Vrindavan+Dham+Jagatpura+Jaipur',
+    address: 'Jodhpur, Rajasthan',
+    mapLink: 'https://www.google.com/maps/search/?api=1&query=Hare+Krishna+Govardhan+Dham+Jodhpur+Rajasthan',
   },
   social: { youtube: '', instagram: '', facebook: '', x: '' }, // full URLs; empty ones are hidden
   // Floating "Hare Krishna" WhatsApp button in the bottom-right corner. Change `number` when the
@@ -62,6 +62,9 @@ const siteConfig = {
     kirtan: '/images/kirtan.webp',
     prasadam: '/images/fruit-offering.webp',
     khichdiPrasadam: '/images/khichdi-prasadam.webp',
+    // The temple's own images: no Wikimedia credit needed.
+    templeModel: '/images/govardhan-dham-3d-model.webp',
+    templeConstruction: '/images/govardhan-dham-construction.webp',
   },
   imageCredits: {
     gitaBook: {

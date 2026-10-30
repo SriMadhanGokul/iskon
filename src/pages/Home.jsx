@@ -22,7 +22,7 @@ const places = [
 ];
 
 const faqs = [
-  { question: 'Where is Gupt Vrindavan Dham?', answer: `The temple is in Jagatpura, Jaipur. The address is ${siteConfig.contact.address}.` },
+  { question: 'Where is Gupt Vrindavan Dham?', answer: 'The temple is in Jodhpur, Rajasthan.' },
   { question: 'When can I attend darshan and aarti?', answer: 'Daily worship and class timings are listed below. Please contact the temple before travelling to confirm any festival or seasonal changes.' },
   { question: 'What can visitors do at the Dham?', answer: 'Visitors can attend darshan, join kirtan and spiritual programmes, learn about seva activities, and explore the temple grounds.' },
 ];
@@ -118,13 +118,13 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>{siteConfig.brandName} – Krishna Temple in Jaipur</title>
-        <meta name="description" content="Plan a visit to Gupt Vrindavan Dham in Jagatpura, Jaipur. Explore temple spaces, daily worship, spiritual programmes and ways to serve." />
-        <meta property="og:title" content={`${siteConfig.brandName}, Jaipur`} />
+        <title>{siteConfig.brandName} – Krishna Temple in Jodhpur</title>
+        <meta name="description" content="Plan a visit to Govardhan Dham in Jodhpur, Rajasthan. Explore temple spaces, daily worship, spiritual programmes and ways to serve." />
+        <meta property="og:title" content={`${siteConfig.brandName}, Jodhpur`} />
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <h1 className="sr-only">{siteConfig.name}, a Krishna temple in Jagatpura, Jaipur</h1>
+      <h1 className="sr-only">{siteConfig.name}, a Krishna temple in Jodhpur, Rajasthan</h1>
       <BannerSlider />
 
       <section id="mandir" className="container-page scroll-mt-24 py-16 sm:py-20">
@@ -133,11 +133,11 @@ export default function Home() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-saffron-dark">Welcome to the Dham</p>
             <h2 className="max-w-2xl font-heading text-3xl font-semibold leading-tight sm:text-4xl">A place to gather, learn and serve</h2>
           </div>
-          <p className="max-w-xl leading-7 text-maroon/80">Gupt Vrindavan Dham is a growing spiritual and cultural centre in Jaipur. Its programmes bring devotional practice, community service and the teachings of Krishna together.</p>
+          <p className="max-w-xl leading-7 text-maroon/80">Gupt Vrindavan Dham is a growing spiritual and cultural centre in Jodhpur. Its programmes bring devotional practice, community service and the teachings of Krishna together.</p>
         </Reveal>
         <Stagger className="mt-8 grid gap-4 rounded-3xl bg-primary p-6 text-maroon shadow-[0_30px_60px_-30px_rgba(184,60,0,0.4)] sm:grid-cols-3 sm:p-8">
           <StaggerItem><p className="font-heading text-3xl font-semibold text-maroon">3.5 lakh</p><p className="mt-1 text-sm text-maroon/80">square feet planned for the temple and cultural centre</p></StaggerItem>
-          <StaggerItem className="border-maroon/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-maroon">Jagatpura</p><p className="mt-1 text-sm text-maroon/80">a spiritual destination in Jaipur, Rajasthan</p></StaggerItem>
+          <StaggerItem className="border-maroon/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-maroon">Jodhpur</p><p className="mt-1 text-sm text-maroon/80">a spiritual destination in Rajasthan</p></StaggerItem>
           <StaggerItem className="border-maroon/30 sm:border-l sm:pl-6"><p className="font-heading text-3xl font-semibold text-maroon">Daily seva</p><p className="mt-1 text-sm text-maroon/80">worship, learning and service for the community</p></StaggerItem>
         </Stagger>
       </section>
@@ -217,15 +217,15 @@ export default function Home() {
       <section id="prabhupada" className="container-page scroll-mt-24 py-16 sm:py-20">
         <Reveal className="card-lift group grid overflow-hidden rounded-[2rem] border border-gold bg-cream md:grid-cols-[0.8fr_1.2fr]">
         <figure className="relative min-h-64 overflow-hidden bg-gold/30">
-          <img {...photo(siteConfig.images.about, '(min-width: 768px) 460px, 100vw')} alt="Samadhi Mandir of Srila Prabhupada in Mayapur" width="1200" height="800" loading="lazy" decoding="async" className="card-zoom absolute inset-0 h-full w-full object-cover" />
-          <figcaption className="absolute inset-x-3 bottom-3 rounded-xl bg-primary/95 px-3 py-2 text-xs text-maroon backdrop-blur-sm">
-            Photo: <a href={siteConfig.imageCredits.about.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.about.title}</a> by {siteConfig.imageCredits.about.author} · <a href={siteConfig.imageCredits.about.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{siteConfig.imageCredits.about.license}</a>
+          <img {...photo(siteConfig.images.templeModel, '(min-width: 768px) 460px, 100vw')} alt="3D model of the Hare Krishna Govardhan Dham temple" width="960" height="421" loading="lazy" decoding="async" className="card-zoom absolute inset-0 h-full w-full object-cover" />
+          <figcaption className="absolute inset-x-3 bottom-3 rounded-xl bg-primary/95 px-3 py-2 text-xs font-semibold text-maroon backdrop-blur-sm">
+            Govardhan Dham · 3D model of the temple
           </figcaption>
         </figure>
           <div className="p-7 sm:p-10">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-saffron-dark">The inspiration</p>
             <h2 className="font-heading text-3xl font-semibold">A vision rooted in Krishna consciousness</h2>
-            <p className="mt-4 leading-7 text-maroon/80">The Dham follows the teachings and devotional mission of Srila Prabhupada. Through worship, study and practical service, it aims to make spiritual life accessible to people and families across Jaipur.</p>
+            <p className="mt-4 leading-7 text-maroon/80">The Dham follows the teachings and devotional mission of Srila Prabhupada. Through worship, study and practical service, it aims to make spiritual life accessible to people and families across Jodhpur.</p>
             <Link to="/prabhupada" className="btn-outline mt-6">Explore our programmes <ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
         </Reveal>
@@ -243,10 +243,10 @@ export default function Home() {
           </Reveal>
           <Stagger className="mt-8 grid gap-4 md:grid-cols-3">
             {[
-              { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, seva: 'sqft', photoKey: 'hero', alt: 'Main gate of an ISKCON temple in Mayapur, shown as representative temple architecture' },
+              { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, seva: 'sqft', photoKey: 'templeConstruction', caption: 'Govardhan Dham · temple under construction', alt: 'The Govardhan Dham temple building under construction' },
               { title: 'Anna Daan', text: 'Support prasadam and food-service efforts for visitors and the wider community.', icon: Utensils, seva: 'anna', photoKey: 'prasadam', alt: 'Fruit arranged as a devotional offering' },
               { title: 'Gau Seva', text: 'Help provide care and support for the temple’s cow-protection work.', icon: HandHeart, seva: 'gau', photoKey: 'gauSeva', alt: 'Vechur cow photographed in India' },
-            ].map(({ title, text, icon: Icon, seva, photoKey, alt }) => {
+            ].map(({ title, text, icon: Icon, seva, photoKey, caption, alt }) => {
               const credit = siteConfig.imageCredits[photoKey];
               return (
               <StaggerItem key={title} className="flex">
@@ -254,7 +254,7 @@ export default function Home() {
                   <figure className="overflow-hidden">
                     <img {...photo(siteConfig.images[photoKey], '(min-width: 768px) 33vw, 100vw')} alt={alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
                     <figcaption className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
-                      Photo: <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a>
+                      {caption ?? <>Photo: <a href={credit.url} target="_blank" rel="noopener noreferrer" className="font-medium underline underline-offset-2">{credit.title}</a> by {credit.author} · <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{credit.license}</a></>}
                     </figcaption>
                   </figure>
                   <div className="flex flex-1 flex-col p-6">
