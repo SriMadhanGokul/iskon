@@ -7,7 +7,8 @@ import { photo } from '../lib/photo.js';
 
 // Donation categories. `banner` (optional) is the temple's own photo for the strip at the top
 // of the seva page, e.g. '/images/sevas/anna-daan.jpg' in public/; without it `image` is used.
-// `tiers` (optional) names each amount, e.g. { 1100: 'Feed 20 devotees' }, once the temple
+// `credit` is the Wikimedia credit for representative photos; the temple's own photos have a
+// plain `caption` instead. `tiers` (optional) names each amount, e.g. { 1100: 'Feed 20 devotees' }, once the temple
 // confirms what each amount provides; otherwise the seva title is shown.
 export const donationCategories = [
   {
@@ -75,6 +76,17 @@ export const donationCategories = [
     credit: siteConfig.imageCredits.garden,
     icon: ScrollText,
     amounts: [251, 501, 1100, 2100, 5100, 11000, 21000, 51000],
+  },
+  {
+    id: 'temple-development',
+    title: 'Temple Development',
+    description: 'Help build the Govardhan Dham temple, one step at a time.',
+    detail: 'The Govardhan Dham temple is taking shape. Your offering supports the construction of the temple and its shared spaces, so devotees and visitors can gather for darshan, kirtan and learning for generations to come.',
+    image: siteConfig.images.templeConstruction,
+    alt: 'The Govardhan Dham temple building under construction',
+    caption: 'Govardhan Dham · temple under construction',
+    icon: Landmark,
+    amounts: [1100, 2100, 5100, 11000, 21000, 51000, 110000, 210000, 510000],
   },
 ];
 
@@ -295,8 +307,12 @@ function DonationCategoryCard({ category, onDonate }) {
         <img {...photo(category.image, '(min-width: 1024px) 32vw, (min-width: 640px) 48vw, 100vw')} alt={category.alt} loading="lazy" decoding="async" className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:h-56" />
         <div className="pointer-events-none absolute inset-0 border-[5px] border-double border-primary/55" aria-hidden="true" />
         <div className="absolute bottom-1 left-1 right-1 rounded-lg bg-maroon/75 px-2 py-1 text-[10px] leading-4 text-white backdrop-blur-sm">
-          Representative photo · <a href={credit.url} target="_blank" rel="noopener noreferrer" className="pointer-events-auto underline underline-offset-2">{credit.author}</a>
-          {' · '}<a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="pointer-events-auto underline underline-offset-2">{credit.license}</a>
+          {credit ? (
+            <>
+              Representative photo · <a href={credit.url} target="_blank" rel="noopener noreferrer" className="pointer-events-auto underline underline-offset-2">{credit.author}</a>
+              {' · '}<a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="pointer-events-auto underline underline-offset-2">{credit.license}</a>
+            </>
+          ) : category.caption}
         </div>
       </div>
       <div className="flex min-h-40 flex-col items-center px-4 pb-5 pt-2 text-center">
@@ -435,12 +451,13 @@ export function DonationSevaPage() {
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-dark sm:text-xs">Serve the Lord, share the mercy</p>
               <h1 className="mt-1 font-heading text-xl font-bold text-maroon sm:text-3xl">{category.title}</h1>
               <p className="mt-1 text-sm leading-6 text-maroon/75 sm:mt-2 sm:text-base">{category.detail}</p>
-              {!category.banner && (
+              {!category.banner && category.credit && (
                 <p className="mt-1 hidden text-[11px] text-maroon/50 sm:block">
                   Photo: <a href={category.credit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.title}</a>
                   {' '}by {category.credit.author} · <a href={category.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{category.credit.license}</a>
                 </p>
               )}
+              {!category.credit && category.caption && <p className="mt-1 hidden text-[11px] text-maroon/50 sm:block">{category.caption}</p>}
             </div>
           </section>
 

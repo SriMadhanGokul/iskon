@@ -243,14 +243,14 @@ export default function Home() {
           </Reveal>
           <Stagger className="mt-8 grid gap-4 md:grid-cols-3">
             {[
-              { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, seva: 'sqft', photoKey: 'templeConstruction', caption: 'Govardhan Dham · temple under construction', alt: 'The Govardhan Dham temple building under construction' },
+              { title: 'Temple development', text: 'Contribute to the continued development of the temple and its shared spaces.', icon: Building2, to: '/donate/temple-development', photoKey: 'templeConstruction', caption: 'Govardhan Dham · temple under construction', alt: 'The Govardhan Dham temple building under construction' },
               { title: 'Anna Daan', text: 'Support prasadam and food-service efforts for visitors and the wider community.', icon: Utensils, seva: 'anna', photoKey: 'prasadam', alt: 'Fruit arranged as a devotional offering' },
               { title: 'Gau Seva', text: 'Help provide care and support for the temple’s cow-protection work.', icon: HandHeart, seva: 'gau', photoKey: 'gauSeva', alt: 'Vechur cow photographed in India' },
-            ].map(({ title, text, icon: Icon, seva, photoKey, caption, alt }) => {
+            ].map(({ title, text, icon: Icon, seva, to, photoKey, caption, alt }) => {
               const credit = siteConfig.imageCredits[photoKey];
               return (
               <StaggerItem key={title} className="flex">
-                <Link to={`/donate?seva=${seva}`} className="card-lift group flex w-full flex-col overflow-hidden rounded-3xl border border-gold bg-white shadow-soft">
+                <Link to={to ?? `/donate?seva=${seva}`} className="card-lift group flex w-full flex-col overflow-hidden rounded-3xl border border-gold bg-white shadow-soft">
                   <figure className="overflow-hidden">
                     <img {...photo(siteConfig.images[photoKey], '(min-width: 768px) 33vw, 100vw')} alt={alt} width="1200" height="800" loading="lazy" decoding="async" className="card-zoom aspect-[16/10] w-full object-cover" />
                     <figcaption className="bg-cream px-3 py-2 text-[11px] leading-4 text-maroon/75">
@@ -277,7 +277,7 @@ export default function Home() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-saffron-dark">Temple development</p>
             <h2 className="font-heading text-3xl font-semibold sm:text-4xl">A shared offering, one step at a time</h2>
             <p className="mt-4 leading-7 text-maroon/80">Support the ongoing square-foot seva and help bring the temple project closer to completion.</p>
-            <Link to="/donate?seva=sqft" className="btn-primary mt-6">Contribute to the project</Link>
+            <Link to="/donate/temple-development" className="btn-primary mt-6">Contribute to the project</Link>
           </div>
           <div className="card-lift rounded-3xl border border-gold bg-white p-6 shadow-soft sm:p-8">
             <div className="mb-5 flex items-start justify-between gap-4">
